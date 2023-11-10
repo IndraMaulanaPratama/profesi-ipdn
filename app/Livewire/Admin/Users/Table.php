@@ -93,7 +93,7 @@ class Table extends Component
         )->when(
                 $this->role,
                 function ($query, $role) use ($praja) {
-                    if ($role != 'Super Admin') {
+                    if ($role != 'Super Admin' and $praja != null) {
                         return $query->whereNotIn('id', [1])->where('user_role', '!=', $praja->ROLE_ID);
                     }
                 }
