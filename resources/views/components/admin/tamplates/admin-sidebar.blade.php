@@ -15,7 +15,7 @@
 
         <x-admin.tamplates.sidebar.link text="Beranda" navigate="/" icon="grid" />
 
-        <x-admin.tamplates.sidebar.heading text='Bebas Pustaka' />
+        <x-admin.tamplates.sidebar.heading text='Profesi IPDN' />
 
         {{-- Logic kanggo nampilkeun data menu dumasar kana role nu login --}}
         @for ($i = 0; $i < count($pivot); $i++)
@@ -25,22 +25,22 @@
         @endfor
 
         {{-- Menu kanggo area Admin --}}
-        @if ($role->ROLE_NAME == 'Super Admin' || $role->ROLE_NAME == 'Admin Pustaka')
+        @if ($role->ROLE_NAME == 'Super Admin' || $role->ROLE_NAME == 'Admin Web')
             <x-admin.tamplates.sidebar.heading text='Admin Area' />
-
-            {{-- User Menu --}}
-            <x-admin.tamplates.sidebar.link text="Manajemen Pengguna" navigate="user-manajemen"
-                icon="bi-person-lines-fill" />
-
-            {{-- Assign Menu --}}
-            <x-admin.tamplates.sidebar.link text="Manajemen Akses" navigate="assign-manajemen"
-                icon="bi-universal-access-circle" />
 
             {{-- Manajemen Menu --}}
             <x-admin.tamplates.sidebar.link text="Manajemen Menu" navigate="menu" icon="bi-menu-button-fill" />
 
-            {{-- Role Menu --}}
-            <x-admin.tamplates.sidebar.link text="Manajemen Role" navigate="role-manajemen" icon="bi-bar-chart-steps" />
+           {{-- Manajeman Role --}}
+           <x-admin.tamplates.sidebar.link text="Manajemen Role" navigate="role-manajemen" icon="bi-bar-chart-steps" />
+
+            {{-- Manajeman User --}}
+            <x-admin.tamplates.sidebar.link text="Manajemen Pengguna" navigate="user-manajemen"
+                icon="bi-person-lines-fill" />
+
+            {{-- Manajeman Akses --}}
+            <x-admin.tamplates.sidebar.link text="Manajemen Akses" navigate="assign-manajemen"
+                icon="bi-universal-access-circle" />
 
             @if ($role->ROLE_NAME == 'Super Admin')
                 {{-- Data Sampah --}}
