@@ -26,13 +26,8 @@ class AksesSeeder extends Seeder
             ],
             [
                 "ROLE_ID" => uuid_create(4),
-                "ROLE_NAME" => "Admin Pustaka",
+                "ROLE_NAME" => "Admin Web",
             ],
-            [
-                "ROLE_ID" => uuid_create(4),
-                "ROLE_NAME" => "Praja Utama",
-            ],
-
         ];
 
         $dataUser = [
@@ -41,15 +36,15 @@ class AksesSeeder extends Seeder
                 "user_role" => $dataRole[0]['ROLE_ID'],
                 "name" => "Rama Wirahma",
                 "email" => "rama-wirahma@ipdn.ac.id",
-                "photo" => "defaultPhoto.jpeg",
+                "photo" => "defaultPhoto.png",
                 "password" => bcrypt("password"),
             ],
             [
                 // "id" => uuid_create(4),
                 "user_role" => $dataRole[1]['ROLE_ID'],
-                "name" => "Admin Pustaka",
-                "email" => "admin-pustaka@ipdn.ac.id",
-                "photo" => "defaultPhoto.jpeg",
+                "name" => "Admin Web",
+                "email" => "admin-web@ipdn.ac.id",
+                "photo" => "defaultPhoto.png",
                 "password" => bcrypt("password"),
             ],
         ];
@@ -63,48 +58,6 @@ class AksesSeeder extends Seeder
                 'MENU_URL' => "/",
                 'MENU_POSITION' => "tautan",
             ],
-
-            // Similaritas Admin
-            [
-                'MENU_ID' => uuid_create(4),
-                'MENU_NAME' => "Similaritas",
-                'MENU_ICON' => "bi-percent",
-                'MENU_DESCRIPTION' => "Menu Simiilaritas Admin",
-                'MENU_URL' => "admin-similaritas",
-                'MENU_POSITION' => "sidebar",
-            ],
-
-            // Similaritas Praja
-            [
-                'MENU_ID' => uuid_create(4),
-                'MENU_NAME' => "Similaritas",
-                'MENU_ICON' => "bi-percent",
-                'MENU_DESCRIPTION' => "Menu Simiilaritas Praja",
-                'MENU_URL' => "praja-similaritas",
-                'MENU_POSITION' => "sidebar",
-            ],
-
-            // Bebas Pinjaman Admin
-            [
-                'MENU_ID' => uuid_create(4),
-                'MENU_NAME' => "Bebas Pinjaman",
-                'MENU_ICON' => "bi-journal-bookmark-fill",
-                'MENU_DESCRIPTION' => "Menu Bebas Pinjaman Admin",
-                'MENU_URL' => "admin-bebasPinjaman",
-                'MENU_POSITION' => "sidebar",
-            ],
-
-            // Bebas Pinjaman Praja
-            [
-                'MENU_ID' => uuid_create(4),
-                'MENU_NAME' => "Bebas Pinjaman",
-                'MENU_ICON' => "bi-journal-bookmark-fill",
-                'MENU_DESCRIPTION' => "Menu Bebas Pinjaman Praja",
-                'MENU_URL' => "praja-bebasPinjaman",
-                'MENU_POSITION' => "sidebar",
-            ],
-
-
         ];
 
         $dataPivotMenu = [
