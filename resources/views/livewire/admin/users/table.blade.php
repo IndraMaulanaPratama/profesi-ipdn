@@ -7,7 +7,7 @@
         <div class="row justify-content-between">
 
             {{-- Tombol Tambah Data --}}
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 {{-- Input Search --}}
                 <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
                     data-bs-target="#formCreateData">
@@ -17,7 +17,7 @@
             </div>
 
             {{-- Input Pencarian Data --}}
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <x-admin.components.form.input size=12 type='text' name='search' placeholder='Cari Data' />
             </div>
         </div>
@@ -83,9 +83,9 @@
                 </tbody>
 
             </table>
+            <x-admin.tamplates.paginate.paginate :item="$data" />
         </div>
 
-        <x-admin.tamplates.paginate.paginate :item="$data" />
 
     </x-admin.components.card.card>
 
