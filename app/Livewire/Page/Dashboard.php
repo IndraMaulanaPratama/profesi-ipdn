@@ -7,12 +7,14 @@ use App\Models\Role;
 use App\Models\User;
 use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
+use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Layout('layouts.app')]
 class Dashboard extends Component
 {
-    #[Title('Beranda - Perpustakaan IPDN')]
+    #[Title('Beranda - Pendidikan Profesi dan Kepamongprajaan')]
 
     public function render()
     {
