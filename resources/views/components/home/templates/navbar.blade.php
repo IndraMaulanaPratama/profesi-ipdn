@@ -7,7 +7,7 @@
             &nbsp; | &nbsp; <i class="bi bi-telephone-fill bi-sm"></i> 0812 1093 7771
         </div>
         <div class="col-2">
-            <a href="#" class="link end-0">Layanan Pengaduan</a>
+            <a href="{{route('layanan-pengaduan')}}" class="link end-0">Layanan Pengaduan</a>
         </div>
     </div>
 
@@ -37,7 +37,7 @@
 
                     {{-- Beranda --}}
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" aria-current="page" href="#">BERANDA</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('/') }}">BERANDA</a>
                     </li>
 
                     {{-- Profile --}}
@@ -47,10 +47,12 @@
                             PROFILE
                         </a>
                         <ul class="dropdown-menu mx-2" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Apa itu Pendidikan Kepamongprajaan</a></li>
-                            <li><a class="dropdown-item" href="#">Sejarah Lahirnya Pendidikan Profesi
+                            <li><a class="dropdown-item" href="{{ route('profile-deskripsi') }}">Apa itu Pendidikan
                                     Kepamongprajaan</a></li>
-                            <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('profile-sejarah') }}">Sejarah Lahirnya
+                                    Pendidikan Profesi
+                                    Kepamongprajaan</a></li>
+                            <li><a class="dropdown-item" href="{{ route('profile-visimisi') }}">Visi dan Misi</a></li>
 
                             {{-- Sumber Daya Manusia --}}
                             <li class="">
@@ -62,7 +64,7 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-submenu">
                                     <li>
-                                        <a class="dropdown-item" href="#">SOTK</a>
+                                        <a class="dropdown-item" href="{{ route('profile-sotk') }}">SOTK</a>
                                     </li>
 
                                     <li>
