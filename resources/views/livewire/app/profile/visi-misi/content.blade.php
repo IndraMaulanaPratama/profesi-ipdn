@@ -3,8 +3,8 @@
 
     {{-- Header --}}
     <div class="row my-5 justify-content-center">
-        <div class="col-auto text-center border">
-            <img src="https://png.pngtree.com/background/20230519/original/pngtree-two-pomeranian-puppies-sitting-side-by-side-picture-image_2655967.jpg"
+        <div class="col-auto text-center">
+            <img src="{{asset('assets/homepage/images/image 9.png')}}"
                 alt="" srcset="">
         </div>
     </div>
