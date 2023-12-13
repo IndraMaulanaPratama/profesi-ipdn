@@ -179,9 +179,9 @@
 
                             <div class="col-6">
                                 <div class="row">
-                                    <div class="col-auto">
-                                        <img src="https://i.pinimg.com/originals/32/a0/31/32a031cddeb9c1649062a13aa946c8c0.jpg"
-                                            alt="mahasiswa-1" class="rounded img" width="100" height="100" />
+                                    <div class="col-2">
+                                        <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/04/10/Rincian-tanggal-dan-kegiatan-SPCP-IPDN-di-dalam-artikel-Instagram-ipdn_praja_-3303168569.jpg"
+                                            alt="mahasiswa-1" class="rounded img-fluid" style="width: 100px; height: 90px"/>
                                     </div>
 
                                     <div class="col-8">
@@ -208,9 +208,9 @@
 
                             <div class="col-6">
                                 <div class="row">
-                                    <div class="col-auto">
-                                        <img src="https://i.pinimg.com/originals/32/a0/31/32a031cddeb9c1649062a13aa946c8c0.jpg"
-                                            alt="mahasiswa-1" class="rounded img" width="100" height="100" />
+                                    <div class="col-2">
+                                        <img src="https://i.pinimg.com/736x/73/17/20/731720bae90f6b53f6b8af7adb2d881a.jpg"
+                                        alt="mahasiswa-2" class="rounded img-fluid" style="width: 100px; height: 90px"/>
                                     </div>
 
                                     <div class="col-8">
