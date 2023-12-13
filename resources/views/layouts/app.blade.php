@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ $title ?? 'Page Title' }}</title>
-
     <link href="{{ asset('assets/homepage/images/favicon.ico') }}" rel="icon">
     <link href="{{ asset('assets/homepage/images/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+    <title>{{ $title ?? 'Page Title' }}</title>
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -38,7 +39,32 @@
         .dropdown-menu>li:hover>.dropdown-submenu {
             display: block;
         }
+
+        a {
+            text-decoration: none;
+            color: black
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        a:active {
+            color: navy;
+        }
+
+        .paragraf {
+            text-indent: 1cm;
+            text-align: justify;
+        }
+
+        .paragraf-etik {
+            font-size: 14px;
+            text-indent: 0.5cm;
+            text-align: justify;
+        }
     </style>
+
 
 </head>
 
