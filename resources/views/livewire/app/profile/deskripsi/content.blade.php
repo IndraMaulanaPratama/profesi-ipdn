@@ -4,7 +4,7 @@
 
     {{-- Deskripsi --}}
     <div class="container my-5">
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
 
             {{-- Narasi --}}
             <div class="col-5">
@@ -28,8 +28,8 @@
 
             {{-- Gambar --}}
             <div class="col-6">
-                <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/19/2023/07/10/dog-g3d9a3a2c1_1280-639541513.jpg"
-                    width="80%" alt="">
+                <img src="{{asset('assets/homepage/images/20231116_094942 1.png')}}"
+                    width="100%" alt="">
             </div>
 
         </div>
@@ -40,7 +40,7 @@
         <div class="container">
 
             {{-- Pamong Praja dan Kepamongprajaan --}}
-            <div class="row">
+            <div class="row justify-content-center">
 
                 {{-- Pamong Praja --}}
                 <div class="col-5 m-4 p-4 rounded shadow" style="background-color: #003b6d; color: whitesmoke;">
