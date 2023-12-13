@@ -1,5 +1,5 @@
 <div>
-    <hr style="color: grey;" class="shadow rounded" />
+    <hr style="color: grey; padding: 0%; margin:0%;" class="shadow rounded" />
 
     <div class="" style="padding: 40px 130px;">
         <div class="row justify-content-between">
@@ -126,7 +126,7 @@
                             <hr />
                         </div>
 
-                        <a href="" class="link">Layanan Pengaduan</a>
+                        <a href="{{route('layanan-pengaduan')}}" class="link">Layanan Pengaduan</a>
                     </div>
 
                     <div class="col-auto">&nbsp;</div>
