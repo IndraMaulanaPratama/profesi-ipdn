@@ -5,7 +5,8 @@
     <div class="row py-4">
 
         <div class="col-12 py-4">
-            <div id="carouselExampleCaptions" class="carousel slide">
+
+            {{-- <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -50,7 +51,10 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </div> --}}
+
+            <img src="{{asset("assets/homepage/images/slide1.png")}}" width="100%" />
+
         </div>
 
     </div>
@@ -180,26 +184,25 @@
                             <div class="col-6">
                                 <div class="row">
                                     <div class="col-2">
-                                        <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/04/10/Rincian-tanggal-dan-kegiatan-SPCP-IPDN-di-dalam-artikel-Instagram-ipdn_praja_-3303168569.jpg"
-                                            alt="mahasiswa-1" class="rounded img-fluid" style="width: 100px; height: 90px"/>
+                                        <img src="{{ asset('assets/homepage/images/praja1.png') }}" alt="mahasiswa-1"
+                                            class="rounded img-fluid" style="width: 75px; height: 75px" />
                                     </div>
 
                                     <div class="col-8">
                                         <h1><i class="bi bi-quote" style="color: orange"></i></h1>
 
                                         <p class="px-3" style="color: whitesmoke; text-align: justify;">
-                                            Terbaik!! <br />
-                                            Developer aplikasi ini sangat bahagia dan tercukupi kehidupanya. Selain itu
-                                            tempat
-                                            dia bekerja memiliki struktural yang sangat baik, supportif, mengedepankan
-                                            work life
-                                            balance, memperhatikan kesehatan dan kesejahteraan pegawai-pegawainya.
+                                            Saya sangat senang dan bersyukur sudah bisa menjadi bagian dari Program
+                                            Pendidikan Profesi Kepamongprajaan IPDN, karena selain suasana belajarnya
+                                            yang nyaman, rekan-rekan yang kompak, juga sekretariat dan dosen-dosen
+                                            pengajarnya sangat ramah dan berpengalaman, sehingga menjadi motivasi saya
+                                            untuk berkarir dan menjadi public servant yang lebih baik lagi
                                         </p>
 
                                         <p class="px-3" style="color: orange; font-size: 13px">
-                                            Mark Zulkarnain <br />
-                                            Angkatan XXI <br />
-                                            Regional Baghdad
+                                            DITO SUDRAJAT <br />
+                                            Ketua Kelas Astha <br />
+                                            Angkatan XII
                                         </p>
                                     </div>
                                 </div>
@@ -209,26 +212,21 @@
                             <div class="col-6">
                                 <div class="row">
                                     <div class="col-2">
-                                        <img src="https://i.pinimg.com/736x/73/17/20/731720bae90f6b53f6b8af7adb2d881a.jpg"
-                                        alt="mahasiswa-2" class="rounded img-fluid" style="width: 100px; height: 90px"/>
+                                        <img src="{{ asset('assets/homepage/images/praja2.png') }}" alt="mahasiswa-2"
+                                            class="rounded img-fluid" style="width: 75px; height: 75px" />
                                     </div>
 
                                     <div class="col-8">
                                         <h1><i class="bi bi-quote" style="color: orange"></i></h1>
 
                                         <p class="px-3" style="color: whitesmoke; text-align: justify;">
-                                            Terbaik!! <br />
-                                            Developer aplikasi ini sangat bahagia dan tercukupi kehidupanya. Selain itu
-                                            tempat
-                                            dia bekerja memiliki struktural yang sangat baik, supportif, mengedepankan
-                                            work life
-                                            balance, memperhatikan kesehatan dan kesejahteraan pegawai-pegawainya.
+                                            <img src="{{ asset('assets/homepage/images/image14.png') }}" width="100%" alt="mahasiswa-2"/>
                                         </p>
 
                                         <p class="px-3" style="color: orange; font-size: 13px">
-                                            Ma'ruf Amir Aswadji <br />
-                                            Angkatan CGV <br />
-                                            Regional Rohingya
+                                            ANDRILLE MARTIN <br />
+                                            Alumni - Angkatan XI <br />
+                                            Kab. Lahat prov. Sumatera selatan
                                         </p>
 
                                     </div>

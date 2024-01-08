@@ -45,7 +45,7 @@
                 <div class="col-6 border" style="padding: 0%">
                     <!-- Jumbotron -->
                     <div class="bg-image"
-                        style="background-image: url('https://eskipaper.com/images/large-2.jpg');height: 100%; width: 100%">
+                        style="background-image: url({{asset('assets/homepage/images/bg_pengaduan.png')}});height: 100%; width: 100%">
 
                         <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height:100%">
                             <div class=" p-5" style=" height: 100%; color:whitesmoke">

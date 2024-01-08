@@ -1,26 +1,26 @@
 <div>
     <hr style="color: grey; padding: 0%; margin:0%;" class="shadow rounded" />
 
-    <div class="" style="padding: 40px 130px;">
-        <div class="row justify-content-between">
+    <div class="" style="padding: 3% 10%;">
+        <div class="row justify-content-between ">
 
             {{-- Title --}}
             <div class="col-3">
                 <div class="row justify-content-between">
-                    <div class="col-11">
+                    <div class="col-10 ">
                         <center>
-                            <img src="{{ asset('assets/homepage/images/logo.png') }}" alt="logo-ipdn" width="190px">
+                            <img src="{{ asset('assets/homepage/images/logo.png') }}" alt="logo-ipdn" width="30%">
                             <br />
-                            <div style="color: #0e416e;line-height: 1.2; padding:10px 0px">
+                            <div style="color: #0e416e;line-height: 1.2; padding:5% 0px; font-size: 14px">
                                 <b>PROGRAM PENDIDIKAN</b> <br />
                                 <b>PROFESI KEPAMONGPRAJAAN</b> <br />
-                                <small>INSTITUT PEMERINTAHAN DALAM NEGRI</small>
+                                <small style="font-size: 12px;">INSTITUT PEMERINTAHAN DALAM NEGERI</small>
                             </div>
 
                         </center>
                     </div>
 
-                    <div class="col-auto" style="margin: 50px 0;">
+                    <div class="col-auto" style="margin: 10% 0;">
                         <div class="rounded" style="border-left: 3px solid #eab940; height: 170px; "></div>
                     </div>
 
@@ -39,11 +39,11 @@
 
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8440881537767!2d106.8158871749908!3d-6.28421639370468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f21dff89fc03%3A0x7189e801feea4cf2!2sIPDN%20Kampus%20Jakarta!5e0!3m2!1sid!2sid!4v1701945881370!5m2!1sid!2sid"
-                            width="630" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="100%" height="60%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
-                    <div class="col-auto" style="margin: 50px 0;">
+                    <div class="col-auto" style="margin: 5% 0;">
                         <div class="rounded" style="border-left: 3px solid #eab940; height: 170px; "></div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
             {{-- Kontak --}}
             <div class="col-3">
                 <div class="row justify-content-between">
-                    <div class="col-11">
+                    <div class="col-12">
                         <h6><b>HUBUNGI KAMI</b></h6>
 
                         <div style="font-size:12px">
@@ -126,7 +126,7 @@
                             <hr />
                         </div>
 
-                        <a href="{{route('layanan-pengaduan')}}" class="link">Layanan Pengaduan</a>
+                        <a href="{{route('layanan-pengaduan')}}" class="link" style="font-size: 12px;">Layanan Pengaduan</a>
                     </div>
 
                     <div class="col-auto">&nbsp;</div>
