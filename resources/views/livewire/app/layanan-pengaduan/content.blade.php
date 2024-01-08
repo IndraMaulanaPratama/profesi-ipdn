@@ -12,30 +12,55 @@
 
 <div style="background-color: #ecf6ff;">
 
-    <div class="row py-5 justify-content-center">
-        <div class="col-8 shadow-sm rounded-sm" style="background-color:white;">
+    {{-- PENCARIAN  PENGADUAN --}}
+    <div class="row py-4 justify-content-center">
+        <div class="col-8 p-4 shadow rounded" style="background-color:white;">
 
+            <div class="input-group input-group-lg mb-3">
+                <input type="text" class="form-control" placeholder="Kode Pengaduan/Informasi"
+                    aria-label="Kode Pengaduan/Informasi" aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button-addon2">CARI</button>
+            </div>
+
+            <small>
+                Masukkan kode pengaduan/informasi yang telah diberikan untuk melihat progres pengaduan/informasi
+            </small>
+        </div>
+    </div>
+    {{-- END OF PENCARIAN PENGADUAN --}}
+
+
+    <div class="row py-5 justify-content-center">
+
+        {{-- FORM PENGADUAN --}}
+        <div class="col-8 shadow-sm rounded-sm" style="background-color:white;">
             <div class="row justify-content-between">
                 <div class="col-5 px-5 py-4">
                     {{-- Email --}}
                     <div class="py-2">
-                        <label for="exampleFormControlInput1" class="form-label">E-mail <small
+                        <label for="email" class="form-label">E-mail <small
                                 class="optional">(Optional)</small></label>
-                        <input type="email" class="form-control">
+                        <input type="email" name="email" class="form-control">
                     </div>
 
                     {{-- Nama --}}
                     <div class="py-2">
-                        <label for="exampleFormControlInput1" class="form-label">Nama <small
-                                class="optional">(Optional)</small></label>
-                        <input type="text" class="form-control">
+                        <label for="nama" class="form-label">Nama <small class="optional">(Optional)</small></label>
+                        <input type="text" name="nama" class="form-control">
                     </div>
 
-                    {{-- Nama --}}
+                    {{-- Pengaduan --}}
                     <div class="py-2">
-                        <label for="exampleFormControlInput1" class="form-label">Pengaduan</label>
-                        <textarea name="" class="form-control" rows="5"></textarea>
+                        <label for="pengaduan" class="form-label">Pengaduan</label>
+                        <textarea name="pengaduan" class="form-control" rows="5"></textarea>
                     </div>
+
+                    {{-- File --}}
+                    <div class="py-2">
+                        <label for="bukti" class="form-label">Pengaduan</label>
+                        <input type="file" name="pengaduan" class="form-control">
+                    </div>
+
 
                     <div class="py-2">
                         <button class="btn btn-outline-secondary">Simpan</button>
@@ -45,12 +70,13 @@
                 <div class="col-6 border" style="padding: 0%">
                     <!-- Jumbotron -->
                     <div class="bg-image"
-                        style="background-image: url({{asset('assets/homepage/images/bg_pengaduan.png')}});height: 100%; width: 100%">
+                        style="background-image: url({{ asset('assets/homepage/images/bg_pengaduan.png') }}); height:100%; background-position: center; background-repeat: no-repeat; background-size: cover;
+                        ">
 
-                        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height:100%">
+                        <div class="mask">
                             <div class=" p-5" style=" height: 100%; color:whitesmoke">
                                 <h3><b>HUBUNGI KAMI</b></h3>
-                                <br/>
+                                <br />
 
                                 <table width="100%" style="line-height: 2.3; font-size:13px;">
 
@@ -98,7 +124,7 @@
 
                                     <tr>
                                         <td colspan="3">
-                                            <hr/>
+                                            <hr />
                                         </td>
                                     </tr>
 
@@ -146,5 +172,7 @@
             </div>
 
         </div>
+        {{-- END OF PENCARIAN PENGADUAN --}}
+
     </div>
 </div>

@@ -201,7 +201,7 @@
 
                         <ul class="dropdown-menu mx-2" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" target="_" href="https://ipdn.siakadcloud.com/spmbfront/">
                                     Pendaftaran
                                 </a>
                             </li>
