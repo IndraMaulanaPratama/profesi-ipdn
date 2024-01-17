@@ -1,7 +1,8 @@
 {{-- Navbar --}}
 <div>
     {{-- Kontak dan layanan pengaduan --}}
-    <div class="d-inline-block" style="background-color: #e5e5e5; padding:0.5% 3.4%;  color: #0e416e; font-size: 12px; width:100%">
+    <div class="d-inline-block"
+        style="background-color: #e5e5e5; padding:0.5% 3.4%;  color: #0e416e; font-size: 12px; width:100%">
         <div class="row justify-content-between">
             <div class="col-5">
                 Alumni &nbsp; | &nbsp;
@@ -17,15 +18,15 @@
             </div>
 
         </div>
-        
+
     </div>
 
     {{-- Logo dan Menu --}}
     <nav class="navbar navbar-expand-md" style="">
         <div class="container-fluid" style="padding:1.3% 3.4%;">
             <a class="navbar-brand " href="#" style="align-items: center">
-                <img src="{{ asset('assets/homepage/images/logo.png') }}"
-                    class=" align-top" alt="" style="width: 12%">
+                <img src="{{ asset('assets/homepage/images/logo.png') }}" class=" align-top" alt=""
+                    style="width: 12%">
 
                 <div class="d-inline-block" style="color: #0e416e;line-height: 1.2; padding:4% 2%; font-size:70%;">
                     <b>PROGRAM PENDIDIKAN</b> <br />
@@ -43,7 +44,7 @@
             </button>
 
             <div class="collapse navbar-collapse" style="font-weight: bold;" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 80%; padding-right: 100px">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 24; padding-right: 100px">
 
                     {{-- Beranda --}}
                     <li class="nav-item mx-2">
@@ -201,7 +202,8 @@
 
                         <ul class="dropdown-menu mx-2" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" target="_" href="https://ipdn.siakadcloud.com/spmbfront/">
+                                <a class="dropdown-item" target="_"
+                                    href="https://ipdn.siakadcloud.com/spmbfront/">
                                     Pendaftaran
                                 </a>
                             </li>
@@ -236,7 +238,7 @@
 
                         <ul class="dropdown-menu mx-2" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{{ route('berita-pengumuman') }}">
                                     Pengumuman
                                 </a>
                             </li>
