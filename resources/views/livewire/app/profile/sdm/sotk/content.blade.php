@@ -1,13 +1,14 @@
 {{-- Be like water. --}}
 
-<div class="my-5">
-    <div class="row justify-content-center">
-        <div class="col-9">
+<div class="my-5 container">
+    <div class="row justify-content-center my-4">
+        <div class="col-6">
             <div class="row p-3 justify-content-between">
 
-                <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" width="90%"
-                        alt="" srcset="">
+                {{-- Dr. Drs. H. Endang Try Setyasih, MM --}}
+                <div class="col-6 text-center">
+                    <img src="{{ asset('assets/homepage/images/Dr. Drs. H. Endang Try Setyasih, MM.png') }}"
+                        width="90%" alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
                         Dr. Drs. H. Endang Try Setyasih, MM
@@ -18,8 +19,9 @@
 
                 </div>
 
-                <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" width="90%"
+                {{-- Drs. Komaedi, M.Si --}}
+                <div class="col-6 text-center">
+                    <img src="{{ asset('assets/homepage/images/Drs. Komaedi, M.Si.png') }}" width="90%"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -32,25 +34,17 @@
 
                 </div>
 
-                <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" width="90%"
-                        alt="" srcset="">
-
-                    <p class="text-center pt-4" style="font-weight: bold; font-size: 24px">
-                        Muhammad Hanif Nashrullah, S.STP
-                    </p>
-
-                    <p style="color: #063A69; font-size: 16px; font-weight: 700">
-                        Plh. Kepala Subbagian Tata <br /> Usaha dan Sistem Informasi
-                    </p>
-
-                </div>
             </div>
+        </div>
+    </div>
 
+    <div class="row justify-content-center">
+        <div class="col-9">
             <div class="row p-3 justify-content-between">
 
+                {{-- hardiyanto_rahman --}}
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" width="100%"
+                    <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" height="250px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -64,7 +58,7 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" width="100%"
+                    <img src="{{ asset('assets/homepage/images/logo.png') }}" height="250px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -78,7 +72,7 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" width="100%"
+                    <img src="{{ asset('assets/homepage/images/logo.png') }}" height="250px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -92,6 +86,30 @@
                 </div>
             </div>
 
+            <div class="row p-3 justify-content-between">
+
+                <div class="col-3 text-center">
+                    &nbsp;
+                </div>
+
+                <div class="col-3 text-center">
+                    <img src="{{ asset('assets/homepage/images/logo.png') }}" height="250px"
+                        alt="" srcset="">
+
+                    <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
+                        Fransina Makdalena Paulla Nusmesse, S.Sos, M.Si
+                    </p>
+
+                    <p style="color: #063A69; font-size: 16px; font-weight: 700">
+                        Kepala Unit Penjaminan Mutu
+                    </p>
+
+                </div>
+
+                <div class="col-3 text-center">
+                    &nbsp;
+                </div>
+            </div>
         </div>
     </div>
 </div>
