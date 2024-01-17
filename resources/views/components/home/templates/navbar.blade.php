@@ -43,7 +43,7 @@
             </button>
 
             <div class="collapse navbar-collapse" style="font-weight: bold;" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 80%;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 80%; padding-right: 100px">
 
                     {{-- Beranda --}}
                     <li class="nav-item mx-2">
@@ -107,7 +107,7 @@
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item" href="#">Fasiilitas</a>
+                                        <a class="dropdown-item" href="#">Fasilitas</a>
                                     </li>
                                 </ul>
                             </li>

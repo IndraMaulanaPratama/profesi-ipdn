@@ -2,11 +2,11 @@
 
 <div class="container py-5">
     {{-- Carousel --}}
-    <div class="row py-4">
+    <div class="row pt-4">
 
-        <div class="col-12 py-4">
+        <div class="col-12 py-2">
 
-            {{-- <div id="carouselExampleCaptions" class="carousel slide">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -16,29 +16,32 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        {{-- <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
+                            alt="..."> --}}
+
+                        <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
+                            width="100%" />
+
+                    </div>
+
                     <div class="carousel-item active">
-                        <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        {{-- <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
+                            alt="..."> --}}
+
+                        <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
+                            width="100%" />
+
                     </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('assets/homepage/images/bg-2.jpeg') }}" height="550" class="d-block w-100"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('assets/homepage/images/bg-3.jpeg') }}" height="550" class="d-block w-100"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
+
+                    <div class="carousel-item active">
+                        {{-- <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
+                            alt="..."> --}}
+
+                        <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
+                            width="100%" />
+
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -51,9 +54,9 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div> --}}
+            </div>
 
-            <img src="{{asset("assets/homepage/images/slide1.png")}}" width="100%" />
+            {{-- <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}" width="100%" /> --}}
 
         </div>
 
@@ -65,16 +68,17 @@
         <div class="col-12 py-4">
 
             {{-- Title --}}
-            <div class="my-4">
+            {{-- <div class="my-4">
                 <center>
                     <h3><b>Kegiatan Profesi Kepamongprajaan</b></h3>
                 </center>
-            </div>
+            </div> --}}
 
 
             {{-- Card Berita --}}
             <div class="row justify-content-evenly g-4">
 
+                {{-- Berita 1 --}}
                 <div class="col-4">
                     <div class="card rounded-lg shadow">
 
@@ -82,76 +86,92 @@
                             alt="..." />
 
                         {{-- Content --}}
-                        <div class="card-body" style="height: 200px">
+                        <div class="card-body" style="height: 250px">
 
-                            <h6>
+                            <h6 class="pb-4">
                                 <b>
                                     KEGIATAN PENGANUGERAHAN TANDA KARTIKA PAMONG PRAJA
                                 </b>
                             </h6>
 
-                            <p class="" style="text-align: justify; font-size: 12px">
+                            <p class="" style="text-align: justify; color: #5B5B5B; font-size: 12px">
                                 Jatingagor, 27/10/2023 - Dalam rangka penganugerahan Tanda Kartika Pamong Praja dan
                                 Alumni Kehormatan Kepada Pejabat Gubernur Papua Barat Daya Dr. Drs. Mohammad Musa’ad,
                                 M.Si dan Bupati Malang Drs. H. Sanusi, M.M. sebagai bentuk apresiasi yang tinggi atas
                                 kontribusinya dalam mendayagunakan alumni Institut Pemerintahan Dalam Negeri di Provinsi
                                 Papua Barat Daya dan Kabupaten Malang.
                             </p>
-                        </div>
 
-                    </div>
-                </div>
-
-
-                <div class="col-4">
-                    <div class="card rounded-lg shadow">
-                        <img src="{{ asset('assets/homepage/images/image 4.png') }}" height="270" class="card-img-top"
-                            alt="..." />
-
-                        {{-- Content --}}
-                        <div class="card-body" style="height: 200px">
-
-                            <h6>
-                                <b>
-                                    Provinsi Papua Barat Daya Tingkatkan SDM Kepala Distrik Melalui Pendidikan Profesi
-                                    Kepamongprajaan di IPDN -Kemendagri
-                                </b>
-                            </h6>
-
-                            <p class="" style="text-align: justify; font-size: 12px">
-                                Jakarta, 06/10/2023 - Rektor IPDN, Prof. Dr. Drs. H. Hadi Prabowo., M.M resmi membuka
-                                kegiatan matrikulasi dan perkuliahan program pendidikan profesi kepamongprajaan angkatan
-                                XII kelas bratha tahun akademik 2023/2024.
+                            <p style="color: #063A69; text-decoration: underline; font-size: 12px;">
+                                <a href="#">Baca Selengkapnya</a>
                             </p>
                         </div>
 
                     </div>
                 </div>
 
+                {{-- Berita 2 --}}
                 <div class="col-4">
                     <div class="card rounded-lg shadow">
                         <img src="{{ asset('assets/homepage/images/image 5.png') }}" height="270" class="card-img-top"
                             alt="..." />
 
                         {{-- Content --}}
-                        <div class="card-body" style="height: 200px">
+                        <div class="card-body" style="height: 250px">
 
-                            <h6>
+                            <h6 class="pb-4">
+                                <b>
+                                    Provinsi Papua Barat Daya Tingkatkan SDM Kepala Distrik Melalui Pendidikan Profesi
+                                    Kepamongprajaan di IPDN -Kemendagri
+                                </b>
+                            </h6>
+
+                            <p class="" style="text-align: justify; color: #5B5B5B; font-size: 12px">
+                                Jakarta, 06/10/2023 - Rektor IPDN, Prof. Dr. Drs. H. Hadi Prabowo., M.M resmi membuka
+                                kegiatan matrikulasi dan perkuliahan program pendidikan profesi kepamongprajaan angkatan
+                                XII kelas bratha tahun akademik 2023/2024.
+                            </p>
+
+                            <p style="color: #063A69; text-decoration: underline; font-size: 12px;">
+                                <a href="#">Baca Selengkapnya</a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                {{-- Berita 3 --}}
+                <div class="col-4">
+                    <div class="card rounded-lg shadow">
+                        <img src="{{ asset('assets/homepage/images/image 4.png') }}" height="270" class="card-img-top"
+                            alt="..." />
+
+                        {{-- Content --}}
+                        <div class="card-body" style="height: 250px">
+
+                            <h6 class="pb-4">
                                 <b>
                                     PENGANUGERAHAN TANDA KEHORMATAN DAM LENCANA ALUMNI KEHORMATAN
                                 </b>
                             </h6>
 
-                            <p class="" style="text-align: justify; font-size: 12px">
+                            <p class="" style="text-align: justify; color: #5B5B5B; font-size: 12px">
                                 Jatingagor, 04/03/2023 - Rektor IPDN, Prof. Dr. Drs. H. Hadi Prabowo., M.M memberikan
                                 penganugerahan tanda kehormatan Kartika Pamong Praja Madya, Kartika Pamong Praja Muda
                                 dan Lencana Alumni Kehormatan Pendidikan Tinggi Kepamongprajaan kepada Direktur Program
                                 Pendidikan Profesi Kepamongprajaan Dr. Dra. Hj. Endang Try Setyasih.
                             </p>
-                        </div>
-                    </div>
 
+                            <p style="color: #063A69; text-decoration: underline; font-size: 12px;">
+                                <a href="#">Baca Selengkapnya</a>
+                            </p>
+
+                        </div>
+
+                    </div>
                 </div>
+
 
                 {{-- See More --}}
                 <div class="py-4">
@@ -175,7 +195,7 @@
                 </center>
 
 
-                {{-- Card Berita --}}
+                {{-- Testimoni Mahasiswa --}}
                 <div class="row justify-content-evenly my-4">
                     <div class="col-12 p-4 rounded" style="background-color: #003b6d">
 
@@ -220,7 +240,11 @@
                                         <h1><i class="bi bi-quote" style="color: orange"></i></h1>
 
                                         <p class="px-3" style="color: whitesmoke; text-align: justify;">
-                                            <img src="{{ asset('assets/homepage/images/image14.png') }}" width="100%" alt="mahasiswa-2"/>
+                                            <a href="https://youtu.be/jEhEuSm-ATU" target="_">
+
+                                                <img src="{{ asset('assets/homepage/images/image14.png') }}"
+                                                    width="100%" alt="mahasiswa-2" />
+                                            </a>
                                         </p>
 
                                         <p class="px-3" style="color: orange; font-size: 13px">
