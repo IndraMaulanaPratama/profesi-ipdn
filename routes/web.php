@@ -3,6 +3,7 @@
 use App\Livewire\Page\Admin\Assign;
 use App\Livewire\Page\Admin\Role;
 use App\Livewire\Page\Admin\Users;
+use App\Livewire\Page\App\Berita\Pengumuman;
 use App\Livewire\Page\App\Dashboard;
 use App\Livewire\Page\App\LayananPengaduan;
 use App\Livewire\Page\App\Profile\Sdm\Sotk;
@@ -23,6 +24,9 @@ Route::get('/profile/deskripsi', ProfileDeskripsi::class)->name('profile-deskrip
 Route::get('/profile/visi-dan-misi', ProfileVisiMisi::class)->name('profile-visimisi');
 Route::get('/profile/simber-daya-manusia/struktur-organisasi-tenaga-kependidikan', Sotk::class)->name('profile-sotk');
 Route::get('/profile/sejarah', Sejarah::class)->name('profile-sejarah');
+
+// Berita
+Route::get('/berita/pengumuman', Pengumuman::class)->name('berita-pengumuman');
 
 
 // Ranahna nu gaduh akses
