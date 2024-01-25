@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/logo.png') }}" height="250px"
+                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" height="250px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/logo.png') }}" height="250px"
+                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" height="250px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -93,11 +93,11 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/logo.png') }}" height="250px"
+                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" height="250px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
-                        Fransina Makdalena Paulla Nusmesse, S.Sos, M.Si
+                        Muhammad Hanif Nashrullah, S.STP
                     </p>
 
                     <p style="color: #063A69; font-size: 16px; font-weight: 700">
