@@ -24,7 +24,7 @@
     {{-- Logo dan Menu --}}
     <nav class="navbar navbar-expand-md" style="">
         <div class="container-fluid" style="padding:1.3% 3.4%;">
-            <a class="navbar-brand " href="#" style="align-items: center">
+            <a class="navbar-brand " href="{{env('APP_URL')}}" style="align-items: center">
                 <img src="{{ asset('assets/homepage/images/logo.png') }}" class=" align-top" alt=""
                     style="width: 12%; padding-top:15px;">
 
@@ -248,19 +248,6 @@
                                     Kegiatan PPPkp
                                 </a>
                             </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Kegiatan Kemahasiswaan
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Alumni
-                                </a>
-                            </li>
-
                         </ul>
                     </li>
 
