@@ -8799,3 +8799,4 @@ vendor/symfony/http-kernel/Fragment/SsiFragmentRenderer.php
 vendor/symfony/http-kernel/HttpCache/AbstractSurrogate.php
 vendor/symfony/http-kernel/HttpCache/Esi.php
 vendor/symfony/http-kernel/HttpCache/HttpCache.php
+.env
