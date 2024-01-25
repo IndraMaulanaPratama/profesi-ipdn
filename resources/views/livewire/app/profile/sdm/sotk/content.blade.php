@@ -7,7 +7,7 @@
 
                 {{-- Dr. Drs. H. Endang Try Setyasih, MM --}}
                 <div class="col-6 text-center">
-                    <img src="{{ asset('assets/homepage/images/Dr. Drs. H. Endang Try Setyasih, MM.png') }}" height="250px" alt="" srcset="">
+                    <img src="{{ asset('assets/homepage/images/Dr. Drs. H. Endang Try Setyasih, MM.png') }}" width="251px" height="276px" alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
                         Dr. Drs. H. Endang Try Setyasih, MM
@@ -20,7 +20,7 @@
 
                 {{-- Drs. Komaedi, M.Si --}}
                 <div class="col-6 text-center">
-                    <img src="{{ asset('assets/homepage/images/Drs. Komaedi, M.Si.png') }}"  height="250px"
+                    <img src="{{ asset('assets/homepage/images/Drs. Komaedi, M.Si.png') }}"  width="251px" height="276px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -43,7 +43,7 @@
 
                 {{-- hardiyanto_rahman --}}
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" height="250px"
+                    <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" width="251px" height="276px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="col-3 rounded text-center">
-                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" height="250px"
+                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
                         alt="" srcset="" class="round">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" height="250px"
+                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" height="250px"
+                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
                         alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
