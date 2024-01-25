@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center my-4">
         <div class="col-12">
             <div class="row p-3 justify-content-center">
 
@@ -67,33 +67,40 @@
                     <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
                         alt="" srcset="" class="round">
 
-                        <div class="text-center pt-2">
-                            <div class="pb-2" style="font-weight: bold; font-size: 24px; line-height: normal;">
-                                Fransina Makdalena Paulla Nusmesse, S.Sos, M.Si
-                            </div>
-    
-                            <div style="color: #063A69; font-size: 16px; font-weight: 700">
-                                Kepala Unit Penjaminan Mutu
-                            </div>
+                    <div class="text-center pt-2">
+                        <div class="pb-2" style="font-weight: bold; font-size: 24px; line-height: normal;">
+                            Fransina Makdalena Paulla Nusmesse, S.Sos, M.Si
                         </div>
+
+                        <div style="color: #063A69; font-size: 16px; font-weight: 700">
+                            Kepala Unit Penjaminan Mutu
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-3 text-center">
                     <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
                         alt="" srcset="">
 
-                        <div class="text-center pt-2">
-                            <div class="pb-2" style="font-weight: bold; font-size: 24px; line-height: normal;">
-                                Cut Laila Karmila, S.Sos, M.A
-                            </div>
-    
-                            <div style="color: #063A69; font-size: 16px; font-weight: 700">
-                                Kepala Unit Perpustakaan
-                            </div>
+                    <div class="text-center pt-2">
+                        <div class="pb-2" style="font-weight: bold; font-size: 24px; line-height: normal;">
+                            Cut Laila Karmila, S.Sos, M.A
                         </div>
+
+                        <div style="color: #063A69; font-size: 16px; font-weight: 700">
+                            Kepala Unit Perpustakaan
+                        </div>
+                    </div>
                 </div>
             </div>
 
+
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center my-4">
+        <div class="col-12">
             <div class="row p-3 justify-content-between">
 
                 <div class="col-3 text-center">
@@ -101,18 +108,18 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
+                    <img src="{{ asset('assets/homepage/images/Muhammad Hanif Nashrullah, S.STP.png') }}" width="251px" height="276px"
                         alt="" srcset="">
 
-                        <div class="text-center pt-2">
-                            <div class="pb-2" style="font-weight: bold; font-size: 24px; line-height: normal;">
-                                Muhammad Hanif Nashrullah, S.STP
-                            </div>
-    
-                            <div style="color: #063A69; font-size: 16px; font-weight: 700">
-                                Kepala Unit Penjaminan Mutu
-                            </div>
+                    <div class="text-center pt-2">
+                        <div class="pb-2" style="font-weight: bold; font-size: 24px; line-height: normal;">
+                            Muhammad Hanif Nashrullah, S.STP
                         </div>
+
+                        <div style="color: #063A69; font-size: 16px; font-weight: 700">
+                            Plh. Kepala Subbagian Tata Usaha dan Sistem Informasi
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-3 text-center">
