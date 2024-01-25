@@ -1,7 +1,7 @@
 <div>
     <hr style="color: grey; padding: 0%; margin:0%;" class="shadow rounded" />
 
-    <div class="" style="padding: 3% 10%;">
+    <div class="" style="padding: 2% 10%;">
         <div class="row justify-content-between ">
 
             {{-- Title --}}
@@ -39,7 +39,7 @@
 
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8440881537767!2d106.8158871749908!3d-6.28421639370468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f21dff89fc03%3A0x7189e801feea4cf2!2sIPDN%20Kampus%20Jakarta!5e0!3m2!1sid!2sid!4v1701945881370!5m2!1sid!2sid"
-                            width="100%" height="60%" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
