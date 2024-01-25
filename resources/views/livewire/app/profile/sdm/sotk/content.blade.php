@@ -38,8 +38,8 @@
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-9">
-            <div class="row p-3 justify-content-between">
+        <div class="col-12">
+            <div class="row p-3 justify-content-center">
 
                 {{-- hardiyanto_rahman --}}
                 <div class="col-3 text-center">
