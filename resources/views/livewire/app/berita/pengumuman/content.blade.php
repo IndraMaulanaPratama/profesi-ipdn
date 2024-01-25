@@ -17,7 +17,7 @@
 
     {{-- Content Card --}}
 
-    <div class="row g-4" style="">
+    <div class="row g-4 mb-4" style="">
 
         {{-- Pengumuman 1 --}}
         <div class="col-3">
