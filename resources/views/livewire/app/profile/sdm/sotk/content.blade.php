@@ -7,8 +7,7 @@
 
                 {{-- Dr. Drs. H. Endang Try Setyasih, MM --}}
                 <div class="col-6 text-center">
-                    <img src="{{ asset('assets/homepage/images/Dr. Drs. H. Endang Try Setyasih, MM.png') }}"
-                        class="rounded" height="250px" alt="" srcset="">
+                    <img src="{{ asset('assets/homepage/images/Dr. Drs. H. Endang Try Setyasih, MM.png') }}" height="250px" alt="" srcset="">
 
                     <p class="text-center pt-4" style="font-weight: bold; font-size: 130%">
                         Dr. Drs. H. Endang Try Setyasih, MM
