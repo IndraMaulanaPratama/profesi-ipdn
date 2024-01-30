@@ -22,26 +22,32 @@
                         {{-- <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
                             alt="..."> --}}
 
-                        <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
-                            width="100%" />
+                        <a href="https://ipdn.siakadcloud.com/spmbfront/" target="_" >
+                            <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
+                                width="100%" />
+                        </a>
                     </div>
 
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         {{-- <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
                             alt="..."> --}}
 
-                        <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
-                            width="100%" />
+                        <a href="https://ipdn.siakadcloud.com/spmbfront/" target="_" >
 
+                            <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
+                                width="100%" />
+                        </a>
                     </div>
 
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         {{-- <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
                             alt="..."> --}}
 
-                        <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
-                            width="100%" />
+                        <a href="https://ipdn.siakadcloud.com/spmbfront/" target="_" >
 
+                            <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
+                                width="100%" />
+                        </a>
                     </div>
 
                 </div>
@@ -51,7 +57,7 @@
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                
+
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -242,13 +248,11 @@
                                     <div class="col-8">
                                         <h1><i class="bi bi-quote" style="color: orange"></i></h1>
 
-                                        <p class="px-3" style="color: whitesmoke; text-align: justify;">
-                                            <a href="https://youtu.be/jEhEuSm-ATU" target="_">
-
-                                                <img src="{{ asset('assets/homepage/images/image14.png') }}"
-                                                    width="100%" alt="mahasiswa-2" />
-                                            </a>
-                                        </p>
+                                        <iframe class="px-3" width="430" height="200"
+                                            src="https://www.youtube.com/embed/jEhEuSm-ATU?si=CL0sPlTkOc9yYRKU"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
 
                                         <p class="px-3" style="color: orange; font-size: 13px">
                                             ANDRILLE MARTIN <br />
