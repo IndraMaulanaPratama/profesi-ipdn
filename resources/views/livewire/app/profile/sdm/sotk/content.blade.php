@@ -5,14 +5,14 @@
         <div class="col-6">
             <div class="row p-3 justify-content-between">
 
-                {{-- Dr. Drs. H. Endang Try Setyasih, MM --}}
+                {{-- Dr. Dra. H. Endang Try Setyasih, MM --}}
                 <div class="col-6 text-center">
                     <img src="{{ asset('assets/homepage/images/Dr. Drs. H. Endang Try Setyasih, MM.png') }}"
                         width="251px" height="276px" alt="" srcset="">
 
                     <div class="text-center pt-2">
                         <div class="pb-2" style="font-weight: bold; font-size: 24px; line-height: normal;">
-                            Dr. Drs. H. Endang Try Setyasih, MM
+                            Dr. Dra. H. Endang Try Setyasih, MM
                         </div>
 
                         <div style="color: #063A69; font-size: 16px; font-weight: 700">
