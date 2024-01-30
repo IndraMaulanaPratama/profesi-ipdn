@@ -92,7 +92,7 @@
                                 </ul>
                             </li>
 
-                            <li><a class="dropdown-item" href="#">Kerja Sama</a></li>
+                            <li><a class="dropdown-item" href="{{ route("profile-KerjaSama") }}">Kerja Sama</a></li>
 
                             {{-- Fasilitas --}}
                             <li>
