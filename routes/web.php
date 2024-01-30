@@ -6,6 +6,7 @@ use App\Livewire\Page\Admin\Users;
 use App\Livewire\Page\App\Berita\Pengumuman;
 use App\Livewire\Page\App\Dashboard;
 use App\Livewire\Page\App\LayananPengaduan;
+use App\Livewire\Page\App\Profile\KerjaSama;
 use App\Livewire\Page\App\Profile\Sdm\Sotk;
 use App\Livewire\Page\App\Profile\Sejarah;
 use App\Livewire\Page\App\ProfileDeskripsi;
@@ -23,6 +24,7 @@ Route::get('/profile/layanan-pengaduan', LayananPengaduan::class)->name('layanan
 Route::get('/profile/deskripsi', ProfileDeskripsi::class)->name('profile-deskripsi');
 Route::get('/profile/visi-dan-misi', ProfileVisiMisi::class)->name('profile-visimisi');
 Route::get('/profile/simber-daya-manusia/struktur-organisasi-tenaga-kependidikan', Sotk::class)->name('profile-sotk');
+Route::get('/profile/kerja-sama', KerjaSama::class)->name('profile-KerjaSama');
 Route::get('/profile/sejarah', Sejarah::class)->name('profile-sejarah');
 
 // Berita
