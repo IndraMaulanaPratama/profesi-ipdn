@@ -24,7 +24,7 @@
     {{-- Logo dan Menu --}}
     <nav class="navbar navbar-expand-md" style="">
         <div class="container-fluid" style="padding:1.3% 3.4%;">
-            <a class="navbar-brand " href="{{env('APP_URL')}}" style="align-items: center">
+            <a class="navbar-brand " href="{{ env('APP_URL') }}" style="align-items: center">
                 <img src="{{ asset('assets/homepage/images/logo.png') }}" class=" align-top" alt=""
                     style="width: 12%; padding-top:15px;">
 
@@ -79,7 +79,7 @@
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item" href="#">Dosen</a>
+                                        <a class="dropdown-item" href="{{ route('profile-dosen') }}">Dosen</a>
                                     </li>
 
                                     <li>
@@ -92,7 +92,7 @@
                                 </ul>
                             </li>
 
-                            <li><a class="dropdown-item" href="{{ route("profile-KerjaSama") }}">Kerja Sama</a></li>
+                            <li><a class="dropdown-item" href="{{ route('profile-KerjaSama') }}">Kerja Sama</a></li>
 
                             {{-- Fasilitas --}}
                             <li>
