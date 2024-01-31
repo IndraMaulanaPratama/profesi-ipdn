@@ -83,7 +83,8 @@
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item" href="#">Tenaga Kependidikan</a>
+                                        <a class="dropdown-item" href="{{ route('profile-tenagaKependidikan') }}">Tenaga
+                                            Kependidikan</a>
                                     </li>
 
                                     <li>
