@@ -88,7 +88,9 @@
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item" href="#">Direktur PPPKp Dari Masa Ke Masa</a>
+                                        <a class="dropdown-item"
+                                            href="{{ route('profile-direkturDariMasaKeMasa') }}">Direktur PPPKp Dari
+                                            Masa Ke Masa</a>
                                     </li>
                                 </ul>
                             </li>
