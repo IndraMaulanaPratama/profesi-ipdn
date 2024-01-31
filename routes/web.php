@@ -9,6 +9,7 @@ use App\Livewire\Page\App\LayananPengaduan;
 use App\Livewire\Page\App\Profile\KerjaSama;
 use App\Livewire\Page\App\Profile\Sdm\Dosen;
 use App\Livewire\Page\App\Profile\Sdm\Sotk;
+use App\Livewire\Page\App\Profile\Sdm\TenagaKependidikan;
 use App\Livewire\Page\App\Profile\Sejarah;
 use App\Livewire\Page\App\ProfileDeskripsi;
 use App\Livewire\Page\App\ProfileVisiMisi;
@@ -27,6 +28,7 @@ Route::get('/profile/visi-dan-misi', ProfileVisiMisi::class)->name('profile-visi
 Route::get('/profile/sumber-daya-manusia/struktur-organisasi-tenaga-kependidikan', Sotk::class)->name('profile-sotk');
 Route::get('/profile/sumber-daya-manusia/kerja-sama', KerjaSama::class)->name('profile-KerjaSama');
 Route::get('/profile/sumber-daya-manusia/dosen', Dosen::class)->name('profile-dosen');
+Route::get('/profile/sumber-daya-manusia/tenaga-kependidikan', TenagaKependidikan::class)->name('profile-tenagaKependidikan');
 Route::get('/profile/sejarah', Sejarah::class)->name('profile-sejarah');
 
 // Berita
