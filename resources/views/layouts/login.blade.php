@@ -39,7 +39,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-    @vite(['public/assets/admin/js/main.js', 'public/assets/admin/css/style.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
