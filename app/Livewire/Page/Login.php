@@ -7,9 +7,12 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Rule;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 #[Layout('layouts.login')]
+#[Title('Halaman admin profesi kepamongprajaan IPDN')]
+
 class Login extends Component
 {
 
