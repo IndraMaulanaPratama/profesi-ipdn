@@ -23,7 +23,7 @@
         <div class="col-3">
             <div class="card" style="width: 18rem;">
                 {{-- Image Preview --}}
-                <img src="{{ asset('assets/homepage/images/Brosur Profesi Kepamongprajaan.png') }}" class="card-img-top"
+                <img src="{{ asset('assets/homepage/images/Mask group-2.png') }}" class="card-img-top"
                     alt="Image Card 1" height="150px" />
 
 
@@ -42,7 +42,7 @@
         <div class="col-3">
             <div class="card" style="width: 18rem;">
                 {{-- Image Preview --}}
-                <img src="{{ asset('assets/homepage/images/Surat Edaran Menteri Dalam Negeri.png') }}" class="card-img-top"
+                <img src="{{ asset('assets/homepage/images/Mask group-3.png') }}" class="card-img-top"
                     alt="Image Card 1" height="150px" />
 
 
@@ -60,7 +60,7 @@
         <div class="col-3">
             <div class="card" style="width: 18rem;">
                 {{-- Image Preview --}}
-                <img src="{{ asset('assets/homepage/images/Surat Rektor Penerimaan Mahasiswa Baru Ak. XIII.png') }}" class="card-img-top"
+                <img src="{{ asset('assets/homepage/images/Mask group-4.png') }}" class="card-img-top"
                     alt="Image Card 1" height="150px" />
 
 
@@ -78,7 +78,7 @@
         <div class="col-3">
             <div class="card" style="width: 18rem;">
                 {{-- Image Preview --}}
-                <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}" class="card-img-top"
+                <img src="{{ asset('assets/homepage/images/Mask group-5.png') }}" class="card-img-top"
                     alt="Image Card 1" height="150px" />
 
 
