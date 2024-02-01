@@ -13,7 +13,7 @@ use Livewire\Component;
 class Login extends Component
 {
 
-    #[Rule(['required', 'string',])]
+    #[Rule(['required', 'email', 'string',])]
     public $email;
 
     #[Rule(['required', 'string',])]
