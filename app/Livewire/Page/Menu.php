@@ -2,11 +2,15 @@
 
 namespace App\Livewire\Page;
 
+use Livewire\Attributes\Layout;
 use Livewire\Attributes\On;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
 #[Title("Manajemen Menu")]
+#[Layout("layouts/admin")]
+
+
 class Menu extends Component
 {
     public $title = 'Buat Data Baru';

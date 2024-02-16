@@ -64,8 +64,8 @@
                 </div>
 
                 <div class="col-3 rounded text-center">
-                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
-                        alt="" srcset="" class="round">
+                    <img src="{{ asset('assets/homepage/images/Group 115.png') }}" width="251px"
+                        height="276px" alt="" srcset="">
 
                     <div class="text-center pt-2">
                         <div class="pb-2" style="font-weight: bold; font-size: 24px; line-height: normal;">
@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
+                    <img src="{{ asset('assets/homepage/images/Mask group-2.png') }}" width="251px" height="276px"
                         alt="" srcset="">
 
                     <div class="text-center pt-2">

@@ -193,8 +193,8 @@
 
         {{-- Baris 4 --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+            <img src="{{ asset('foto_pegawai/Drs. Komaedi, M.Si.png') }}" width="251px" height="276px"
+                alt="" srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
                 Drs. Komaedi, M.Si
@@ -202,7 +202,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('foto_pegawai/Mask group-2.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
 

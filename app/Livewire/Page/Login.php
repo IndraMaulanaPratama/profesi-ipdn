@@ -56,7 +56,7 @@ class Login extends Component
                 // Milarian data praja ka table user
                 if (Auth::attempt($credentials)) {
                     session()->regenerate();
-                    $this->redirect('/');
+                    $this->redirect('/menu');
                 }
 
                 // Ngadamel user praja kumargi teu acan ka data di user
@@ -78,7 +78,7 @@ class Login extends Component
                         $credentials = $this->validate();
                         Auth::attempt($credentials);
                         session()->regenerate();
-                        $this->redirect('/');
+                        $this->redirect('/menu');
 
                     } catch (\Throwable $th) {
                         $this->password = null;

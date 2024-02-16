@@ -4,7 +4,7 @@
         <a href="{{ route('/') }}" class="logo d-flex align-items-center">
             <img src="{{ asset('assets/admin/img/logo.png') }}" alt="">
 
-            <span class="d-none d-lg-block"> &nbsp; WEB PROFESI</span>
+            <span class="d-none d-lg-block">&nbsp; Web Profesi</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -12,7 +12,7 @@
     <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
 
-            {{-- Dropdown Notification --}}
+            {{-- Notivication Nav --}}
             <li class="nav-item dropdown invisible">
 
                 <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
@@ -88,7 +88,6 @@
 
             </li><!-- End Notification Nav -->
 
-            {{-- Dropdown Message --}}
             <li class="nav-item dropdown invisible">
 
                 <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
@@ -158,7 +157,6 @@
 
             </li><!-- End Messages Nav -->
 
-            {{-- Dropdown Profile --}}
             <li class="nav-item dropdown pe-3">
 
                 <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
@@ -176,30 +174,30 @@
                         <hr class="dropdown-divider">
                     </li>
 
-                    <li>
+                    <li class="d-none">
                         <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
                             <i class="bi bi-person"></i>
-                            <span>Profil Saya</span>
+                            <span>My Profile</span>
                         </a>
                     </li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
 
-                    <li>
+                    <li class="d-none">
                         <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
                             <i class="bi bi-gear"></i>
-                            <span>Pengaturan Akun</span>
+                            <span>Account Settings</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="d-none">
                         <hr class="dropdown-divider">
                     </li>
 
-                    <li>
+                    <li class="d-none">
                         <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
                             <i class="bi bi-question-circle"></i>
-                            <span>Pusat Bantuan</span>
+                            <span>Need Help?</span>
                         </a>
                     </li>
                     <li>
@@ -209,7 +207,7 @@
                     <li>
                         <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}">
                             <i class="bi bi-box-arrow-right"></i>
-                            <span>Keluar</span>
+                            <span>Sign Out</span>
                         </a>
                     </li>
 

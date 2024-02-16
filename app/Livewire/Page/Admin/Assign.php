@@ -6,12 +6,15 @@ use App\Models\Akses;
 use App\Models\Menu;
 use App\Models\pivotMenu;
 use App\Models\Role;
+use Livewire\Attributes\Layout;
 use Livewire\Attributes\On;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 #[Title("Assign Role Manajemen")]
+#[Layout("layouts/admin")]
+
 class Assign extends Component
 {
     use WithPagination;

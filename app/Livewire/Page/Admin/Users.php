@@ -2,11 +2,14 @@
 
 namespace App\Livewire\Page\Admin;
 
+use Livewire\Attributes\Layout;
 use Livewire\Attributes\On;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
 #[Title("Manajemen Pengguna")]
+#[Layout("layouts/admin")]
+
 class Users extends Component
 {
     public $title = 'Formulir Data Pengguna';

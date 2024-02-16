@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Page\Admin\Assign;
+use App\Livewire\Page\Admin\PengaturanWebsite\PusatPengaduan;
 use App\Livewire\Page\Admin\Role;
 use App\Livewire\Page\Admin\Users;
 use App\Livewire\Page\App\Berita\Pengumuman;
@@ -41,10 +42,13 @@ Route::get('/berita/pengumuman', Pengumuman::class)->name('berita-pengumuman');
 Route::middleware(['auth', 'access'])->group(function () {
 
     // -- *** Admin Area --- //
-    Route::get('/menu', Menu::class)->name('menu');
-    Route::get('/users', Users::class)->name('user-manajemen');
-    Route::get('/role', Role::class)->name('role-manajemen');
-    Route::get('/assign', Assign::class)->name('assign-manajemen');
+    Route::get('/admin/menu', Menu::class)->name('menu');
+    Route::get('/admin/users', Users::class)->name('user-manajemen');
+    Route::get('/admin/role', Role::class)->name('role-manajemen');
+    Route::get('/admin/assign', Assign::class)->name('assign-manajemen');
+
+    // Pengaturan Website
+    Route::get('/admin/pengaturan-website/pusat-pengaduan/', PusatPengaduan::class)->name('pengaturan.pengaduan');
     // <!-- End Of Admin area !--->
 
 });
