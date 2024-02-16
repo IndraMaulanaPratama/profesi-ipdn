@@ -29,7 +29,7 @@
 
         {{-- Drs. Komaedi, M.Si --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('foto_pegawai/Drs. Komaedi, M.Si.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
@@ -41,6 +41,64 @@
             </div>
         </div>
 
+    </div>
+
+
+
+
+
+    {{-- Header Kepala Unit --}}
+    <div class="mt-5" style="font-weight: bold; color:#063A69; font-size: 37px;">
+        KEPALA UNIT
+    </div>
+
+    {{-- Underline Header --}}
+    <div class="rounded mb-5" style="width: 60px; height: 5px; background-color: #E3A100">&nbsp;</div>
+
+    {{-- Content --}}
+    <div class="row text-center" style="margin-left: -50px">
+
+        {{-- Hardiyanto Rahman, S.IP, M.Si --}}
+        <div class="col-3">
+            <img src="{{ asset('foto_pegawai/sotk_hardiyanto_rahman.png') }}" width="251px" height="276px"
+                alt="" srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Hardiyanto Rahman, S.IP, M.Si
+            </div>
+
+            <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Laboratorium Pemerintahan, Pangakalan Data dan Sistem Informasi
+            </div>
+        </div>
+
+        {{-- Fransina Makdalena Paulla Nusmesse, S.Sos, M.Si --}}
+        <div class="col-3">
+            <img src="{{ asset('foto_pegawai/Group 115.png') }}" width="251px" height="276px" alt=""
+                srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Fransina Makdalena Paulla Nusmesse, S.Sos, M.Si
+            </div>
+
+            <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Penjaminan Mutu
+            </div>
+        </div>
+
+        {{-- Cut Laila Karmila, S.Sos, M.A --}}
+        <div class="col-3">
+            <img src="{{ asset('foto_pegawai/Mask group-2.png') }}" width="251px" height="276px" alt=""
+                srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Cut Laila Karmila, S.Sos, M.A
+            </div>
+
+            <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Perpustakaan
+            </div>
+        </div>
     </div>
 
 
@@ -78,64 +136,6 @@
 
 
 
-    {{-- Header Kepala Unit --}}
-    <div class="mt-5" style="font-weight: bold; color:#063A69; font-size: 37px;">
-        KEPALA UNIT
-    </div>
-
-    {{-- Underline Header --}}
-    <div class="rounded mb-5" style="width: 60px; height: 5px; background-color: #E3A100">&nbsp;</div>
-
-    {{-- Content --}}
-    <div class="row text-center" style="margin-left: -50px">
-
-        {{-- Hardiyanto Rahman, S.IP, M.Si --}}
-        <div class="col-3">
-            <img src="{{ asset('foto_pegawai/sotk_hardiyanto_rahman.png') }}" width="251px" height="276px"
-                alt="" srcset="">
-
-            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Hardiyanto Rahman, S.IP, M.Si
-            </div>
-
-            <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Laboratorium Pemerintahan, Pangakalan Data dan Sistem Informasi
-            </div>
-        </div>
-
-        {{-- Fransina Makdalena Paulla Nusmesse, S.Sos, M.Si --}}
-        <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
-
-            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Fransina Makdalena Paulla Nusmesse, S.Sos, M.Si
-            </div>
-
-            <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Penjaminan Mutu
-            </div>
-        </div>
-
-        {{-- Cut Laila Karmila, S.Sos, M.A --}}
-        <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
-
-            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Cut Laila Karmila, S.Sos, M.A
-            </div>
-
-            <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Perpustakaan
-            </div>
-        </div>
-    </div>
-
-
-
-
-
     {{-- Header Staff PPPKp --}}
     <div class="mt-5" style="font-weight: bold; color:#063A69; font-size: 37px;">
         STAFF PPPKp
@@ -145,15 +145,15 @@
     <div class="rounded mb-5" style="width: 60px; height: 5px; background-color: #E3A100">&nbsp;</div>
 
     {{-- Content --}}
-    <div class="row g-4 text-center" style="margin-left: -50px">
+    <div class="row g-5 text-center" style="margin-left: -50px">
 
-        {{-- &nbsp; --}}
-        <div class="col-3">
+        {{-- Dr. Ngalimun, S.Sos, M.Si --}}
+        <div class="col-4">
             <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                &nbsp;
+                Dr. Ngalimun, S.Sos, M.Si
             </div>
 
             {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
@@ -161,13 +161,13 @@
             </div> --}}
         </div>
 
-        {{-- &nbsp; --}}
-        <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+        {{-- Dewi Astuti, M.K.M --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Dewi Astuti, M.K.M.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                &nbsp;
+                Dewi Astuti, M.K.M
             </div>
 
             {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
@@ -175,27 +175,13 @@
             </div> --}}
         </div>
 
-        {{-- &nbsp; --}}
-        <div class="col-3">
+        {{-- Wahyu Santo Nugoro, SE --}}
+        <div class="col-4">
             <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                &nbsp;
-            </div>
-
-            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Perpustakaan
-            </div> --}}
-        </div>
-
-        {{-- &nbsp; --}}
-        <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
-
-            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                &nbsp;
+                Wahyu Santo Nugoro, SE
             </div>
 
             {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
@@ -205,15 +191,27 @@
 
 
 
-
-
-        {{-- &nbsp; --}}
-        <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+        {{-- Meylinda Fitria Chairani, S.Psi --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Meylinda Fitria Chairani, S.Psi.png') }}" width="251px" height="276px"
+                alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                &nbsp;
+                Meylinda Fitria Chairani, S.Psi
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Perpustakaan
+            </div> --}}
+        </div>
+
+        {{-- Yusi Audya, S.STP --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Yusi Audya, S.STP.png') }}" width="251px" height="276px"
+                alt="" srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Yusi Audya, S.STP
             </div>
 
             {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
@@ -221,13 +219,13 @@
             </div> --}}
         </div>
 
-        {{-- &nbsp; --}}
-        <div class="col-3">
+        {{-- Samsir, SE --}}
+        <div class="col-4">
             <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                &nbsp;
+                Samsir, SE
             </div>
 
             {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
@@ -235,13 +233,16 @@
             </div> --}}
         </div>
 
-        {{-- &nbsp; --}}
-        <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+
+
+
+        {{-- Farieta Safira Kalpika Putri, S.STP --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Farieta Safira Kalpika Putri, S.STP.png') }}" width="251px"
+                height="276px" alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                &nbsp;
+                Farieta Safira Kalpika Putri, S.STP
             </div>
 
             {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
@@ -249,8 +250,130 @@
             </div> --}}
         </div>
 
+        {{-- Ade Ria Safitri, S.STP, M.Tr.IP --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Ade Ria Safitri, S.STP, M.Tr.IP.png') }}" width="251px" height="276px"
+                alt="" srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Ade Ria Safitri, S.STP, M.Tr.IP
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Perpustakaan
+            </div> --}}
+        </div>
+
+        {{-- Vatia Arda Putri, S.Kom --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+                srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Vatia Arda Putri, S.Kom
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Perpustakaan
+            </div> --}}
+        </div>
+
+
+
+
+        {{-- Deddy S. P. Maramis, S.STP --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Deddy S. P. Maramis, S.STP.png') }}" width="251px" height="276px"
+                alt="" srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Deddy S. P. Maramis, S.STP
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Perpustakaan
+            </div> --}}
+        </div>
+
+        {{-- Muhammad Imran Syukri, SE --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+                srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Muhammad Imran Syukri, SE
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Perpustakaan
+            </div> --}}
+        </div>
+
+        {{-- Suryanto --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+                srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Suryanto
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Perpustakaan
+            </div> --}}
+        </div>
+
+
+
+
+        {{-- Budi Harijadi --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+                srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Budi Harijadi
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Perpustakaan
+            </div> --}}
+        </div>
+
+        {{-- Muhammad Deandie Noufal Enrico, S.Tr.IP --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Muhammad Deandie Noufal Enrico, S.Tr.IP.png') }}" width="251px" height="276px" alt=""
+                srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Muhammad Deandie Noufal Enrico, S.Tr.IP
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                        Kepala Unit Perpustakaan
+                    </div> --}}
+        </div>
+
+        {{-- Aisyah Hafira Rizal, S.Tr.IP --}}
+        <div class="col-4">
+            <img src="{{ asset('foto_pegawai/Aisyah Hafira Rizal, S.Tr.IP.png') }}" width="251px" height="276px" alt=""
+                srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Aisyah Hafira Rizal, S.Tr.IP
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                Kepala Unit Perpustakaan
+            </div> --}}
+        </div>
+
+
+
+
+
         {{-- &nbsp; --}}
-        <div class="col-3">
+        {{-- <div class="col-4">
             <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
@@ -258,10 +381,10 @@
                 &nbsp;
             </div>
 
-            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+            <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
                 Kepala Unit Perpustakaan
-            </div> --}}
-        </div>
+            </div>
+        </div> --}}
 
     </div>
 
