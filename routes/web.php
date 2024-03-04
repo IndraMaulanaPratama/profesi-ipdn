@@ -4,6 +4,7 @@ use App\Livewire\Page\Admin\Assign;
 use App\Livewire\Page\Admin\PengaturanWebsite\PusatPengaduan;
 use App\Livewire\Page\Admin\Role;
 use App\Livewire\Page\Admin\Users;
+use App\Livewire\Page\App\Akademik\Kurikulum;
 use App\Livewire\Page\App\Berita\Pengumuman;
 use App\Livewire\Page\App\Dashboard;
 use App\Livewire\Page\App\LayananPengaduan;
@@ -34,6 +35,9 @@ Route::get('/profile/sumber-daya-manusia/tenaga-kependidikan', TenagaKependidika
 Route::get('/profile/sumber-daya-manusia/direktur-dari-masa-ke-masa', Direktur::class)->name('profile-direkturDariMasaKeMasa');
 Route::get('/profile/sejarah', Sejarah::class)->name('profile-sejarah');
 
+// Akademik
+Route::get('/akademik/kurikulum', Kurikulum::class)->name('akademik-kurikulum');
+
 // Berita
 Route::get('/berita/pengumuman', Pengumuman::class)->name('berita-pengumuman');
 
@@ -52,7 +56,6 @@ Route::middleware(['auth', 'access'])->group(function () {
     // <!-- End Of Admin area !--->
 
 });
-
 
 
 // Ranahna gapura

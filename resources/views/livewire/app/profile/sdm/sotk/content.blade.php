@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="col-3 text-center">
-                    <img src="{{ asset('assets/homepage/images/Mask group-2.png') }}" width="251px" height="276px"
+                    <img src="{{ asset('foto_pegawai/Mask group-2.png') }}" width="251px" height="276px"
                         alt="" srcset="">
 
                     <div class="text-center pt-2">
