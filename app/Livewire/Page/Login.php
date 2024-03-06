@@ -36,7 +36,7 @@ class Login extends Component
             $credentials = $this->validate();
             if (Auth::attempt($credentials)) {
                 session()->regenerate();
-                $this->redirect('/');
+                $this->redirect('/admin/users/');
 
             } else {
                 $this->password = null;
