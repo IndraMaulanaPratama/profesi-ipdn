@@ -1,95 +1,119 @@
 {{-- If your happiness depends on money, you will never be happy with yourself. --}}
 
-<div class="container">
+<style>
+    table {}
+</style>
 
-    {{-- Banner --}}
-    <div style="padding: 30px 0px;">
-        <center>
-            <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}" width="80%" />
-        </center>
-    </div>
+<div class="container py-5">
 
-    {{-- Title Section --}}
-    <div style="padding:30px 0px; ">
-        <h4 style="color: #063A69; font-weight: bold">PENERIMAAN MAHASISWA BARU 2024</h4>
-        <div class="rounded" style="border: 3px solid #eab940; height: 5px; width:80px; background-color: #eab940 "></div>
-    </div>
-
-    {{-- Content Card --}}
-
-    <div class="row g-4 mb-5" style="">
-
-        {{-- Pengumuman 1 --}}
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                {{-- Image Preview --}}
-                <img src="{{ asset('assets/homepage/images/Mask group-2.png') }}" class="card-img-top"
-                    alt="Image Card 1" height="150px" />
-
-
-                {{-- Text Content --}}
-                <div class="card-body" style="font-weight: bold">
-                    <a href="https://drive.google.com/file/d/1EQhYXdH-yXyrbWxO2VIwhkrqBiRCDPFe/view?usp=drive_link"
-                        target="_">
-                        <p class="card-text">Brosur Profesi Kepamongprajaan</p>
-                    </a>
-                </div>
-            </div>
-
+    {{-- Kurikulum Semester 1 --}}
+    <div class="py-4">
+        {{-- Header Semester 1 --}}
+        <div class="py-4" style="font-family: 'Roboto Slab'; font-size: 25px; font-weight: bold">
+            Semester 1
         </div>
 
-        {{-- Pengumuman 2 --}}
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                {{-- Image Preview --}}
-                <img src="{{ asset('assets/homepage/images/Mask group-3.png') }}" class="card-img-top"
-                    alt="Image Card 1" height="150px" />
+
+        {{-- Table Semester 1 --}}
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th style="width: 5cm">KODE</th>
+                    <th>MATA KULIAH</th>
+                    <th style="width: 2.5cm">SKS</th>
+                </tr>
 
 
-                {{-- Text Content --}}
-                <div class="card-body" style="font-weight: bold">
-                    <a href="https://drive.google.com/file/d/13NkoA8Ndrix77qIu4ghKOd3PX6_RSheD/view?usp=drive_link"
-                        target="_">
-                        <p class="card-text">Surat Edaran Menteri Dalam Negeri</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        {{-- Pengumuman 3 --}}
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                {{-- Image Preview --}}
-                <img src="{{ asset('assets/homepage/images/Mask group-4.png') }}" class="card-img-top"
-                    alt="Image Card 1" height="150px" />
-                    
-
-
-                {{-- Text Content --}}
-                <div class="card-body" style="font-weight: bold">
-                    <a href="https://drive.google.com/file/d/1qpy-DPEyRsqV4OhW_iIbq7lEsIZAJWu0/view?usp=drive_link"
-                        target="_">
-                        <p class="card-text">Surat Rektor Penerimaan Mahasiswa Baru Ak. XIII</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        {{-- Pengumuman 4 --}}
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                {{-- Image Preview --}}
-                <img src="{{ asset('assets/homepage/images/Mask group-5.png') }}" class="card-img-top"
-                    alt="Image Card 1" height="150px" />
-
-
-                {{-- Text Content --}}
-                <div class="card-body" style="font-weight: bold">
-                    <p class="card-text">Seleksi Penerimaan Mahasiswa Baru Ak. XIII</p>
-                </div>
-            </div>
+                <tr>
+                    <td>PKP230101</td>
+                    <td>Teknik Kepemimpinan Kepamongprajaan</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>PKP230102</td>
+                    <td>Teknik Administrasi Pemerintahan Daerah</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PKP230103</td>
+                    <td>Teknik Analisis Potensi Wilayah dan Perumusan Kebijakan Pemerintahan</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PKP230104</td>
+                    <td>Teknik Adminitrasi Pertanahan</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PKP230105</td>
+                    <td>Teknik Perencanaan dan Pengawasan Pelaksanaan Pembangunan</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PKP230106</td>
+                    <td>Teknik Pengelolaan Keuangan Daerah</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PKP230107</td>
+                    <td>Teknik Manajemen Pembangunan dan Pemberdayaan Masyarakat</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PKP230108</td>
+                    <td>Teknik Pelayanan Publik Berdasarkan Standar Pelayanan Minimal</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PKP230109</td>
+                    <td>Teknik Pembinaan Ketentraman dan Ketertiban Umum</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PKP230110</td>
+                    <td>Teknik Penulisan Laporan Praktik</td>
+                    <td>2</td>
+                </tr>
+            </table>
         </div>
 
     </div>
 
+
+
+
+
+    {{-- Kurikulum Semester 2 --}}
+    <div class="py-2">
+        {{-- Header Semester 2 --}}
+        <div class="py-4" style="font-family: 'Roboto Slab'; font-size: 25px; font-weight: bold">
+            Semester 2
+        </div>
+
+
+        {{-- Table Semester 2 --}}
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th style="width: 5cm">KODE</th>
+                    <th>MATA KULIAH</th>
+                    <th style="width: 2.5cm">SKS</th>
+                </tr>
+
+
+                <tr>
+                    <td>PK230201</td>
+                    <td>Praktik Lapangan</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>PK230202</td>
+                    <td>Laporan Praktik Lapangan</td>
+                    <td>4</td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
 </div>
