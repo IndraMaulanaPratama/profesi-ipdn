@@ -145,7 +145,7 @@
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{{ route('akademik-biayaPendidikan') }}">
                                     Biaya Pendidikan
                                 </a>
                             </li>
