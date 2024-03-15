@@ -18,7 +18,7 @@
         &nbsp; &#62; &nbsp;
 
         <a href="{{ route('akademik-kalenderAkademik') }}">
-            KAlender Akademik
+            Kalender Akademik
         </a>
     </div>
 
