@@ -31,7 +31,7 @@
                 <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
                     <div class="d-flex justify-content-center align-items-center" style=" height: 200px">
                         <div style="color: #ffda79;">
-                            <h1 class=""><b>KALENDER AKADEMIK</b></h1>
+                            <h1 class=""><b>LABORATORIUM</b></h1>
                         </div>
                     </div>
                 </div>
