@@ -7,6 +7,7 @@ use App\Livewire\Page\Admin\Users;
 use App\Livewire\Page\App\Akademik\BiayaPendidikan;
 use App\Livewire\Page\App\Akademik\KalenderAkademik;
 use App\Livewire\Page\App\Akademik\Kurikulum;
+use App\Livewire\Page\App\Akademik\Laboratorium;
 use App\Livewire\Page\App\Berita\Pengumuman;
 use App\Livewire\Page\App\Dashboard;
 use App\Livewire\Page\App\LayananPengaduan;
@@ -38,6 +39,7 @@ Route::get('/profile/sumber-daya-manusia/direktur-dari-masa-ke-masa', Direktur::
 Route::get('/profile/sejarah', Sejarah::class)->name('profile-sejarah');
 
 // Akademik
+Route::get('/akademik/laboratorium', Laboratorium::class)->name('akademik-laboratorium');
 Route::get('/akademik/kalender-akademik', KalenderAkademik::class)->name('akademik-kalenderAkademik');
 Route::get('/akademik/biaya-pendidikan', BiayaPendidikan::class)->name('akademik-biayaPendidikan');
 Route::get('/akademik/kurikulum', Kurikulum::class)->name('akademik-kurikulum');
