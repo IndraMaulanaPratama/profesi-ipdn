@@ -133,7 +133,7 @@
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{{ route("akademik-kalenderAkademik") }}">
                                     Kalender Akademik
                                 </a>
                             </li>
