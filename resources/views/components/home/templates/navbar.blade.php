@@ -111,7 +111,7 @@
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item" href="#">Fasilitas</a>
+                                        <a class="dropdown-item" href="{{route('profile-fasilitas.fasilitas')}}">Fasilitas</a>
                                     </li>
 
                                     <li>
