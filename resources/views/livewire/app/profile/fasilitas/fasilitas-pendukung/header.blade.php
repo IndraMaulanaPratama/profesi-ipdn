@@ -24,7 +24,7 @@
 
         &nbsp; &#62; &nbsp;
 
-        <a href="{{ route('profile-sotk') }}">
+        <a href="{{ route('profile-fasilitas.fasilitasPendukung') }}">
             Fasilitas Pendukung
         </a>
     </div>
