@@ -11,6 +11,7 @@ use App\Livewire\Page\App\Akademik\Laboratorium;
 use App\Livewire\Page\App\Berita\Pengumuman;
 use App\Livewire\Page\App\Dashboard;
 use App\Livewire\Page\App\LayananPengaduan;
+use App\Livewire\Page\App\Profile\Fasilitas\Fasilitas;
 use App\Livewire\Page\App\Profile\Fasilitas\FasilitasPendukung;
 use App\Livewire\Page\App\Profile\KerjaSama;
 use App\Livewire\Page\App\Profile\Sdm\Direktur;
@@ -39,6 +40,7 @@ Route::get('/profile/sumber-daya-manusia/tenaga-kependidikan', TenagaKependidika
 Route::get('/profile/sumber-daya-manusia/direktur-dari-masa-ke-masa', Direktur::class)->name('profile-direkturDariMasaKeMasa');
 Route::get('/profile/sejarah', Sejarah::class)->name('profile-sejarah');
 
+Route::get('profile/fasilitas/fasilitas', Fasilitas::class)->name('profile-fasilitas.fasilitas');
 Route::get('profile/fasilitas/fasilitas-pendukung', FasilitasPendukung::class)->name('profile-fasilitas.fasilitasPendukung');
 
 // Akademik
