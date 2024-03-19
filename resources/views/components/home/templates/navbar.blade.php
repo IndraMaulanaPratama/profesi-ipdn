@@ -113,6 +113,13 @@
                                     <li>
                                         <a class="dropdown-item" href="#">Fasilitas</a>
                                     </li>
+
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="{{ route('profile-fasilitas.fasilitasPendukung') }}">Fasilitas
+                                            Pendukung</a>
+                                    </li>
+
                                 </ul>
                             </li>
                         </ul>
