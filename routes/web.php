@@ -10,6 +10,8 @@ use App\Livewire\Page\App\Akademik\Kurikulum;
 use App\Livewire\Page\App\Akademik\Laboratorium;
 use App\Livewire\Page\App\Berita\Pengumuman;
 use App\Livewire\Page\App\Dashboard;
+use App\Livewire\Page\App\Kemahasiswaan\Brosur;
+use App\Livewire\Page\App\Kemahasiswaan\Kegiatan;
 use App\Livewire\Page\App\LayananPengaduan;
 use App\Livewire\Page\App\Profile\Fasilitas\Fasilitas;
 use App\Livewire\Page\App\Profile\Fasilitas\FasilitasPendukung;
@@ -48,6 +50,10 @@ Route::get('/akademik/laboratorium', Laboratorium::class)->name('akademik-labora
 Route::get('/akademik/kalender-akademik', KalenderAkademik::class)->name('akademik-kalenderAkademik');
 Route::get('/akademik/biaya-pendidikan', BiayaPendidikan::class)->name('akademik-biayaPendidikan');
 Route::get('/akademik/kurikulum', Kurikulum::class)->name('akademik-kurikulum');
+
+// Kemahasiswaan
+Route::get('/kemahasiswaan/brosur', Brosur::class)->name('kemahasiswaan-brosur');
+Route::get('/kemahasiswaan/brkegiatan', Kegiatan::class)->name('kemahasiswaan-kegiatan');
 
 // Berita
 Route::get('/berita/pengumuman', Pengumuman::class)->name('berita-pengumuman');
