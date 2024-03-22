@@ -111,7 +111,8 @@
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item" href="{{route('profile-fasilitas.fasilitas')}}">Fasilitas</a>
+                                        <a class="dropdown-item"
+                                            href="{{ route('profile-fasilitas.fasilitas') }}">Fasilitas</a>
                                     </li>
 
                                     <li>
@@ -219,13 +220,13 @@
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{{ route('kemahasiswaan-brosur') }}">
                                     Brosur
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{{ route('kemahasiswaan-kegiatan') }}">
                                     Kegiatan Kemahasiswaan
                                 </a>
                             </li>
