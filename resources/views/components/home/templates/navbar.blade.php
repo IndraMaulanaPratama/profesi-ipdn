@@ -255,7 +255,7 @@
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="{{ route('berita-kegiatan') }}">
                                     Kegiatan PPPkp
                                 </a>
                             </li>
