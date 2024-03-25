@@ -57,6 +57,7 @@ Route::get('/kemahasiswaan/brkegiatan', Kegiatan::class)->name('kemahasiswaan-ke
 
 // Berita
 Route::get('/berita/pengumuman', Pengumuman::class)->name('berita-pengumuman');
+Route::get('/berita/kegiatan', \App\Livewire\Page\App\Berita\Kegiatan::class)->name('berita-kegiatan');
 
 
 // Ranahna nu gaduh akses
