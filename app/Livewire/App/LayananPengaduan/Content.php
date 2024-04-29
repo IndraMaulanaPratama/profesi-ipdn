@@ -68,9 +68,9 @@ class Content extends Component
         try {
 
             if (null != $this->inputPengaduan):
+                $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
                 $this->inputFile != null ? $fileName = $timestamp . '.' . $this->inputFile->getClientOriginalExtension() : $fileName = null;
 
-                $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
                 $idPengajuan = 'PPPKP-' . $timestamp;
 
                 $data = [
