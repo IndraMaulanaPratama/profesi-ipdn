@@ -67,7 +67,7 @@ class Table extends Component
     public function createData()
     {
         // Ngajalankeun validasi data
-        $this->validate();
+        // $this->validate();
 
         try {
             // Inisialisasi data nu bade di eksekusi
