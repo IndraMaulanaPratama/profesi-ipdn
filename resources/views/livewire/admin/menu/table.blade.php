@@ -135,7 +135,7 @@
     <x-admin.components.modal.modal id='formCreateMenu'>
 
         {{-- Header Modal --}}
-        <x-admin.components.modal.header id={{ $id }} title="Formulir tambah data baru" />
+        <x-admin.components.modal.header id="createMenu" title="Formulir tambah data baru" />
 
         <form wire:submit='createData' method="POST">
 
