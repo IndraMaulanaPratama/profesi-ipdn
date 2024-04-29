@@ -30,7 +30,11 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', Dashboard::class)->name('/');
-Route::get('/profile/layanan-pengaduan', LayananPengaduan::class)->name('layanan-pengaduan');
+
+// Layanan
+Route::get('/layanan-pengaduan', LayananPengaduan::class)->name('layanan-pengaduan');
+Route::get('/layanan-pengaduan/{id}', \App\Livewire\Page\App\LayananPengaduan\Pencarian::class)->name('layanan-pengaduan.pencarian');
+Route::get('/layanan-pengaduan/resume/{id}', \App\Livewire\Page\App\LayananPengaduan\Resume::class)->name('layanan-pengaduan.resume');
 
 // Profile Menu
 Route::get('/profile/deskripsi', ProfileDeskripsi::class)->name('profile-deskripsi');
@@ -71,6 +75,9 @@ Route::middleware(['auth', 'access'])->group(function () {
 
     // Pengaturan Website
     Route::get('/admin/pengaturan-website/pusat-pengaduan/', PusatPengaduan::class)->name('pengaturan.pengaduan');
+
+    // Layanan Pengaduan
+    Route::get('/admin/layanan-pengaduan', \App\Livewire\Page\Admin\LayananPengaduan\LayananPengaduan::class)->name('admin.layanan-pengaduan');
     // <!-- End Of Admin area !--->
 
 });
