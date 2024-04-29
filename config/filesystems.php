@@ -73,6 +73,7 @@ return [
         public_path('storage') => storage_path('app/public'),
         public_path('foto_pegawai') => storage_path('app/public/foto_pegawai'),
         public_path('tanda_tangan') => storage_path('app/public/tanda_tangan'),
+        public_path('file_pengaduan') => storage_path('app/public/file_pengaduan'),
         public_path('gambar') => storage_path('app/public/gambar'),
     ],
 
