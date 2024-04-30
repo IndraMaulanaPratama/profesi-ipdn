@@ -89,9 +89,9 @@ class Content extends Component
                         return;
                     endif;
 
-                else:
-                    $this->dispatch('warning', 'File pengaduan kosong');
-                    return;
+                    // else:
+                    //     $this->dispatch('warning', 'File pengaduan kosong');
+                    //     return;
                 endif;
 
                 // $this->inputFile != null ? $this->inputFile->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public') : null;
