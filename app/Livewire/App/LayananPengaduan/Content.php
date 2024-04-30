@@ -86,7 +86,11 @@ class Content extends Component
                 // Miwarang livewire kanggo nyimpen data dumasar kana katangtosan nu tos di damel
                 if (null != $this->inputFile):
                     if (!$this->inputFile->storeAs('file_pengaduan', $fileName)):
-                        $this->dispatch('warning', 'File pengaduan gagal diupload');
+                        dd($this->inputFile);
+                        return;
+
+                    else:
+                        $this->dispatch('warning', 'File pengaduan kosong');
                         return;
                     endif;
                 endif;
@@ -94,10 +98,10 @@ class Content extends Component
                 // $this->inputFile != null ? $this->inputFile->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public') : null;
 
                 // Proses ngalebetkeun data formulir ka database
-                Pengaduan::create($data);
+                // Pengaduan::create($data);
 
                 //  ngarahkeun aplikasi ka halaman resume pengajuan
-                return redirect('layanan-pengaduan/resume/' . $idPengajuan);
+                // return redirect('layanan-pengaduan/resume/' . $idPengajuan);
 
             } catch (\Throwable $th) {
                 dd($th->getMessage());
