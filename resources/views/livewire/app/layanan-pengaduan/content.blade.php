@@ -52,7 +52,7 @@
                     <div class="row justify-content-between">
 
                         {{-- FORM PENGADUAN --}}
-                        <div class="col-5 px-5 py-4">
+                        <div class="col-5 px-5 py-4" wire:ignore.self>
                             <form wire:submit.prevent='buatPengajuan' method="POST">
                                 {{-- Email --}}
                                 <div class="py-2">
