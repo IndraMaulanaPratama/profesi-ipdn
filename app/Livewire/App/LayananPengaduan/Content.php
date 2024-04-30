@@ -14,21 +14,6 @@ class Content extends Component
     // Variabel form
     public $inputEmail, $inputNama, $inputPengaduan, $inputFile, $inputSearch;
 
-    // Variable option view
-    public $form = true, $search = false, $resume = false;
-
-
-    public function toggleContent($name)
-    {
-        if ('form' == $name):
-            $this->form = !$this->form;
-        elseif ('search' == $name):
-            $this->search = !$this->search;
-        elseif ('resume' == $name):
-            $this->resume = !$this->resume;
-        endif;
-    }
-
 
     public function cariPengajuan()
     {
@@ -62,6 +47,10 @@ class Content extends Component
         if (null != $this->inputPengaduan):
             $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
             $this->inputFile != null ? $fileName = $timestamp . '.' . $this->inputFile->getClientOriginalExtension() : $fileName = null;
+            dd([
+                'input' => $this->inputFile,
+                'file' => $fileName,
+            ]);
 
             $idPengajuan = 'PPPKP-' . $timestamp;
 
@@ -89,9 +78,9 @@ class Content extends Component
                         return;
                     endif;
 
-                    // else:
-                    //     $this->dispatch('warning', 'File pengaduan kosong');
-                    //     return;
+                else:
+                    $this->dispatch('warning', 'File pengaduan kosong');
+                    return;
                 endif;
 
                 // $this->inputFile != null ? $this->inputFile->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public') : null;
@@ -113,7 +102,6 @@ class Content extends Component
             $this->dispatch('warning', 'Kolom pengaduan tidak boleh dikosongkang');
         endif;
     }
-
 
     public function render()
     {
