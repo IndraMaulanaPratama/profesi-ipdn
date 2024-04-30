@@ -53,7 +53,7 @@
 
                         {{-- FORM PENGADUAN --}}
                         <div class="col-5 px-5 py-4">
-                            <form wire:submit.prevent='buatPengajuan' method="POST" enctype="multipart/form-data">
+                            <form wire:submit.prevent='buatPengajuan' method="POST">
                                 {{-- Email --}}
                                 <div class="py-2">
                                     <x-admin.components.form.input type='email' name='inputEmail'
