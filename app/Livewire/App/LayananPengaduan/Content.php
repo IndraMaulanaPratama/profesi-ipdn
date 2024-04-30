@@ -65,47 +65,50 @@ class Content extends Component
 
     public function buatPengajuan()
     {
-        try {
+        if (null != $this->inputPengaduan):
+            $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
+            $this->inputFile != null ? $fileName = $timestamp . '.' . $this->inputFile->getClientOriginalExtension() : $fileName = null;
 
-            if (null != $this->inputPengaduan):
-                $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
-                $this->inputFile != null ? $fileName = $timestamp . '.' . $this->inputFile->getClientOriginalExtension() : $fileName = null;
+            $idPengajuan = 'PPPKP-' . $timestamp;
 
-                $idPengajuan = 'PPPKP-' . $timestamp;
-
-                $data = [
-                    'PENGADUAN_ID' => $idPengajuan,
-                    'PENGADUAN_STATUS' => 'Proses',
-                    'PENGADUAN_OFFICER' => '3',
-                    'PENGADUAN_EMAIL' => $this->inputEmail,
-                    'PENGADUAN_NAME' => $this->inputNama,
-                    'PENGADUAN_VALUE' => $this->inputPengaduan,
-                    'PENGADUAN_ATTACHMENT' => $fileName,
-                ];
+            $data = [
+                'PENGADUAN_ID' => $idPengajuan,
+                'PENGADUAN_STATUS' => 'Proses',
+                'PENGADUAN_OFFICER' => '3',
+                'PENGADUAN_EMAIL' => $this->inputEmail,
+                'PENGADUAN_NAME' => $this->inputNama,
+                'PENGADUAN_VALUE' => $this->inputPengaduan,
+                'PENGADUAN_ATTACHMENT' => $fileName,
+            ];
 
 
+            try {
                 // Miwarang livewire kanggo nyimpen data dumasar kana katangtosan nu tos di damel
-                $this->inputFile != null ? $this->inputFile->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public') : null;
+                if (null != $this->inputFile):
+                    if (!$this->inputFile->storeAs('file_pengaduan', $fileName)):
+                        $this->dispatch('warning', 'File pengaduan gagal diupload');
+                        return;
+                    endif;
+                endif;
+
+                // $this->inputFile != null ? $this->inputFile->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public') : null;
 
                 // Proses ngalebetkeun data formulir ka database
                 Pengaduan::create($data);
 
-                // ngadamel pengumuman pengaduan parantos rengse diproses
-                $this->dispatch('success', 'Pengaduan anda sudah kami terima');
-
                 //  ngarahkeun aplikasi ka halaman resume pengajuan
                 return redirect('layanan-pengaduan/resume/' . $idPengajuan);
 
-            else:
-                // ngadamel bewara yen pengaduan teu tiasa dikosongkeun
-                $this->dispatch('warning', 'Kolom pengaduan tidak boleh dikosongkang');
-            endif;
+            } catch (\Throwable $th) {
+                dd($th->getMessage());
+                // ngadamel bewara yen pengaduan gagal diproses ku sistem
+                // $this->dispatch('error', 'Terjadi kesalahan pada saat menyimpan pengaduan, silahkan hubungi pihak pengembang aplikasi');
+            }
 
-        } catch (\Throwable $th) {
-            dd($th->getMessage());
-            // ngadamel bewara yen pengaduan gagal diproses ku sistem
-            // $this->dispatch('error', 'Terjadi kesalahan pada saat menyimpan pengaduan, silahkan hubungi pihak pengembang aplikasi');
-        }
+        else:
+            // ngadamel bewara yen pengaduan teu tiasa dikosongkeun
+            $this->dispatch('warning', 'Kolom pengaduan tidak boleh dikosongkang');
+        endif;
     }
 
 
