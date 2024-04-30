@@ -79,7 +79,8 @@ class Content extends Component
             try {
                 // Miwarang livewire kanggo nyimpen data dumasar kana katangtosan nu tos di damel
                 if (null != $this->inputFile):
-                    if (!$this->inputFile->storeAs('file_pengaduan', $fileName)):
+
+                    if (!$this->inputFile->storeAs('file_pengaduan', $fileName, 'public')):
                         $this->dispatch('error', 'File pengaduan gagal diupload');
                         return;
 
