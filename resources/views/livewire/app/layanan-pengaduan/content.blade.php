@@ -84,10 +84,6 @@
                                             Simpan
                                         </button>
 
-                                        <button type="button" wire:click='resetForm' class="btn btn-outline-secondary"
-                                            data-bs-dismiss="modal">
-                                            Batalkan
-                                        </button>
                                     </div>
                                 </form>
                             </div>
@@ -206,87 +202,6 @@
             </div>
         @endif
         {{-- END OFPENCARIAN, FORMULIR PENGADUAN dan INFORMASI KONTAK --}}
-
-
-        {{-- RESUME PENGADUAN/FEEDBACK SUCCESS INSERT PENGADUAN --}}
-        @if ($resume)
-            <div class="row py-4 justify-content-center" {{ $resume }}>
-                <div class="col-8 p-4 shadow rounded" style="background-color:white;">
-
-                    {{-- Title dan Status --}}
-                    <div class="row justify-content-between mb-4">
-
-                        {{-- Title --}}
-                        <div class="col-11" style="text-align: center">
-                            <p class="mb-1" style="color: #CC2323; font-size: 50px; font-weight: bold;">
-                                PPPKP-QST1
-                            </p>
-
-                            <p>
-                                Mohon menyimpan kode tersebut untuk melihat kelanjutan pengaduan.
-                            </p>
-                        </div>
-
-                        {{-- Status --}}
-                        <div class="col-1 ">
-                            <p class="rounded-pill px-2"
-                                style="background-color: #F6E2B0; color: #E3A100; font-size: 14px; text-align: center;">
-                                <small>Proses</small>
-                            </p>
-                        </div>
-
-                    </div>
-                    {{-- Title dan Status --}}
-
-                    {{-- Data Pembuat Pengajuan --}}
-                    <div class="row mb-4">
-                        <div class="col-11">
-                            <table>
-                                <tr>
-                                    <td scope='col' width='60px'>Nama</td>
-                                    <td scope='col' width='10px'>:</td>
-                                    <td>Rama Wirahma</td>
-                                </tr>
-                                <tr>
-                                    <td>Email</td>
-                                    <td>:</td>
-                                    <td>rama-wirahma@ipdn.ac.id</td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="3">
-                                        <p class="my-4" style="text-indent: 1cm; text-align: justify;">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum has been
-                                            the industry's standard dummy text ever since the 1500s, when an unknown
-                                            printer
-                                            took a galley
-                                            of type and scrambled it to make a type specimen book. It has survived not
-                                            only
-                                            five centuries,
-                                            but also the leap into electronic typesetting, remaining essentially
-                                            unchanged.
-                                        </p>
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>Bukti</td>
-                                    <td>:</td>
-                                    <td>Download</td>
-                                </tr>
-
-                            </table>
-                        </div>
-                    </div>
-                    {{-- END OF Data Pembuat Pengajuan --}}
-
-                </div>
-            </div>
-        @endif
-        {{-- RESUME PENGADUAN/FEEDBACK SUCCESS INSERT PENGADUAN --}}
 
     </div>
     {{-- END OF Content --}}

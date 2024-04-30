@@ -18,12 +18,6 @@ class Content extends Component
     public $form = true, $search = false, $resume = false;
 
 
-    public function resetForm()
-    {
-        $this->reset();
-    }
-
-
     public function toggleContent($name)
     {
         if ('form' == $name):
@@ -86,13 +80,17 @@ class Content extends Component
                 // Miwarang livewire kanggo nyimpen data dumasar kana katangtosan nu tos di damel
                 if (null != $this->inputFile):
                     if (!$this->inputFile->storeAs('file_pengaduan', $fileName)):
-                        dd($this->inputFile);
+                        $this->dispatch('error', 'File pengaduan gagal diupload');
                         return;
 
                     else:
-                        $this->dispatch('warning', 'File pengaduan kosong');
+                        $this->dispatch('success', 'File pengaduan berhasil di upload');
                         return;
                     endif;
+
+                else:
+                    $this->dispatch('warning', 'File pengaduan kosong');
+                    return;
                 endif;
 
                 // $this->inputFile != null ? $this->inputFile->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public') : null;
