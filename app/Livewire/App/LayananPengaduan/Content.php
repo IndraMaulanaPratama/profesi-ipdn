@@ -47,10 +47,10 @@ class Content extends Component
         if (null != $this->inputPengaduan):
             $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
             $this->inputFile != null ? $fileName = $timestamp. '.' .$this->inputFile->getClientOriginalExtension() : $fileName = null;
-            // dd([
-            //     'input' => $this->inputFile,
-            //     'file' => $fileName,
-            // ]);
+            dd([
+                'input' => $this->inputFile,
+                'file' => $fileName,
+            ]);
 
             $idPengajuan = 'PPPKP-' . $timestamp;
 
@@ -78,9 +78,9 @@ class Content extends Component
                         return;
                     endif;
 
-                // else:
-                //     $this->dispatch('warning', 'File pengaduan kosong');
-                //     return;
+                else:
+                    $this->dispatch('warning', 'File pengaduan kosong');
+                    return;
                 endif;
 
                 // $this->inputFile != null ? $this->inputFile->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public') : null;
@@ -88,7 +88,7 @@ class Content extends Component
                 // Proses ngalebetkeun data formulir ka database
                 // Pengaduan::create($data);
 
-                //  ngarahkeun aplikasi ka halaman resume pengajuan
+                // ngarahkeun aplikasi ka halaman resume pengajuan
                 // return redirect('layanan-pengaduan/resume/' . $idPengajuan);
 
             } catch (\Throwable $th) {
