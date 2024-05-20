@@ -73,11 +73,6 @@ class Create extends Component
             $this->photo != null ? $photoName = $timestamp . '-' . $this->photo->getClientOriginalName() : $photoName = "defaultPhoto.jpeg";
             $this->sign != null ? $signName = $timestamp . '-' . $this->sign->getClientOriginalName() : $signName = "defaultSign.jpeg";
 
-            dd([
-                'photo' => $this->photo,
-                'sign' => $this->sign
-            ]);
-
             // $photoName = $this->photo == null ? 'defaultPhoto.jpg' : $timestamp . '-' . $this->photo->getClientOriginalName();
             // $signName = $this->sign == null ? 'defaultSign.jpg' : $timestamp . '-' . $this->sign->getClientOriginalName();
 
