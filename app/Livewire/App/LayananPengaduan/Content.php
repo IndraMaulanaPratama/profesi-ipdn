@@ -46,7 +46,7 @@ class Content extends Component
     {
         if (null != $this->inputPengaduan):
             $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
-            $this->inputFile != null ? $fileName = $timestamp . '.' . $this->inputFile->getClientOriginalExtension() : $fileName = null;
+            $this->inputFile != null ? $fileName = $this->inputFile->getClientOriginalExtension() : $fileName = null;
             dd([
                 'input' => $this->inputFile,
                 'file' => $fileName,
