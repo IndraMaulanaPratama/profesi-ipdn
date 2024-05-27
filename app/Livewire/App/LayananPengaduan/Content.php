@@ -4,6 +4,7 @@ namespace App\Livewire\App\LayananPengaduan;
 
 use App\Models\Pengaduan;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -46,13 +47,10 @@ class Content extends Component
     {
         if (null != $this->inputPengaduan):
             $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
-            $this->inputFile != null ? $fileName = $timestamp. '.' .$this->inputFile->getClientOriginalExtension() : $fileName = null;
-            dd([
-                'input' => $this->inputFile,
-                'file' => $fileName,
-            ]);
+            $randomString = Str::random(3);
+            $this->inputFile != null ? $fileName = $timestamp . '.' . $this->inputFile->getClientOriginalExtension() : $fileName = null;
 
-            $idPengajuan = 'PPPKP-' . $timestamp;
+            $idPengajuan = 'PPPKP-' . $randomString;
 
             $data = [
                 'PENGADUAN_ID' => $idPengajuan,
@@ -71,30 +69,25 @@ class Content extends Component
 
                     if (!$this->inputFile->storeAs('file_pengaduan', $fileName, 'public')):
                         $this->dispatch('error', 'File pengaduan gagal diupload');
-                        return;
 
                     else:
                         $this->dispatch('success', 'File pengaduan berhasil di upload');
-                        return;
                     endif;
 
-                else:
-                    $this->dispatch('warning', 'File pengaduan kosong');
-                    return;
                 endif;
 
                 // $this->inputFile != null ? $this->inputFile->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public') : null;
 
                 // Proses ngalebetkeun data formulir ka database
-                // Pengaduan::create($data);
+                Pengaduan::create($data);
 
                 // ngarahkeun aplikasi ka halaman resume pengajuan
-                // return redirect('layanan-pengaduan/resume/' . $idPengajuan);
+                return redirect('layanan-pengaduan/resume/' . $idPengajuan);
 
             } catch (\Throwable $th) {
                 dd($th->getMessage());
                 // ngadamel bewara yen pengaduan gagal diproses ku sistem
-                // $this->dispatch('error', 'Terjadi kesalahan pada saat menyimpan pengaduan, silahkan hubungi pihak pengembang aplikasi');
+                $this->dispatch('error', 'Terjadi kesalahan pada saat menyimpan pengaduan, silahkan hubungi pihak pengembang aplikasi');
             }
 
         else:
