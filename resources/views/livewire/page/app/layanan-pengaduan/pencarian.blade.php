@@ -92,7 +92,7 @@
                                     </td>
                                 </tr>
 
-                                <tr>
+                                <tr hidden>
                                     <td>Bukti</td>
                                     <td>:</td>
                                     <td>
