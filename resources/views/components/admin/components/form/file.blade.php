@@ -1,7 +1,7 @@
-<div class="col-{{ $size ?? 12 }}">
+<div class="col-{{ $size ?? 12 }}" {{$hidden ?? null}}>
     <div class="form-floating">
         <input class="form-control" wire:model.live='{{ $name }}' placeholder="foto" type="file"
-            {{ $required ?? null }} {{ $disable ?? null }}>
+            {{ $required ?? null }} {{ $disable ?? null }} >
             <label>{{ $placeholder ?? 'Input Form' }}</label>
 
     </div>
