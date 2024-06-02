@@ -2,6 +2,8 @@
 
 <div>
     <div class="col-12">
+
+        {{-- Data table pengaduan --}}
         <x-admin.components.card.card size=12 title='Data Pengaduan' titleSpan=''>
 
             <div class="row g-4">
@@ -9,6 +11,13 @@
 
                     {{-- Baris bagian search sareng tombol tambih data --}}
                     <div class="row justify-content-between">
+
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                            <x-admin.components.form.select name='sortStatus' placeholder='Urutan status'>
+                                <option value="Proses">Proses</option>
+                                <option value="Selesai">Selesai</option>
+                            </x-admin.components.form.select>
+                        </div>
 
                         {{-- Tombol Tambah Data --}}
                         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -20,6 +29,7 @@
                             </button>
                         </div>
 
+
                         {{-- Input Pencarian Data --}}
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <x-admin.components.form.input size=12 type='text' name='search'
@@ -27,16 +37,18 @@
                         </div>
                     </div>
 
+                    <hr />
 
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col" width=5%>#</th>
-                                    <th scope="col" wiidth="40%">ID Pengaduan</th>
-                                    <th scope="col" wiidth="10%">Status</th>
-                                    <th scope="col" width="40%">Pengaduan</th>
-                                    <th scope="col" colspan="4" width=5%>Option</th>
+                                    <th scope="col" width="15%">ID Pengaduan</th>
+                                    <th scope="col" width="10%">Status</th>
+                                    <th scope="col">Pengaduan</th>
+                                    <th scope="col" width="15%">Petugas</th>
+                                    <th scope="col" colspan="4" width=3%>Option</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -58,11 +70,20 @@
                                     @endphp
 
                                     <tr>
-                                        <td scope="col" widtd=3%> {{ $nomor }} </td>
+                                        <td scope="col">{{ $nomor }} </td>
                                         <td scope="col">{{ $item['PENGADUAN_ID'] }}</td>
-                                        <td scope="col">{{ $item['PENGADUAN_STATUS'] }}</td>
-                                        <td scope="col">{{ Str::substr($item['PENGADUAN_VALUE'], 0, 50) }} ...</td>
 
+                                        <td scope="col">
+                                            <span
+                                                class="badge {{ $item['PENGADUAN_STATUS'] == 'Selesai' ? 'text-bg-success' : 'text-bg-primary' }}">
+                                                {{ $item['PENGADUAN_STATUS'] }}
+                                            </span>
+                                        </td>
+
+                                        <td scope="col">{{ Str::substr($item['PENGADUAN_VALUE'], 0, 70) }}
+                                                ...
+                                        </td>
+                                        <td> {{ $item['PENGADUAN_OFFICER'] === 1 ? null : $item->user->name }} </td>
                                         {{-- Option Row --}}
 
                                         <td {{ $buttonDetail . $accessDetail }}>
