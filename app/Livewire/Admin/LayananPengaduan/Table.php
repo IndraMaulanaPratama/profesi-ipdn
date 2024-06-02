@@ -32,7 +32,7 @@ class Table extends Component
     $detailAttachment;
 
     // Variable Form
-    public $search, $inputReply;
+    public $search, $inputReply, $sortStatus;
 
 
 
@@ -150,12 +150,18 @@ class Table extends Component
     public function render()
     {
 
-        $pengaduan = Pengaduan::when(
-            $this->search,
-            function ($query, $search) {
-                return $query->where('PENGADUAN_VALUE', 'like', '%' . $search . '%');
-            }
-        )->latest()->paginate();
+        $pengaduan = Pengaduan::
+            when(
+                $this->search,
+                function ($query, $search) {
+                    return $query->where('PENGADUAN_ID', 'like', '%' . $search . '%')->orWhere('PENGADUAN_VALUE', 'like', '%' . $search . '%');
+                }
+            )->when(
+                $this->sortStatus,
+                function ($query, $status) {
+                    return $query->where('PENGADUAN_STATUS', $status);
+                }
+            )->latest()->paginate();
 
         return view('livewire.admin.layanan-pengaduan.table', [
             'data' => $pengaduan,
