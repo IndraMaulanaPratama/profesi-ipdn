@@ -75,18 +75,6 @@
                                 </td>
                             </tr>
 
-                            <tr>
-                                <td>Bukti</td>
-                                <td>:</td>
-                                <td>
-                                    <a href="{{ env('APP_URL') . '/file_pengaduan/' . $data['lampiran'] }}"
-                                        target="_blank" class="link" style="text-decoration: underline">
-                                        {{ $data['lampiran'] }}
-                                    </a>
-
-                                </td>
-                            </tr>
-
                         </table>
                     </div>
                 </div>
