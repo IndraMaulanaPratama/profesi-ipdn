@@ -2,8 +2,10 @@
 
 namespace App\Livewire\App\LayananPengaduan;
 
+use App\Mail\testMail;
 use App\Models\Pengaduan;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -80,6 +82,15 @@ class Content extends Component
 
                 // Proses ngalebetkeun data formulir ka database
                 Pengaduan::create($data);
+
+                // Ngintun email
+                $dataEmail = [
+                    'id_pengaduan' => $idPengajuan,
+                    'email' => $this->inputEmail,
+                    'nama' => $this->inputNama,
+                    'pengaduan' => $this->inputPengaduan
+                ];
+                Mail::to('profesi.kepamongprajaan@ipdn.ac.id')->send(new testMail($dataEmail));
 
                 // ngarahkeun aplikasi ka halaman resume pengajuan
                 return redirect('layanan-pengaduan/resume/' . $idPengajuan);
