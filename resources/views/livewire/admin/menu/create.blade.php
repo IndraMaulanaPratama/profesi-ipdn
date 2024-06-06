@@ -38,6 +38,7 @@
                     <option value="tautan">Tautan Navigasi</option>
                     <option value='navbar'>Navbar</option>
                     <option value="sidebar">Sidebar</option>
+                    <option value="sidebar-group">Sidebar Group</option>
                 </x-admin.components.form.select>
 
             </div>
