@@ -15,50 +15,19 @@
             <th>Satuan</th>
             <th>Tarif (Rupiah)</th>
         </thead>
-        <tr>
-            <td>Pendaftaran Tes Masuk</td>
-            <td>per calon mahasiswa</td>
-            <td>500.000,00</td>
-        </tr>
-        <tr>
-            <td>Matrikulasi</td>
-            <td>per mahasiswa</td>
-            <td>1.000.000,00</td>
-        </tr>
-        <tr>
-            <td>Registrasi Ulang</td>
-            <td>per mahasiswa</td>
-            <td>100.000,00</td>
-        </tr>
-        <tr>
-            <td>Sumbangan Penyelenggaraan Pendidikan Profesi Kepamongprajaan (2 semester)</td>
-            <td>per mahasiswa/ per program/ per profesi</td>
-            <td>16.500.000,00</td>
-        </tr>
-        <tr>
-            <td>Sumbangan Penyelenggaraan Pendidikan Profesi Kepamongprajaan (1 semester)</td>
-            <td>per mahasiswa/ per program/ per profesi</td>
-            <td>11.500.000,00</td>
-        </tr>
-        <tr>
-            <td>Praktek Lapangan dan Penelitian</td>
-            <td>per mahasiswa</td>
-            <td>2.500.000,00</td>
-        </tr>
-        <tr>
-            <td>Pakaian Dinas dan Kelengkapannya</td>
-            <td>per mahasiswa</td>
-            <td>4.655.000,00</td>
-        </tr>
-        <tr>
-            <td>Wisuda</td>
-            <td>per mahasiswa</td>
-            <td>1.000.000,00</td>
-        </tr>
+
+        @foreach ($data as $item)
+            <tr>
+                <td> {{ $item['PENDIDIKAN_NAMA'] }} </td>
+                <td> {{ $item['PENDIDIKAN_SATUAN'] }} </td>
+                <td> {{ number_format($item['PENDIDIKAN_TARIF'], 2, ',', '.') }} </td>
+            </tr>
+        @endforeach
+
         <tr class="table-danger">
             <td>Jumlah</td>
             <td>per mahasiswa</td>
-            <td>37.755.000</td>
+            <td> Rp.{{ number_format($total, 2, ',', '.') }} </td>
         </tr>
     </table>
 
