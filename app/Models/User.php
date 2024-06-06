@@ -16,7 +16,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    // Fungsi kanggo sawalasna maca relasi user ka table role teras ka tabel pivot menu
+    // Fungsi kanggo salawasna maca relasi user ka table role teras ka tabel pivot menu
     protected $with = ['role.pivotMenu'];
 
 
@@ -71,6 +71,12 @@ class User extends Authenticatable
     {
         return $this->hasMany(Pengaduan::class, 'PENGADUAN_OFFICER', 'id');
     }
+
+    public function biaya_pendidikan(): HasMany
+    {
+        return $this->hasMany(BiayaPendidikan::class, 'PENDIDIKAN_OFFICER', 'id');
+    }
+
 
     // --- *** END OF RELATION AREA *** ---
 
