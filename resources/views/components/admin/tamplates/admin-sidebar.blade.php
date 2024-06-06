@@ -7,6 +7,8 @@
         ->oldest()
         ->get();
 
+    $sidebarGroup = '';
+
 @endphp
 
 <aside id="sidebar" class="sidebar">
@@ -15,14 +17,35 @@
 
         <x-admin.tamplates.sidebar.link text="Beranda" navigate="/" icon="grid" />
 
-        <x-admin.tamplates.sidebar.heading text='Bebas Pustaka' />
+        <x-admin.tamplates.sidebar.heading text='Profesi Kepamongprajaan' />
 
         {{-- Logic kanggo nampilkeun data menu dumasar kana role nu login --}}
         @for ($i = 0; $i < count($pivot); $i++)
-            @if ('sidebar' == $pivot[$i]->menu[0]->MENU_POSITION)
+            @if ('sidebar' == $pivot[$i]->menu[0]->MENU_POSITION && null == $pivot[$i]->menu[0]->MENU_PARENT)
                 <x-admin.tamplates.sidebar.link :text="$pivot[$i]->menu[0]->MENU_NAME" :navigate="$pivot[$i]->menu[0]->MENU_URL" :icon="$pivot[$i]->menu[0]->MENU_ICON" />
             @endif
         @endfor
+
+        {{-- Logic kanggo nampilkeun data sidebar group dumasar kana role nu login --}}
+        @for ($i = 0; $i < count($pivot); $i++)
+            @if ('sidebar-group' == $pivot[$i]->menu[0]->MENU_POSITION && null == $pivot[$i]->menu[0]->MENU_PARENT)
+                <x-admin.tamplates.sidebar.list-item text="{{ $pivot[$i]->menu[0]->MENU_NAME }}"
+                    icon="{{ $pivot[$i]->menu[0]->MENU_ICON }}" name="{{ $pivot[$i]->menu[0]->MENU_ID }}"
+                    wire:key='{{ $pivot[$i]->menu[0]->MENU_ID }}'>
+
+                    @for ($j = 0; $j < count($pivot); $j++)
+                        @if (
+                            'sidebar' == $pivot[$j]->menu[0]->MENU_POSITION && $pivot[$j]->menu[0]->MENU_PARENT == $pivot[$i]->menu[0]->MENU_NAME)
+                            <x-admin.tamplates.sidebar.item-link text="{{ $pivot[$j]->menu[0]->MENU_NAME }}"
+                                navigate="{{ $pivot[$j]->menu[0]->MENU_URL }}" icon="circle"
+                                wire:key='{{ $pivot[$j]->menu[0]->MENU_ID }}' />
+                        @endif
+                    @endfor
+
+                </x-admin.tamplates.sidebar.list-item>
+            @endif
+        @endfor
+
 
         {{-- Menu kanggo area Admin --}}
         @if ($role->ROLE_NAME == 'Super Admin' || $role->ROLE_NAME == 'Admin Pustaka')
@@ -45,8 +68,8 @@
             {{-- Pengaturan Website --}}
             <x-admin.tamplates.sidebar.list-item text="Pengaturan website" name="pengaturan" wire:key='pengaturan'>
 
-                <x-admin.tamplates.sidebar.item-link text="Pusat Pengaduan" navigate="pengaturan.pengaduan" icon="circle"
-                    wire:key='1' />
+                <x-admin.tamplates.sidebar.item-link text="Pusat Pengaduan" navigate="pengaturan.pengaduan"
+                    icon="circle" wire:key='1' />
 
                 {{-- <x-admin.tamplates.sidebar.item-link text="-" navigate="-" icon="circle"
                     wire:key='-' /> --}}
