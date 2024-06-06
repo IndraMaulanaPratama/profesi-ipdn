@@ -32,6 +32,7 @@
                                 <th scope="col">Deskripsi</th>
                                 <th scope="col">URL</th>
                                 <th scope="col">Posisi</th>
+                                <th scope="col">Parent Menu</th>
                                 <th scope="col" colspan="2" width=5%>Option</th>
                             </tr>
                         </thead>
@@ -43,6 +44,7 @@
                                     <td>{{ $item->MENU_DESCRIPTION }}</td>
                                     <td>{{ $item->MENU_URL }}</td>
                                     <td>{{ $item->MENU_POSITION }}</td>
+                                    <td>{{ $item->MENU_PARENT }}</td>
 
                                     {{-- Option Row --}}
                                     <td>
@@ -109,6 +111,14 @@
                         <option value="tautan">Tautan Navigasi</option>
                         <option value='navbar'>Navbar</option>
                         <option value="sidebar">Sidebar</option>
+                        <option value="sidebar-group">Sidebar Group</option>
+                    </x-admin.components.form.select>
+
+                    {{-- Input Parent Menu --}}
+                    <x-admin.components.form.select name='parent' placeholder='Parent Menu'>
+                        @foreach ($data_parent as $item)
+                            <option value="{{ $item['MENU_NAME'] }}"> {{ $item['MENU_NAME'] }} </option>
+                        @endforeach
                     </x-admin.components.form.select>
 
                     {{-- Input Description --}}
@@ -165,10 +175,20 @@
                         <option value="tautan">Tautan Navigasi</option>
                         <option value='navbar'>Navbar</option>
                         <option value="sidebar">Sidebar</option>
+                        <option value="sidebar-group">Sidebar Group</option>
                     </x-admin.components.form.select>
 
+                    {{-- Input Parent Menu --}}
+                    <x-admin.components.form.select name='parent' placeholder='Parent Menu'>
+                        @foreach ($data_parent as $item)
+                            <option value="{{ $item['MENU_NAME'] }}"> {{ $item['MENU_NAME'] }} </option>
+                        @endforeach
+                    </x-admin.components.form.select>
+
+
                     {{-- Input Description --}}
-                    <x-admin.components.form.textarea name='description' placeholder='Deskripsi Menu' tinggi='100' />
+                    <x-admin.components.form.textarea name='description' placeholder='Deskripsi Menu'
+                        tinggi='100' />
 
                 </div>
             </div>
