@@ -40,24 +40,17 @@ class Table extends Component
     #[Rule(['string', 'required'])]
     public $position = '';
 
+    #[Rule(['string'])]
+    public $parent = '';
 
 
 
-    /**
-     * On () -> Attribut kanggo maca pesan ti componen sanes
-     * `menuCreated` pesan anu dikintun ti component lain
-     *
-     * fungsi placeholder nyaeta fungsi candakan livewire pikeun ngaload ulang component
-     */
+    #[On('menu-created'), On('menu-updated')]
+    public function placeholder()
+    {
+        return view('components.admin.components.spinner.loading');
+    }
 
-
-    /**
-     * Fungsi kanggo ngadamel slug url menu
-     */
-    // public function updatedMenu()
-    // {
-    //     $this->url = str::slug($this->menu);
-    // }
 
 
     /**
@@ -78,6 +71,7 @@ class Table extends Component
                 'MENU_ICON' => $this->icon != null ? $this->icon : null,
                 'MENU_URL' => $this->url,
                 'MENU_POSITION' => $this->position,
+                'MENU_PARENT' => $this->parent,
             ];
 
             // proses nyimpen data ka database
@@ -94,12 +88,6 @@ class Table extends Component
         }
     }
 
-
-    #[On('menu-created'), On('menu-updated')]
-    public function placeholder()
-    {
-        return view('components.admin.components.spinner.loading');
-    }
 
     public function updateMenu($id)
     {
@@ -202,7 +190,8 @@ class Table extends Component
             }
         )->latest()->paginate();
 
+        $parent = Menu::where('MENU_POSITION', '=', 'sidebar-group')->get();
 
-        return view('livewire.admin.menu.table', ['data' => $menu]);
+        return view('livewire.admin.menu.table', ['data' => $menu, 'data_parent' => $parent]);
     }
 }
