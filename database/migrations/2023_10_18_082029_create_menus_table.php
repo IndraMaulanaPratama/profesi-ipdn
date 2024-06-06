@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->text('MENU_DESCRIPTION')->nullable(true)->comment('Keterangan menu');
             $table->string('MENU_URL', 20)->comment('Nama Route Dari Halaman');
             $table->string('MENU_POSITION', 30)->default('tautan')->nullable(true)->comment('Keterangan dimana menu ini ini kan ditampilkan');
+            $table->string('MENU_PARENT', 100)->nullable(true)->comment('Keterangan Parent menu');
             $table->timestamps();
             $table->softDeletes();
         });
