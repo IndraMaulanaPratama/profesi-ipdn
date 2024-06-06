@@ -78,6 +78,10 @@ Route::middleware(['auth', 'access'])->group(function () {
 
     // Layanan Pengaduan
     Route::get('/admin/layanan-pengaduan', \App\Livewire\Page\Admin\LayananPengaduan\LayananPengaduan::class)->name('admin.layanan-pengaduan');
+
+    // Biaya Pendidikan
+    Route::get('admin/biaya-pendidikan', \App\Livewire\Page\Admin\Akademik\BiayaPendidikan::class)->name('admin.biaya-pendidikan');
+
     // <!-- End Of Admin area !--->
 
 });
