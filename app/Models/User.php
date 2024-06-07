@@ -77,6 +77,10 @@ class User extends Authenticatable
         return $this->hasMany(BiayaPendidikan::class, 'PENDIDIKAN_OFFICER', 'id');
     }
 
+    public function kurikulum(): HasMany
+    {
+        return $this->hasMany(Kurikulum::class, 'KURIKULUM_OFFICER', 'id');
+    }
 
     // --- *** END OF RELATION AREA *** ---
 
