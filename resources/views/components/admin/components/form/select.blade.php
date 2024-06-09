@@ -2,7 +2,7 @@
     <div class="form-floating mb-3">
         <select class="form-select" wire:model.live='{{ $name }}' id="{{ $name }}" aria-label="State"
             {{ $required ?? null }} {{ $disabled ?? null }}>
-            <option selected"></option>
+            <option selected></option>
             {{ $slot }}
         </select>
         <label for="{{ $name }}">{{ $placeholder ?? 'Select Form' }}</label>
