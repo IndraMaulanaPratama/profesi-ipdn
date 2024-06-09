@@ -76,11 +76,22 @@ Route::middleware(['auth', 'access'])->group(function () {
     // Pengaturan Website
     Route::get('/admin/pengaturan-website/pusat-pengaduan/', PusatPengaduan::class)->name('pengaturan.pengaduan');
 
+
     // Layanan Pengaduan
     Route::get('/admin/layanan-pengaduan', \App\Livewire\Page\Admin\LayananPengaduan\LayananPengaduan::class)->name('admin.layanan-pengaduan');
 
+    /**
+     * Ranahna menu akademik:
+     * Biaya Pendidikan, Kurikulum
+     */
+
     // Biaya Pendidikan
-    Route::get('admin/biaya-pendidikan', \App\Livewire\Page\Admin\Akademik\BiayaPendidikan::class)->name('admin.biaya-pendidikan');
+    Route::get('admin/akademik/biaya-pendidikan', \App\Livewire\Page\Admin\Akademik\BiayaPendidikan::class)->name('admin.biaya-pendidikan');
+
+    // Kurikulum
+    Route::get('admin/akademik/kurikulum', \App\Livewire\Page\Admin\Akademik\Kurikulum::class)->name('admin.kurikulum');
+
+    /** tungtung tina ranahna akademik */
 
     // <!-- End Of Admin area !--->
 
