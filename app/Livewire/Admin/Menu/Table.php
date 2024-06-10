@@ -78,13 +78,13 @@ class Table extends Component
             Menu::create($data);
 
             // ngadamel pengumuman kanggo component nu sanes
-            $this->dispatch('menu-created', 'Menu baru berhasil ditambahkan');
+            $this->dispatch('success', 'Menu baru berhasil ditambahkan');
 
             // mulihkeun kondisi form ka posisi default
             $this->resetForm();
 
         } catch (\Throwable $th) {
-            $this->dispatch('failed-creating-menu', $th->getMessage());
+            $this->dispatch('error', $th->getMessage());
         }
     }
 
@@ -101,6 +101,7 @@ class Table extends Component
         $this->url = $menu->MENU_URL;
         $this->description = $menu->MENU_DESCRIPTION;
         $this->position = $menu->MENU_POSITION;
+        $this->parent = $menu->MENU_PARENT;
         // $this->dispatch('selected-menu', $data);
     }
 
@@ -109,7 +110,6 @@ class Table extends Component
      */
     public function updateData()
     {
-        $this->validate();
 
         try {
             // Inisialisasi data nu bade di eksekusi
@@ -119,6 +119,7 @@ class Table extends Component
                 'MENU_URL' => $this->url,
                 'MENU_ICON' => $this->icon,
                 'MENU_POSITION' => $this->position,
+                'MENU_PARENT' => $this->parent,
             ];
 
             // proses nyimpen data ka database
@@ -128,10 +129,10 @@ class Table extends Component
             $this->resetForm();
 
             // ngadamel pengumuman kanggo component nu sanes
-            $this->dispatch('menu-updated', 'Menu yang anda pilih, berhasil diperbaharui');
+            $this->dispatch('success', 'Menu yang anda pilih, berhasil diperbaharui');
 
         } catch (\Throwable $th) {
-            $this->dispatch('failed-updating-menu', 'Terjadi kesalahan pada saat memperbaharui data menu');
+            $this->dispatch('error', 'Terjadi kesalahan pada saat memperbaharui data menu');
         }
     }
 
@@ -140,10 +141,9 @@ class Table extends Component
         try {
             Menu::find($id)->delete();
 
-            $this->placeholder();
-            $this->dispatch('deleted-menu', 'Menu yang anda pilih, berhasil dihapuskan');
+            $this->dispatch('success', 'Menu yang anda pilih, berhasil dihapuskan');
         } catch (\Throwable $th) {
-            $this->dispatch('failed-deleting-menu', $th->getMessage());
+            $this->dispatch('error', $th->getMessage());
         }
     }
 
@@ -152,10 +152,9 @@ class Table extends Component
         try {
             Menu::find($id)->restore();
 
-            $this->placeholder();
-            $this->dispatch('restored-menu', 'Menu yang anda pilih, berhasil dipulihkan');
+            $this->dispatch('success', 'Menu yang anda pilih, berhasil dipulihkan');
         } catch (\Throwable $th) {
-            $this->dispatch('failed-restoring-menu', $th->getMessage());
+            $this->dispatch('error', $th->getMessage());
         }
     }
 
