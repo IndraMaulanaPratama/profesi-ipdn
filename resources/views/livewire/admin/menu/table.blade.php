@@ -46,7 +46,8 @@
                                     <td>{{ $item->MENU_POSITION }}</td>
                                     <td>{{ $item->MENU_PARENT }}</td>
 
-                                    {{-- Option Row --}}
+                                    {{-- Option Update and Delete --}}
+                                    {{-- Update Row --}}
                                     <td>
                                         <button type="button" {{ $buttonUpdate }}
                                             class="btn btn-sm btn-outline-success rounded-pill"
@@ -55,6 +56,8 @@
                                             <i class="bi bi-pencil-square"></i>
                                         </button>
                                     </td>
+
+                                    {{-- Delete Row --}}
                                     <td>
                                         <button type="button" {{ $buttonDelete }}
                                             class="btn rounded-pill btn-sm btn-outline-danger"
@@ -62,7 +65,8 @@
                                             wire:confirm='Anda yakin akan menghapus menu {{ $item->MENU_NAME }} ini?'>
                                             <i class="bi bi-trash3-fill"></i>
                                         </button>
-                                    </td> <!-- END Of OPTION ROW !-->
+                                    </td>
+                                    <!-- END Of OPTION ROW !-->
                                 </tr>
                             @endforeach
                         </tbody>
@@ -127,16 +131,8 @@
                 </div>
             </div>
 
-            <div class="modal-footer">
-                <button type="button" wire:click='resetForm' class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                    Batalkan
-                </button>
 
-                <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">
-                    Simpan Data
-                </button>
-
-            </div>
+            <x-admin.components.modal.footer />
         </form>
 
     </x-admin.components.modal.modal>
@@ -187,23 +183,12 @@
 
 
                     {{-- Input Description --}}
-                    <x-admin.components.form.textarea name='description' placeholder='Deskripsi Menu'
-                        tinggi='100' />
+                    <x-admin.components.form.textarea name='description' placeholder='Deskripsi Menu' tinggi='100' />
 
                 </div>
             </div>
 
-            <div class="modal-footer">
-                <button type="button" wire:click='resetForm' class="btn btn-outline-secondary"
-                    data-bs-dismiss="modal">
-                    Batalkan
-                </button>
-
-                <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">
-                    Simpan Data
-                </button>
-
-            </div>
+            <x-admin.components.modal.footer />
         </form>
 
     </x-admin.components.modal.modal>
