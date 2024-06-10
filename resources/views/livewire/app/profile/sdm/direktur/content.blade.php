@@ -65,7 +65,7 @@
                 alt="" srcset="">
 
             <div class="pt-2" style="font-size: 30px; font-weight: bold;">
-                Dr. Dra. H. Endang Try Setyasih, MM
+                Dr. Dra. Hj. Endang Try Setyasih, MM
             </div>
 
             <div class="pt-2" style="font-size: 20px; font-weight: bold; color:#063A69;">

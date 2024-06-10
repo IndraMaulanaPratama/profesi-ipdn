@@ -16,7 +16,7 @@
                 alt="" srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
-                Dr. Dra. H. Endang Try Setyasih, MM
+                Dr. Dra. Hj. Endang Try Setyasih, MM
             </div>
 
         </div>
