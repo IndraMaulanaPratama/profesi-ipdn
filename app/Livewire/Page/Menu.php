@@ -18,19 +18,27 @@ class Menu extends Component
     public $actionName = 'createData';
 
 
-    #[On("menu-created"), On("deleted-menu"), On("menu-updated")]
+    #[On("success")]
     public function processSuccessfully($message)
     {
         session()->reflash();
         session()->flash('success', $message);
     }
 
-    #[On('failed-creating-menu'), On('failed-deleting-menu'), On('failed-updating-menu')]
+    #[On('warning')]
     public function failedProcess($message)
     {
         session()->reflash();
         session()->flash('warning', $message);
     }
+
+    #[On('error')]
+    public function errorProcess($message)
+    {
+        session()->reflash();
+        session()->flash('error', $message);
+    }
+
 
     #[On('selected-menu')]
     public function selectedMenu($data)
