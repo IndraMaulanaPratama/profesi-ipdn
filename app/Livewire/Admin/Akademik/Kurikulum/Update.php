@@ -85,6 +85,13 @@ class Update extends Component
     }
 
 
+    /** Fungsi kangggo mulihkeun formulir bah bahara bahari */
+    public function resetForm()
+    {
+        $this->reset();
+    }
+
+
     public function render()
     {
         return view('livewire.admin.akademik.kurikulum.update');
