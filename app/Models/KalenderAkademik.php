@@ -23,6 +23,7 @@ class KalenderAkademik extends Model
         'KALENDER_TANGGAL',
         'KALENDER_SEMESTER',
         'KALENDER_KEGIATAN',
+        'KALENDER_URUTAN',
         'KALENDER_OFFICER',
     ];
 
