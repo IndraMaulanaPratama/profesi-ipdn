@@ -16,10 +16,11 @@ return new class extends Migration {
             $table->string('KALENDER_TANGGAL')->comment('Range tanggal kegiatan');
             $table->integer('KALENDER_SEMESTER')->comment('Keterangan semester perkuliahan');
             $table->string('KALENDER_KEGIATAN', 250)->comment('Nama kegiatan perkuliahan');
+            $table->integer('KALENDER_URUTAN')->comment('Urutan data');
 
             $table->timestamps();
             $table->softDeletes();
-            
+
             $table->unsignedBigInteger('KALENDER_OFFICER');
             $table->foreign('KALENDER_OFFICER')->references('id')->on('users');
             $table->unsignedBigInteger('KALENDER_OFFICER', 255)->nullable()->change()->comment('Foreign Key ke table user sebagai petugas');
