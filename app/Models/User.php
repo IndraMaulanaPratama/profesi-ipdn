@@ -72,7 +72,7 @@ class User extends Authenticatable
         return $this->hasMany(Pengaduan::class, 'PENGADUAN_OFFICER', 'id');
     }
 
-    public function biaya_pendidikan(): HasMany
+    public function biayaPendidikan(): HasMany
     {
         return $this->hasMany(BiayaPendidikan::class, 'PENDIDIKAN_OFFICER', 'id');
     }
@@ -80,6 +80,12 @@ class User extends Authenticatable
     public function kurikulum(): HasMany
     {
         return $this->hasMany(Kurikulum::class, 'KURIKULUM_OFFICER', 'id');
+    }
+
+
+    public function kalenderAkademik(): HasMany
+    {
+        return $this->hasMany(KalenderAkademik::class, 'KALENDER_OFFICER', 'id');
     }
 
     // --- *** END OF RELATION AREA *** ---
