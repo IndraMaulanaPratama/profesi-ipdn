@@ -91,6 +91,9 @@ Route::middleware(['auth', 'access'])->group(function () {
     // Kurikulum
     Route::get('admin/akademik/kurikulum', \App\Livewire\Page\Admin\Akademik\Kurikulum::class)->name('admin.kurikulum');
 
+    // Kalender akademik
+    Route::get('admin/akademik/kalender-akademik', \App\Livewire\Page\Admin\Akademik\KalenderAkademik::class)->name('admin.kalender-akademik');
+
     /** tungtung tina ranahna akademik */
 
     // <!-- End Of Admin area !--->
