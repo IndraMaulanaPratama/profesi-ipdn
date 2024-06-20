@@ -3,7 +3,7 @@
 <div>
 
     {{-- Header --}}
-    @livewire('App.LayananPengaduan.Header', [], key('header'))
+    @livewire('App.LayananPengaduan.Header')
 
     <div class="m-4">
 
