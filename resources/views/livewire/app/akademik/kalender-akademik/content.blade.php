@@ -1,42 +1,84 @@
 {{-- Close your eyes. Count to one. That is how long forever feels. --}}
 
 
-<div class="container">
-    {{-- Header Biaya Pendidikan --}}
-    <div class="text-center my-5" style="font-weight: bold; font-size: 24px">
-        Tahun Akademik {{ $tahun_ajaran[0]['tahun'] }} / {{ $tahun_ajaran[1]['tahun'] }} <br />
-        <center>
-            <div class="rounded" style="border: 3px solid #eab940; height: 2px; width:100px; background-color: #eab940;">
-        </center>
-    </div>
+<div class="container py-5">
 
-    {{-- Table --}}
-    <table class="table table-bordered text-center my-5" style="font-size: 20px">
-        <thead class="table-primary">
-            <th>TAHUN</th>
-            <th>TANGGAL / BULAN</th>
-            <th>SEMESTER</th>
-            <th width="45%">KEGIATAN</th>
-        </thead>
+    {{-- Kurikulum Semester 1 --}}
+    <div class="py-4 mx-4">
+        {{-- Header Semester 1 --}}
+        <div class="py-4" style="font-family: 'Roboto Slab'; font-size: 25px; font-weight: bold">
+            Semester 1
+        </div>
 
-        <tbody>
-
-            @foreach ($data as $item)
-                @php
-                    $pemisah = explode('/', $item->KALENDER_TANGGAL);
-                    $tanggal1 = Carbon\Carbon::parse($pemisah[0])->translatedFormat('d F');
-                    $tanggal2 = Carbon\Carbon::parse($pemisah[1])->translatedFormat('d F');
-                @endphp
-
+        {{-- Table Semester 1 --}}
+        <div class="table-responsive mb-4">
+            <table class="table table-hover table-stripped">
                 <tr>
-                    <td rowspan=""> {{ $item->KALENDER_TAHUN_AJARAN }} </td>
-                    <td> {{ $tanggal1 }} - {{ $tanggal2 }} </td>
-                    <td rowspan=""> {{ $item->KALENDER_SEMESTER }} </td>
-                    <td> {{ $item->KALENDER_KEGIATAN }} </td>
+                    <th colspan="3" style="width: 30%; text-align: center;">Tanggal</th>
+                    <th style="padding-left: 2%;">Kegiatan</th>
                 </tr>
-            @endforeach
 
-        </tbody>
-    </table>
+                @foreach ($semester1 as $item)
+                                @php
+                                    $tanggal = explode("/", $item['KALENDER_TANGGAL']);
+                                @endphp
 
+                                <tr>
+                                    <td>
+                                        {{ \Carbon\Carbon::createFromDate($tanggal[0])->locale('id')->isoFormat('D MMMM YYYY') }}
+                                    </td>
+
+                                    <td>-</td>
+
+                                    <td>
+                                        {{ \Carbon\Carbon::createFromDate($tanggal[1])->locale('id')->isoFormat('D MMMM YYYY') }}
+                                    </td>
+
+
+                                    <td style="padding-left: 2%;"> {{ $item['KALENDER_KEGIATAN'] }} </td>
+                                </tr>
+                @endforeach
+
+            </table>
+        </div>
+
+
+        {{-- Header Semester 2 --}}
+        <div class="py-4 mx-4 mt-4" style="font-family: 'Roboto Slab'; font-size: 25px; font-weight: bold">
+            Semester 2
+        </div>
+
+        {{-- Table Semester 2 --}}
+        <div class="table-responsive ">
+            <table class="table table-hover table-stripped">
+                <tr>
+                    <th colspan="3" style="width: 30%; text-align: center;">Tanggal</th>
+                    <th style="padding-left: 2%;">Kegiatan</th>
+                </tr>
+
+                @foreach ($semester2 as $item)
+                                @php
+                                    $tanggal = explode("/", $item['KALENDER_TANGGAL']);
+                                @endphp
+
+                                <tr>
+                                    <td>
+                                        {{ \Carbon\Carbon::createFromDate($tanggal[0])->locale('id')->isoFormat('D MMMM YYYY') }}
+                                    </td>
+
+                                    <td>-</td>
+
+                                    <td>
+                                        {{ \Carbon\Carbon::createFromDate($tanggal[1])->locale('id')->isoFormat('D MMMM YYYY') }}
+                                    </td>
+
+
+                                    <td style="padding-left: 2%;"> {{ $item['KALENDER_KEGIATAN'] }} </td>
+                                </tr>
+                @endforeach
+
+            </table>
+        </div>
+
+    </div>
 </div>
