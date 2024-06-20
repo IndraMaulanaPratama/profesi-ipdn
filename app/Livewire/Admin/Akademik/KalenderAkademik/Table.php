@@ -56,7 +56,7 @@ class Table extends Component
                 }
             )
             ->orderBy('KALENDER_URUTAN')
-            ->paginate(5);
+            ->paginate(10);
 
         return view('livewire.admin.akademik.kalender-akademik.table', ['data' => $data]);
     }
