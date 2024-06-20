@@ -3,10 +3,10 @@
 <div>
 
     {{-- Header --}}
-    @livewire('App.berita.kegiatan.header', [], key('header'))
+    @livewire('App.berita.kegiatan.header')
 
 
     {{-- Content --}}
-    @livewire('App.berita.kegiatan.content', [], key('content'))
+    @livewire('App.berita.kegiatan.content')
 
 </div>
