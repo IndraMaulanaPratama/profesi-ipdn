@@ -29,10 +29,10 @@
 <div>
 
     {{-- Header --}}
-    @livewire('App.Profile.Deskripsi.Header', [], key('header'))
+    @livewire('App.Profile.Deskripsi.Header')
 
 
     {{-- Content --}}
-    @livewire('App.Profile.Deskripsi.Content', [], key('content'))
+    @livewire('App.Profile.Deskripsi.Content')
 
 </div>
