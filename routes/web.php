@@ -1,5 +1,8 @@
 <?php
 
+use App\Livewire\Page\Admin\Akademik\Laboratorium\Index;
+use App\Livewire\Page\Admin\Akademik\Laboratorium\Layanan;
+use App\Livewire\Page\Admin\Akademik\Laboratorium\Pelatihan;
 use App\Livewire\Page\Admin\Assign;
 use App\Livewire\Page\Admin\PengaturanWebsite\PusatPengaduan;
 use App\Livewire\Page\Admin\Role;
@@ -29,45 +32,55 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', Dashboard::class)->name('/');
+/**
+ * Ranahna halaman semah
+ */
+Route::group([], function () {
 
-// Layanan
-Route::get('/layanan-pengaduan', LayananPengaduan::class)->name('layanan-pengaduan');
-Route::get('/layanan-pengaduan/{id}', \App\Livewire\Page\App\LayananPengaduan\Pencarian::class)->name('layanan-pengaduan.pencarian');
-Route::get('/layanan-pengaduan/resume/{id}', \App\Livewire\Page\App\LayananPengaduan\Resume::class)->name('layanan-pengaduan.resume');
+    Route::get('/', Dashboard::class)->name('/');
 
-// Profile Menu
-Route::get('/profile/deskripsi', ProfileDeskripsi::class)->name('profile-deskripsi');
-Route::get('/profile/visi-dan-misi', ProfileVisiMisi::class)->name('profile-visimisi');
-Route::get('/profile/sumber-daya-manusia/struktur-organisasi-tenaga-kependidikan', Sotk::class)->name('profile-sotk');
-Route::get('/profile/sumber-daya-manusia/kerja-sama', KerjaSama::class)->name('profile-KerjaSama');
-Route::get('/profile/sumber-daya-manusia/dosen', Dosen::class)->name('profile-dosen');
-Route::get('/profile/sumber-daya-manusia/tenaga-kependidikan', TenagaKependidikan::class)->name('profile-tenagaKependidikan');
-Route::get('/profile/sumber-daya-manusia/direktur-dari-masa-ke-masa', Direktur::class)->name('profile-direkturDariMasaKeMasa');
-Route::get('/profile/sejarah', Sejarah::class)->name('profile-sejarah');
+    // Layanan
+    Route::get('/layanan-pengaduan', LayananPengaduan::class)->name('layanan-pengaduan');
+    Route::get('/layanan-pengaduan/{id}', \App\Livewire\Page\App\LayananPengaduan\Pencarian::class)->name('layanan-pengaduan.pencarian');
+    Route::get('/layanan-pengaduan/resume/{id}', \App\Livewire\Page\App\LayananPengaduan\Resume::class)->name('layanan-pengaduan.resume');
 
-Route::get('profile/fasilitas/fasilitas', Fasilitas::class)->name('profile-fasilitas.fasilitas');
-Route::get('profile/fasilitas/fasilitas-pendukung', FasilitasPendukung::class)->name('profile-fasilitas.fasilitasPendukung');
+    // Profile Menu
+    Route::get('/profile/deskripsi', ProfileDeskripsi::class)->name('profile-deskripsi');
+    Route::get('/profile/visi-dan-misi', ProfileVisiMisi::class)->name('profile-visimisi');
+    Route::get('/profile/sumber-daya-manusia/struktur-organisasi-tenaga-kependidikan', Sotk::class)->name('profile-sotk');
+    Route::get('/profile/sumber-daya-manusia/kerja-sama', KerjaSama::class)->name('profile-KerjaSama');
+    Route::get('/profile/sumber-daya-manusia/dosen', Dosen::class)->name('profile-dosen');
+    Route::get('/profile/sumber-daya-manusia/tenaga-kependidikan', TenagaKependidikan::class)->name('profile-tenagaKependidikan');
+    Route::get('/profile/sumber-daya-manusia/direktur-dari-masa-ke-masa', Direktur::class)->name('profile-direkturDariMasaKeMasa');
+    Route::get('/profile/sejarah', Sejarah::class)->name('profile-sejarah');
 
-// Akademik
-Route::get('/akademik/laboratorium', Laboratorium::class)->name('akademik-laboratorium');
-Route::get('/akademik/kalender-akademik', KalenderAkademik::class)->name('akademik-kalenderAkademik');
-Route::get('/akademik/biaya-pendidikan', BiayaPendidikan::class)->name('akademik-biayaPendidikan');
-Route::get('/akademik/kurikulum', Kurikulum::class)->name('akademik-kurikulum');
+    Route::get('profile/fasilitas/fasilitas', Fasilitas::class)->name('profile-fasilitas.fasilitas');
+    Route::get('profile/fasilitas/fasilitas-pendukung', FasilitasPendukung::class)->name('profile-fasilitas.fasilitasPendukung');
 
-// Kemahasiswaan
-Route::get('/kemahasiswaan/brosur', Brosur::class)->name('kemahasiswaan-brosur');
-Route::get('/kemahasiswaan/brkegiatan', Kegiatan::class)->name('kemahasiswaan-kegiatan');
+    // Akademik
+    Route::get('/akademik/laboratorium', Laboratorium::class)->name('akademik-laboratorium');
+    Route::get('/akademik/kalender-akademik', KalenderAkademik::class)->name('akademik-kalenderAkademik');
+    Route::get('/akademik/biaya-pendidikan', BiayaPendidikan::class)->name('akademik-biayaPendidikan');
+    Route::get('/akademik/kurikulum', Kurikulum::class)->name('akademik-kurikulum');
 
-// Berita
-Route::get('/berita/pengumuman', Pengumuman::class)->name('berita-pengumuman');
-Route::get('/berita/kegiatan', \App\Livewire\Page\App\Berita\Kegiatan::class)->name('berita-kegiatan');
+    // Kemahasiswaan
+    Route::get('/kemahasiswaan/brosur', Brosur::class)->name('kemahasiswaan-brosur');
+    Route::get('/kemahasiswaan/brkegiatan', Kegiatan::class)->name('kemahasiswaan-kegiatan');
+
+    // Berita
+    Route::get('/berita/pengumuman', Pengumuman::class)->name('berita-pengumuman');
+    Route::get('/berita/kegiatan', \App\Livewire\Page\App\Berita\Kegiatan::class)->name('berita-kegiatan');
+
+});
+/** tungtung tina ranahna halaman semah */
 
 
-// Ranahna nu gaduh akses
+/**
+ * Ranahna Pengelola
+ * Menu, Users, Role, Assign, Pengaturan Website
+ */
 Route::middleware(['auth', 'access'])->group(function () {
 
-    // -- *** Admin Area --- //
     Route::get('/admin/menu', Menu::class)->name('menu');
     Route::get('/admin/users', Users::class)->name('user-manajemen');
     Route::get('/admin/role', Role::class)->name('role-manajemen');
@@ -76,14 +89,25 @@ Route::middleware(['auth', 'access'])->group(function () {
     // Pengaturan Website
     Route::get('/admin/pengaturan-website/pusat-pengaduan/', PusatPengaduan::class)->name('pengaturan.pengaduan');
 
+});
+/** tungtung tina ranahna pengelola */
 
-    // Layanan Pengaduan
+
+/**
+ * Ranahna admin Layanan Pengaduan
+ */
+Route::middleware(['auth', 'access'])->group(function () {
     Route::get('/admin/layanan-pengaduan', \App\Livewire\Page\Admin\LayananPengaduan\LayananPengaduan::class)->name('admin.layanan-pengaduan');
 
-    /**
-     * Ranahna menu akademik:
-     * Biaya Pendidikan, Kurikulum
-     */
+});
+/** tungtung tina ranahna layanan pengaduan */
+
+
+/**
+ * Ranahna admin akademik
+ * Biaya Pendidikan, Kurikulum, Kalender Akademik, Laboratorium
+ */
+Route::middleware(['auth', 'access'])->group(function () {
 
     // Biaya Pendidikan
     Route::get('admin/akademik/biaya-pendidikan', \App\Livewire\Page\Admin\Akademik\BiayaPendidikan::class)->name('admin.biaya-pendidikan');
@@ -94,19 +118,33 @@ Route::middleware(['auth', 'access'])->group(function () {
     // Kalender akademik
     Route::get('admin/akademik/kalender-akademik', \App\Livewire\Page\Admin\Akademik\KalenderAkademik::class)->name('admin.kalender-akademik');
 
-    /** tungtung tina ranahna akademik */
+    // Laboratorium - index
+    Route::get('admin/akademik/laboratorium', Index::class)->name('admin.akademik.laboratorium');
 
-    // <!-- End Of Admin area !--->
-
+    // Laboratorium - Layanan
+    Route::get('admin/akademik/laboratorium/layanan', Layanan::class)->name('admin.akademik.laboratorium.layanan');
+    // Laboratorium - Pelatihan
+    Route::get('admin/akademik/laboratorium/pelatihan', Pelatihan::class)->name('admin.akademik.laboratorium.pelatihan');
 });
+/** tungtung tina ranahna akademik */
 
 
-// Ranahna gapura
-Route::get('/login', Login::class)->middleware('guest')->name('login');
-Route::get('/logout', function () {
-    Auth::logout();
-    request()->session()->invalidate();
-    request()->session()->regenerateToken();
+/**
+ * Ranahna Gapura
+ * Login, Logout
+ */
+Route::group([], function () {
 
-    return redirect('login');
-})->middleware('auth')->name('logout');
+    // Login
+    Route::get('/login', Login::class)->middleware('guest')->name('login');
+
+    // Logout
+    Route::get('/logout', function () {
+        Auth::logout();
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+
+        return redirect('login');
+    })->middleware('auth')->name('logout');
+});
+/** tungtung tina ranahna gapura */
