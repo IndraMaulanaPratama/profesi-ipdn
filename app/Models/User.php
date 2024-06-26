@@ -88,6 +88,17 @@ class User extends Authenticatable
         return $this->hasMany(KalenderAkademik::class, 'KALENDER_OFFICER', 'id');
     }
 
+    public function laboratoriumLayanan(): HasMany
+    {
+        return $this->hasMany(LaboratoriumLayanan::class, 'LAYANAN_OFFICER', 'id');
+    }
+
+
+    public function laboratoriumPelatihan(): HasMany
+    {
+        return $this->hasMany(LaboratoriumPelatihan::class, 'PELATIHAN_OFFICER', 'id');
+    }
+
     // --- *** END OF RELATION AREA *** ---
 
 
