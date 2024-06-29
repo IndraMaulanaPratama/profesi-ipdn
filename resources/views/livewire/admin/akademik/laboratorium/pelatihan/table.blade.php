@@ -1,9 +1,6 @@
 {{-- The whole world belongs to you. --}}
 
 <div class="card p-4">
-    <div class="card-body">
-        <div class="card-title">Pelatihan Laboratorium</div>
-    </div>
 
     <!-- Navigasi Tab-->
     <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist" wire:ignore>
@@ -12,7 +9,7 @@
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="table-tab" data-bs-toggle="tab" data-bs-target="#bordered-home"
                 type="button" role="tab" aria-controls="home" aria-selected="true">
-                Data Table
+                Data Pelatihan
             </button>
         </li>
 
@@ -35,9 +32,9 @@
             <div class="row my-4">
                 {{-- Tambih Data --}}
                 <div class="col-lg-8">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formCreate">
+                    <a href="{{ route('admin.akademik.laboratorium.tambah-pelatihan') }}" class="btn btn-primary">
                         Tambah Data
-                    </button>
+                    </a>
                 </div>
 
                 {{-- Pencarian Data --}}
@@ -58,7 +55,7 @@
                                     <th>Judul Pelatihan</th>
                                     <th style="width: 15%;">Pembuat</th>
                                     <th style="width: 15%;">Tanggal Terbit</th>
-                                    <th class="text-center" colspan="3" style="width: 10%;">Option</th>
+                                    <th class="text-center">Option</th>
                                 </tr>
                             </thead>
 
@@ -67,29 +64,19 @@
                                 @foreach ($data as $item)
                                     <tr>
                                         <td> {{ $item['PELATIHAN_URUTAN'] }} </td>
-                                        <td> {{ $item['PELATIHAN_JUDUL'] }} </td>
+                                        <td>
+                                            <a href="{{ route('admin.akademik.laboratorium.ubah-pelatihan', ['id' => $item['PELATIHAN_ID']]) }}"
+                                                class="link">
+                                                {{ $item['PELATIHAN_JUDUL'] }}
+                                            </a>
+                                        </td>
                                         <td> {{ $item->user->name }} </td>
                                         <td>
                                             {{ \Carbon\Carbon::parse($item['updated_at'])->translatedFormat('d - F - Y') }}
                                         </td>
 
-                                        <td>
-                                            <button type="button" class="btn btn-sm btn-outline-success rounded-pill"
-                                                wire:click="detailData('{{ $item['PELATIHAN_ID'] }}')"
-                                                data-bs-toggle="modal" data-bs-target="#detailData">
-                                                <i class="bi bi-eye"></i>
-                                            </button>
-                                        </td>
-
-                                        <td>
-                                            <button type="button" class="btn btn-sm btn-outline-primary rounded-pill"
-                                                wire:click="updateData('{{ $item['PELATIHAN_ID'] }}')"
-                                                data-bs-toggle="modal" data-bs-target="#formUpdate">
-                                                <i class="bi bi-pencil-square"></i>
-                                            </button>
-                                        </td>
-
-                                        <td>
+                                        {{-- Tombol hapus data --}}
+                                        <td class="text-center">
                                             <button type="button" class="btn rounded-pill btn-sm btn-outline-danger"
                                                 wire:click='deleteData("{{ $item['PELATIHAN_ID'] }}")'
                                                 wire:confirm='Anda yakin akan menghapus data {{ $item['PELATIHAN_JUDUL'] }} ini?'>
