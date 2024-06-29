@@ -1,8 +1,6 @@
 {{-- The whole world belongs to you. --}}
 
-<div class="container">
-
-    <x-admin.components.modal.header id="formUpdate" title='Ubah data pelatihan' />
+<div class="">
 
     <form wire:submit.prevent='updateData' method="POST">
         <div class="row mt-3 g-3">
@@ -10,7 +8,7 @@
             {{-- Id Pelatihan --}}
             <input type="hidden" name="inputId" />
 
-            
+
             {{-- Input Urutan --}}
             <div class="">
                 <x-admin.components.form.input name='inputUrutan' placeholder='Urutan' size=4 />
@@ -24,20 +22,39 @@
 
 
             {{-- Input Deskripsi --}}
-            <div class="">
-                <x-admin.components.form.textarea name='inputDeskripsi' placeholder='Deksripsi' />
+            <div class="" wire:ignore>
+                <textarea id='input'>{!! $inputDeskripsi !!}</textarea>
             </div>
 
+            {{-- Tombol submit sareng reset --}}
+            <div class="text-end">
+                <!-- Tombol Reset -->
+                <a href="{{ route('admin.akademik.laboratorium.pelatihan') }}"
+                    class="btn btn-outline-secondary">Kembali</a>
 
-            {{-- Input Tautan --}}
-            <div class="">
-                <x-admin.components.form.input name='inputTautan' placeholder='Tautan Pelatihan' />
+                <!-- Tombol Submit -->
+                <x-admin.components.form.button type="submit" id="btnSubmit" color="primary" text="simpan" />
             </div>
-
-
-            <x-admin.components.modal.footer />
 
         </div>
     </form>
 
 </div>
+
+<script>
+    $(document).ready(function() {
+        const editor = CKEDITOR.replace('input');
+        editor.on('change', function(event) {
+            @this.set('inputDeskripsi', event.editor.getData());
+        });
+
+        $("#btnSubmit").click(function() {
+            CKEDITOR.instances['input'].setData("");
+        });
+
+        $("#btnReset").click(function() {
+            CKEDITOR.instances['input'].setData("");
+        });
+
+    });
+</script>
