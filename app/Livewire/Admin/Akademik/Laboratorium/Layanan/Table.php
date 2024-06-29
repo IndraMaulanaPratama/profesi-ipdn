@@ -10,7 +10,7 @@ class Table extends Component
     protected $listeners = ['success' => '$refresh'];
 
     public $inputSearch;
-    public $inputJudul, $inputDeskripsi;
+    public $detailJudul, $detailDeskripsi;
 
 
     /**
@@ -24,8 +24,9 @@ class Table extends Component
 
 
             // Proses ngausian modal detail data 
-            $this->inputJudul = $data->LAYANAN_JUDUL;
-            $this->inputDeskripsi = $data->LAYANAN_DESKRIPSI;
+            $this->detailJudul = $data->LAYANAN_JUDUL;
+
+            $this->detailDeskripsi = strip_tags($data->LAYANAN_DESKRIPSI);
 
         } catch (\Throwable $th) {
             // Ngadamel bewara yen data detail gagal dipilari
