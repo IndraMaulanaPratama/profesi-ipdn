@@ -9,7 +9,7 @@ use Livewire\Component;
 
 class Layanan extends Component
 {
-    #[Title('Layanan - Laboratorium Profesi Kepamongprajaan IPDN - Layanan')]
+    #[Title('Layanan - Laboratorium Profesi Kepamongprajaan IPDN')]
     #[Layout("layouts/admin")]
 
     #[On("success")]
