@@ -15,9 +15,6 @@ class Create extends Component
     #[Rule(['required', 'string'])]
     public $inputDeskripsi;
 
-    #[Rule(['required', 'string'])]
-    public $inputTautan;
-
 
     /**
      * Fungsi kanggo mulangkeun kondisi form sakumaha bahara-bahari
@@ -48,7 +45,6 @@ class Create extends Component
                 'PELATIHAN_ID' => uuid_create(4),
                 'PELATIHAN_JUDUL' => $this->inputJudul,
                 'PELATIHAN_DESKRIPSI' => $this->inputDeskripsi,
-                'PELATIHAN_TAUTAN' => $this->inputTautan,
                 'PELATIHAN_KATEGORI' => 'pelatihan',
                 'PELATIHAN_OFFICER' => Auth::user()->id,
                 'PELATIHAN_URUTAN' => $urutan + 1,
