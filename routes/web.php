@@ -2,6 +2,8 @@
 
 use App\Livewire\Page\Admin\Akademik\Laboratorium\Index;
 use App\Livewire\Page\Admin\Akademik\Laboratorium\Layanan;
+use App\Livewire\Page\Admin\Akademik\Laboratorium\Layanan\Create;
+use App\Livewire\Page\Admin\Akademik\Laboratorium\Layanan\Update;
 use App\Livewire\Page\Admin\Akademik\Laboratorium\Pelatihan;
 use App\Livewire\Page\Admin\Assign;
 use App\Livewire\Page\Admin\PengaturanWebsite\PusatPengaduan;
@@ -30,7 +32,8 @@ use App\Livewire\Page\Login;
 use App\Livewire\Page\Menu;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Livewire\Page\Admin\Akademik\Laboratorium\Pelatihan\Create as PelatihanCreate;
+use App\Livewire\Page\Admin\Akademik\Laboratorium\Pelatihan\Update as PelatihanUpdate;
 
 /**
  * Ranahna halaman semah
@@ -123,8 +126,14 @@ Route::middleware(['auth', 'access'])->group(function () {
 
     // Laboratorium - Layanan
     Route::get('admin/akademik/laboratorium/layanan', Layanan::class)->name('admin.akademik.laboratorium.layanan');
+    Route::get('admin/akademik/laboratorium/layanan/tambah-data', Create::class)->name('admin.akademik.laboratorium.tambah-layanan');
+    Route::get('admin/akademik/laboratorium/layanan/ubah-data/{id}', Update::class)->name('admin.akademik.laboratorium.ubah-layanan');
+
     // Laboratorium - Pelatihan
     Route::get('admin/akademik/laboratorium/pelatihan', Pelatihan::class)->name('admin.akademik.laboratorium.pelatihan');
+    Route::get('admin/akademik/laboratorium/pelatihan/tambah-data', PelatihanCreate::class)->name('admin.akademik.laboratorium.tambah-pelatihan');
+    Route::get('admin/akademik/laboratorium/pelatihan/ubah-data/{id}', PelatihanUpdate::class)->name('admin.akademik.laboratorium.ubah-pelatihan');
+
 });
 /** tungtung tina ranahna akademik */
 
