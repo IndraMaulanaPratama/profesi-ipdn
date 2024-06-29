@@ -35,6 +35,7 @@
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> --}}
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('style')
 
 
 </head>
@@ -57,6 +58,8 @@
     {{-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> --}}
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script> --}}
     <script src="{{ asset('assets/admin/js/main.js') }}"></script>
+
+    @stack('script')
 
 </body>
 
