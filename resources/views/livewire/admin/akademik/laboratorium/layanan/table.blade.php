@@ -3,9 +3,9 @@
     <div class="row my-4">
         {{-- Tambih Data --}}
         <div class="col-lg-8">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formCreate">
+            <a href="{{ route('admin.akademik.laboratorium.tambah-layanan') }}" class="btn btn-primary">
                 Tambah Data
-            </button>
+            </a>
         </div>
 
         {{-- Pencarian Data --}}
@@ -26,7 +26,7 @@
                             <th>Judul</th>
                             <th style="width: 15%;">Pembuat</th>
                             <th style="width: 15%;">Tanggal Terbit</th>
-                            <th class="text-center" colspan="3" style="width: 10%;">Option</th>
+                            <th class="text-center" colspan="2" style="width: 5%;">Option</th>
                         </tr>
                     </thead>
 
@@ -34,13 +34,26 @@
 
                         @foreach ($data as $item)
                             <tr>
+                                <!-- Urutan data -->
                                 <td> {{ $item['LAYANAN_URUTAN'] }} </td>
-                                <td> {{ $item['LAYANAN_JUDUL'] }} </td>
+
+                                <!-- Judul -->
+                                <td>
+                                    <a
+                                        href="{{ route('admin.akademik.laboratorium.ubah-layanan', ['id' => $item['LAYANAN_ID']])}}">
+                                        {{ $item['LAYANAN_JUDUL'] }}
+                                    </a>
+                                </td>
+
+                                <!-- Petugas -->
                                 <td> {{ $item->user->name }} </td>
+
+                                <!-- Tanggal Rilis -->
                                 <td>
                                     {{ \Carbon\Carbon::parse($item['updated_at'])->translatedFormat('d - F - Y') }}
                                 </td>
 
+                                <!-- Tombol Detail -->
                                 <td>
                                     <button type="button" class="btn btn-sm btn-outline-success rounded-pill"
                                         wire:click="detailData('{{ $item['LAYANAN_ID'] }}')" data-bs-toggle="modal"
@@ -49,14 +62,7 @@
                                     </button>
                                 </td>
 
-                                <td>
-                                    <button type="button" class="btn btn-sm btn-outline-primary rounded-pill"
-                                        wire:click="updateData('{{ $item['LAYANAN_ID'] }}')" data-bs-toggle="modal"
-                                        data-bs-target="#formUpdate">
-                                        <i class="bi bi-pencil-square"></i>
-                                    </button>
-                                </td>
-
+                                <!-- Tombol Hapus -->
                                 <td>
                                     <button type="button" class="btn rounded-pill btn-sm btn-outline-danger"
                                         wire:click='deleteData("{{ $item['LAYANAN_ID'] }}")'
@@ -86,11 +92,11 @@
             <div class="row g-3 p-3">
 
                 <div class="">
-                    <x-admin.components.form.input name='inputJudul' placeholder='Judul Layanan' disabled='disabled' />
+                    <x-admin.components.form.input name='detailJudul' placeholder='Judul Layanan' disabled='disabled' />
                 </div>
 
                 <div class="">
-                    <x-admin.components.form.textarea name='inputDeskripsi' placeholder='Deskripsi Layanan'
+                    <x-admin.components.form.textarea name='detailDeskripsi' placeholder='Deskripsi Layanan'
                         disabled='disabled' />
                 </div>
 
