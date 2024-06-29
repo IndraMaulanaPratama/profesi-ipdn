@@ -22,9 +22,16 @@ class Update extends Component
     #[Rule(['required', 'integer'])]
     public $inputUrutan;
 
-    #[Rule(['required', 'string'])]
-    public $inputTautan;
 
+    public function mount($id)
+    {
+        $pelatihan = LaboratoriumPelatihan::find($id);
+
+        $this->inputId = $id;
+        $this->inputJudul = $pelatihan['PELATIHAN_JUDUL'];
+        $this->inputDeskripsi = $pelatihan['PELATIHAN_DESKRIPSI'];
+        $this->inputUrutan = $pelatihan['PELATIHAN_URUTAN'];
+    }
 
 
     /**
@@ -66,8 +73,6 @@ class Update extends Component
             $data = [
                 'PELATIHAN_JUDUL' => $this->inputJudul,
                 'PELATIHAN_DESKRIPSI' => $this->inputDeskripsi,
-                'PELATIHAN_URUTAN' => $this->inputUrutan,
-                'PELATIHAN_TAUTAN' => $this->inputTautan,
                 'PELATIHAN_OFFICER' => Auth::user()->id,
             ];
 
