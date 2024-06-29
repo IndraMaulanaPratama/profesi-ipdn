@@ -10,46 +10,33 @@ use Livewire\Component;
 
 class Update extends Component
 {
-    public $inputId;
+    public $updateId;
 
     #[Rule(['required', 'string', 'max:255'])]
-    public $inputJudul;
+    public $updateJudul;
 
     #[Rule(['required', 'string'])]
-    public $inputDeskripsi;
+    public $updateDeskripsi;
 
     #[Rule(['required', 'integer'])]
-    public $inputUrutan;
+    public $updateUrutan;
 
 
-    /**
-     * Fungsi kanggo mulihkeun kondisi form
-     */
-    public function resetForm()
+    public function mount($id)
     {
-        $this->reset();
-    }
+        $layanan = LaboratoriumLayanan::find($id);
 
-
-    /**
-     * Fungsi kanggo ngarespon kintunan id ti tabel
-     */
-    #[On('updateData')]
-    public function updateForm($id)
-    {
-        $data = LaboratoriumLayanan::find($id);
-
-        $this->inputId = $data->LAYANAN_ID;
-        $this->inputJudul = $data->LAYANAN_JUDUL;
-        $this->inputDeskripsi = $data->LAYANAN_DESKRIPSI;
-        $this->inputUrutan = $data->LAYANAN_URUTAN;
+        $this->updateId = $layanan['LAYANAN_ID'];
+        $this->updateJudul = $layanan['LAYANAN_JUDUL'];
+        $this->updateDeskripsi = $layanan['LAYANAN_DESKRIPSI'];
+        $this->updateUrutan = $layanan['LAYANAN_URUTAN'];
     }
 
 
     /**
      * Fungsi Kanggo ngarobih data tabel
      * 
-     * @inputId, @inputJudul, @inputDeskripsi, @inputUrutan
+     * @updateId, @inputJudul, @inputDeskripsi, @inputUrutan
      */
     public function updateData()
     {
@@ -58,14 +45,14 @@ class Update extends Component
         try {
             // Ngadamel inisialisasi data
             $data = [
-                'LAYANAN_JUDUL' => $this->inputJudul,
-                'LAYANAN_DESKRIPSI' => $this->inputDeskripsi,
-                'LAYANAN_URUTAN' => $this->inputUrutan,
+                'LAYANAN_JUDUL' => $this->updateJudul,
+                'LAYANAN_DESKRIPSI' => $this->updateDeskripsi,
+                'LAYANAN_URUTAN' => $this->updateUrutan,
                 'LAYANAN_OFFICER' => Auth::user()->id,
             ];
 
             // Proses ngarobih data
-            LaboratoriumLayanan::where('LAYANAN_ID', $this->inputId)->update($data);
+            LaboratoriumLayanan::where('LAYANAN_ID', $this->updateId)->update($data);
 
             // mulihkeun kondisi form
             $this->reset();
