@@ -53,7 +53,8 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    {{-- <script src="{{ asset('assets/admin/vendor/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/vendor/tinymce/tinymce.min.js') }}"></script>
+    {{-- 
     <script src="{{ asset('assets/admin/vendor/quill/quill.min.js') }}"></script>
     <script src="{{ asset('assets/admin/vendor/simple-datatables/simple-datatables.js') }}"></script>
     <script src="{{ asset('assets/admin/vendor/apexcharts/apexcharts.min.js') }}"></script>
