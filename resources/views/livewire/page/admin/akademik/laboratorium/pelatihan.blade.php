@@ -20,19 +20,7 @@
     <div class="row mt-4">
         @livewire('admin.Akademik.Laboratorium.Pelatihan.Table')
     </div>
-
-
-    {{-- Modal tambih data pelatihan --}}
-    <x-admin.components.modal.modal id="formCreate" size='xl'>
-        @livewire('admin.Akademik.Laboratorium.Pelatihan.create')
-    </x-admin.components.modal.modal>
-
-
-    {{-- Modal ngarobih data pelatihan --}}
-    <x-admin.components.modal.modal id="formUpdate" size='xl'>
-        @livewire('admin.Akademik.Laboratorium.Pelatihan.Update')
-    </x-admin.components.modal.modal>
-
+    
 
     {{-- Modal tambih data sumber data --}}
     <x-admin.components.modal.modal id="formCreateSumber" size='xl'>
