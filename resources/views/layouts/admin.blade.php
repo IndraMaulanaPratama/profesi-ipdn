@@ -39,6 +39,7 @@
   ======================================================== -->
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('style')
 </head>
 
 <body>
@@ -86,6 +87,7 @@
 
     <!-- Template Main JS File -->
     <script src="{{ asset("assets/admin/js/main.js") }}"></script>
+    @stack('script')
 
 </body>
 
