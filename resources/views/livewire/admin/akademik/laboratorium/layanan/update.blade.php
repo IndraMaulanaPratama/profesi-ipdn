@@ -1,35 +1,60 @@
 {{-- Stop trying to control. --}}
 
-<div class="container">
+<div class="">
 
-    <x-admin.components.modal.header id="formUpdate" title='Ubah data layanan' />
 
     <form wire:submit.prevent='updateData' method="POST">
         <div class="row mt-3 g-3">
 
             {{-- Id Layanan --}}
-            <input type="hidden" name="inputId" />
+            <input type="hidden" wire:model="updateId" />
 
-            {{-- Input Judul --}}
+            {{-- Input Urutan --}}
             <div class="">
-                <x-admin.components.form.input name='inputUrutan' placeholder='Urutan' size=4 />
+                <x-admin.components.form.input name='updateUrutan' placeholder='Urutan' size=1 />
             </div>
 
             {{-- Input Judul --}}
             <div class="">
-                <x-admin.components.form.input name='inputJudul' placeholder='Judul Layanan' />
+                <x-admin.components.form.input name='updateJudul' placeholder='Judul Layanan' />
             </div>
 
 
-            {{-- Input Kode --}}
-            <div class="">
-                <x-admin.components.form.textarea name='inputDeskripsi' placeholder='Deksripsi' />
+            {{-- Input Deskripsi --}}
+            {{-- <div class="">
+                <x-admin.components.form.textarea name='updateDeskripsi' placeholder='Deksripsi' />
+            </div> --}}
+
+
+            {{-- Input Deskripsi --}}
+            <div class="" wire:ignore>
+                <textarea id="update-cke"> {!! $updateDeskripsi !!}</textarea>
             </div>
 
+            {{-- Tombol submit sareng reset --}}
+            <div class="text-end">
+                <!-- Tombol Reset -->
+                <a href="{{ route('admin.akademik.laboratorium.layanan') }}" class="btn btn-outline-secondary">Kembali</a>
 
-            <x-admin.components.modal.footer />
+                <!-- Tombol Submit -->
+                <x-admin.components.form.button type="submit" id="btnSubmit" color="primary" text="simpan" />
+            </div>
 
         </div>
     </form>
 
 </div>
+
+<script>
+    $(document).ready(function() {
+        const editor = CKEDITOR.replace('update-cke');
+        editor.on('change', function(event) {
+            @this.set('updateDeskripsi', event.editor.getData());
+        });
+
+        $("#btnReset").click(function() {
+            CKEDITOR.instances['update-cke'].setData("");
+        });
+
+    });
+</script>
