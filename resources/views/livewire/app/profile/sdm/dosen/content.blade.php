@@ -12,7 +12,7 @@
 
     <div class="row justify-content-center align-items-start text-center my-5">
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Dr. Drs. H. Endang Try Setyasih, MM.png') }}" width="251px" height="276px"
+            <img src="{{ asset('assets/homepage/images/Dr. Drs. H. Endang Try Setyasih, MM.png') }}" width="251px" height="276px"
                 alt="" srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Mask group-3.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Frans Dione.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -31,7 +31,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Rectangle 44.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Tjahyo Suprajogo.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -43,7 +43,7 @@
 
     <div class="row justify-content-center align-items-start text-center my-5">
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Mask group-4.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/James Robert Pualillin.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -52,7 +52,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Rectangle 44-2.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Nelson Simanjuntak.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
 
@@ -76,7 +76,7 @@
 
         {{-- Baris 1 --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Rectangle 44-3.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Djohermansyah Djohan.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -85,7 +85,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
 
@@ -95,7 +95,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -104,7 +104,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
 
@@ -115,7 +115,7 @@
 
         {{-- Baris 2 --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -124,7 +124,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
 
@@ -134,7 +134,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -143,7 +143,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
 
@@ -154,7 +154,7 @@
 
         {{-- Baris 3 --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -163,7 +163,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
 
@@ -173,7 +173,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -182,7 +182,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
 
@@ -193,7 +193,7 @@
 
         {{-- Baris 4 --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Drs. Komaedi, M.Si.png') }}" width="251px" height="276px"
+            <img src="{{ asset('assets/homepage/images/Drs. Komaedi, M.Si.png') }}" width="251px" height="276px"
                 alt="" srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
@@ -202,7 +202,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Mask group-2.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Cut Laila Karmila, S.Sos, M.A.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
 
@@ -212,7 +212,7 @@
         </div>
 
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/sotk_hardiyanto_rahman.png') }}" width="251px" height="276px"
+            <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" width="251px" height="276px"
                 alt="" srcset="">
 
             <div class="text-center px-3" style="font-size: 24px; font-weight: bold">
