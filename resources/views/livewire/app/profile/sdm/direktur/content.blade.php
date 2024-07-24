@@ -15,29 +15,29 @@
 
         {{-- &nbsp; --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="370px" height="407px"
-                alt="" srcset="">
+            <img src="{{ asset('assets/homepage/images/Prio Teguh.png') }}" width="370px" height="407px" alt=""
+                srcset="">
 
             <div class="pt-2" style="font-size: 30px; font-weight: bold;">
-                &nbsp;
+                Dr. Prio Teguh, S.H., M.Si
             </div>
 
             <div class="pt-2" style="font-size: 20px; font-weight: bold; color:#063A69;">
-                &nbsp;
+                2015 - 2016
             </div>
         </div>
 
         {{-- &nbsp; --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="370px" height="407px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Margaretha umbekwan.png') }}" width="370px" height="407px"
+                alt="" srcset="">
 
             <div class="pt-2" style="font-size: 30px; font-weight: bold;">
-                &nbsp;
+                Dr. Margaretha Rumbekwan, S.Sos., M.Si
             </div>
 
             <div class="pt-2" style="font-size: 20px; font-weight: bold; color:#063A69;">
-                &nbsp;
+                2016 - 2021
             </div>
         </div>
 
@@ -47,29 +47,29 @@
 
         {{-- &nbsp --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="370px" height="407px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Sampara Lukman.png') }}" width="370px" height="407px"
+                alt="" srcset="">
 
             <div class="pt-2" style="font-size: 30px; font-weight: bold;">
-                &nbsp
+                Dr. Sampara Lukman, MA
             </div>
 
             <div class="pt-2" style="font-size: 20px; font-weight: bold; color:#063A69;">
-                &nbsp;
+                2021 - 2023
             </div>
         </div>
 
         {{-- Dr. Drs. H. Endang Try Setyasih, MM --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Dr. Drs. H. Endang Try Setyasih, MM.png') }}" width="370px" height="407px"
-                alt="" srcset="">
+            <img src="{{ asset('assets/homepage/images/Dr. Drs. H. Endang Try Setyasih, MM.png') }}" width="370px"
+                height="407px" alt="" srcset="">
 
             <div class="pt-2" style="font-size: 30px; font-weight: bold;">
                 Dr. Dra. Hj. Endang Try Setyasih, MM
             </div>
 
             <div class="pt-2" style="font-size: 20px; font-weight: bold; color:#063A69;">
-                2023
+                2023 - Sekarang
             </div>
         </div>
 
