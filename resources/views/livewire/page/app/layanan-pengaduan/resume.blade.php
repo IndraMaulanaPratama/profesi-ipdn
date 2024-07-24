@@ -68,10 +68,21 @@
 
                             <tr>
                                 <td colspan="3">
-                                    <p class="my-4" style="text-indent: 1cm; text-align: justify;">
+                                    <p class="my-4" style="text-align: justify;">
                                         {{ $data['pengaduan'] }}
                                     </p>
 
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Bukti</td>
+                                <td>:</td>
+                                <td>
+                                    <a href="{{ asset('file_pengaduan') . '/' . $data['lampiran'] }}" target="_blank" style="text-decoration: underline">
+                                        Lihat lampiran
+                                    </a>
                                 </td>
                             </tr>
 
