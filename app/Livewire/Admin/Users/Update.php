@@ -17,7 +17,7 @@ class Update extends Component
     public $id, $name, $email, $password, $role;
 
     #[Rule('image|max:1024')]
-    public $photo, $sign;
+    public $photo;
 
 
     /**
@@ -63,32 +63,23 @@ class Update extends Component
     {
         try {
             $photoName = $this->fileName($this->photo);
-            $signName = $this->fileName($this->sign);
-            // null != $this->photo ? $photoName = Carbon::now()->timestamp . '-' . $this->photo->getClientOriginalName() : $photoName = null;
-            // null != $this->sign ? $signName = Carbon::now()->timestamp . '-' . $this->sign->getClientOriginalName() : $signName = null;
-
 
             $data = [
                 'name' => $this->name,
                 'email' => $this->email,
                 'photo' => str_replace(" ", "", $photoName),
-                'sign' => str_replace(" ", "", $signName),
                 'user_role' => $this->role,
             ];
 
             if (null == $this->photo) {
                 unset($data['photo']);
             }
-            if (null == $this->sign) {
-                unset($data['sign']);
-            }
             if (null == $this->role) {
                 unset($data['user_role']);
             }
 
             // Miwarang livewire kanggo nyimpen data dumasar kana katangtosan nu tos di damel
-            $this->photo != null ? $this->photo->storeAs('foto_pegawai', str_replace(" ", "", $photoName), 'public') : null;
-            $this->sign != null ? $this->sign->storeAs('tanda_tangan', str_replace(" ", "", $signName), 'public') : null;
+            $this->photo?->storeAs('foto_pegawai', $data['photo'], 'public');
 
             User::where('id', $this->id)->update($data);
             $this->dispatch('user-updated', 'Data ' . $data['name'] . ' berhasil diperbaharui');
@@ -96,7 +87,6 @@ class Update extends Component
         } catch (\Throwable $th) {
             $this->dispatch('failed-updating-user', '' . $th->getMessage());
         }
-
     }
 
 
