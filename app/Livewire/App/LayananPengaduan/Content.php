@@ -78,7 +78,7 @@ class Content extends Component
 
                 endif;
 
-                // $this->inputFile != null ? $this->inputFile->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public') : null;
+                $this->inputFile?->storeAs('file_pengaduan', str_replace(" ", "", $fileName), 'public');
 
                 // Proses ngalebetkeun data formulir ka database
                 Pengaduan::create($data);
