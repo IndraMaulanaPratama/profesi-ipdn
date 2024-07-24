@@ -53,7 +53,7 @@ class testMail extends Mailable
     //     return [];
     // }
 
-    public function build()
+    public function build(): self // Tambahkan tipe pengembalian
     {
         return $this->view('emails.test-mail', ['pengaduan' => $this->pengaduan]);
     }
