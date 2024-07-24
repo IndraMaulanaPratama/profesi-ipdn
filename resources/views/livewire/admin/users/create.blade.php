@@ -37,7 +37,7 @@
 
 
                         {{-- Input Tanda Tangan --}}
-                        <x-admin.components.form.file name='sign' placeholder="Tanda Tangan" />
+                        {{-- <x-admin.components.form.file name='sign' placeholder="Tanda Tangan" /> --}}
 
 
                         {{-- Input Role --}}
