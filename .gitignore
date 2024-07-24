@@ -4,6 +4,6 @@ composer.lock
 package-lock.json
 public/hot
 vendor
-public
+public/*
 public/foto_pegawai
 public/storage
