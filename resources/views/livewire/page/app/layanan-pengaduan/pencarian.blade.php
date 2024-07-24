@@ -85,20 +85,20 @@
                                 <tr>
                                     <td colspan="3">
                                         &nbsp;
-                                        <p style="text-align: justify; text-indent: 20px;">
+                                        <p style="text-align: justify;">
                                             {{ $data['pengaduan'] }}
                                         </p>
 
                                     </td>
                                 </tr>
 
-                                <tr hidden>
+                                <tr>
                                     <td>Bukti</td>
                                     <td>:</td>
                                     <td>
-                                        <a href="{{ env('APP_URL') . '/file_pengaduan/' . $data['lampiran'] }}"
+                                        <a href="{{ asset('file_pengaduan') . '/' . $data['lampiran'] }}"
                                             target="_blank" class="link" style="text-decoration: underline">
-                                            {{ $data['lampiran'] }}
+                                            Lihat Lampiran
                                         </a>
                                     </td>
                                 </tr>
