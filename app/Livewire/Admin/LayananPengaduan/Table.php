@@ -72,7 +72,7 @@ class Table extends Component
 
 
 
-    public function updatedetailAttachment($file)
+    public function updateDetailAttachment($file)
     {
         $this->detailAttachment = $file;
     }
@@ -96,7 +96,7 @@ class Table extends Component
                 $this->detailSolution = $pengaduan->PENGADUAN_SOLUTION;
                 $this->detailAttachment = $pengaduan->PENGADUAN_ATTACHMENT;
 
-                $this->updatedetailAttachment($pengaduan->PENGADUAN_ATTACHMENT);
+                $this->updateDetailAttachment($pengaduan->PENGADUAN_ATTACHMENT);
             endif;
 
             // dd($this->detailAttachment);
