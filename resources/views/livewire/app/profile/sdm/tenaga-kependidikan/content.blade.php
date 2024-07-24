@@ -15,8 +15,8 @@
 
         {{-- Dr. Drs. H. Endang Try Setyasih, MM --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Dr. Drs. H. Endang Try Setyasih, MM.png') }}" width="251px" height="276px"
-                alt="" srcset="">
+            <img src="{{ asset('assets/homepage/images/Dr. Drs. H. Endang Try Setyasih, MM.png') }}" width="251px"
+                height="276px" alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Dr. Dra. Hj. Endang Try Setyasih, MM
@@ -29,8 +29,8 @@
 
         {{-- Drs. Komaedi, M.Si --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Drs. Komaedi, M.Si.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Drs. Komaedi, M.Si.png') }}" width="251px" height="276px"
+                alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Drs. Komaedi, M.Si
@@ -60,7 +60,7 @@
 
         {{-- Hardiyanto Rahman, S.IP, M.Si --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/sotk_hardiyanto_rahman.png') }}" width="251px" height="276px"
+            <img src="{{ asset('assets/homepage/images/sotk_hardiyanto_rahman.png') }}" width="251px" height="276px"
                 alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
@@ -74,7 +74,7 @@
 
         {{-- Fransina Makdalena Paulla Nusmesse, S.Sos, M.Si --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Group 115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group 115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
@@ -88,8 +88,8 @@
 
         {{-- Cut Laila Karmila, S.Sos, M.A --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Mask group-2.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Cut Laila Karmila, S.Sos, M.A.png') }}" width="251px"
+                height="276px" alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Cut Laila Karmila, S.Sos, M.A
@@ -118,8 +118,8 @@
 
         {{-- Muhammad Hanif Nashrullah, S.STP --}}
         <div class="col-3">
-            <img src="{{ asset('foto_pegawai/Muhammad Hanif Nashrullah, S.STP.png') }}" width="251px" height="276px"
-                alt="" srcset="">
+            <img src="{{ asset('assets/homepage/images/Muhammad Hanif Nashrullah, S.STP.png') }}" width="251px"
+                height="276px" alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Muhammad Hanif Nashrullah, S.STP
@@ -149,7 +149,7 @@
 
         {{-- Dr. Ngalimun, S.Sos, M.Si --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
@@ -163,8 +163,8 @@
 
         {{-- Dewi Astuti, M.K.M --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Dewi Astuti, M.K.M.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Dewi Astuti, M.K.M.png') }}" width="251px" height="276px"
+                alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Dewi Astuti, M.K.M
@@ -175,26 +175,27 @@
             </div> --}}
         </div>
 
-        {{-- Wahyu Santo Nugoro, SE --}}
+
+        {{-- Samsir, SE --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
+                alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Wahyu Santo Nugoro, SE
+                Samsir, SE
             </div>
 
             {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Perpustakaan
-            </div> --}}
+        Kepala Unit Penjaminan Mutu
+    </div> --}}
         </div>
 
 
 
         {{-- Meylinda Fitria Chairani, S.Psi --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Meylinda Fitria Chairani, S.Psi.png') }}" width="251px" height="276px"
-                alt="" srcset="">
+            <img src="{{ asset('assets/homepage/images/Meylinda Fitria Chairani, S.Psi.png') }}" width="251px"
+                height="276px" alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Meylinda Fitria Chairani, S.Psi
@@ -207,7 +208,7 @@
 
         {{-- Yusi Audya, S.STP --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Yusi Audya, S.STP.png') }}" width="251px" height="276px"
+            <img src="{{ asset('assets/homepage/images/Yusi Audya, S.STP.png') }}" width="251px" height="276px"
                 alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
@@ -219,55 +220,11 @@
             </div> --}}
         </div>
 
-        {{-- Samsir, SE --}}
-        <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
-
-            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Samsir, SE
-            </div>
-
-            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Penjaminan Mutu
-            </div> --}}
-        </div>
-
-
-
-
-        {{-- Farieta Safira Kalpika Putri, S.STP --}}
-        <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Farieta Safira Kalpika Putri, S.STP.png') }}" width="251px"
-                height="276px" alt="" srcset="">
-
-            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Farieta Safira Kalpika Putri, S.STP
-            </div>
-
-            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Perpustakaan
-            </div> --}}
-        </div>
-
-        {{-- Ade Ria Safitri, S.STP, M.Tr.IP --}}
-        <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Ade Ria Safitri, S.STP, M.Tr.IP.png') }}" width="251px" height="276px"
-                alt="" srcset="">
-
-            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Ade Ria Safitri, S.STP, M.Tr.IP
-            </div>
-
-            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Perpustakaan
-            </div> --}}
-        </div>
 
         {{-- Vatia Arda Putri, S.Kom --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
+                alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Vatia Arda Putri, S.Kom
@@ -279,29 +236,28 @@
         </div>
 
 
-
-
         {{-- Deddy S. P. Maramis, S.STP --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Deddy S. P. Maramis, S.STP.png') }}" width="251px" height="276px"
-                alt="" srcset="">
+            <img src="{{ asset('assets/homepage/images/Deddy S. P. Maramis, S.STP.png') }}" width="251px"
+                height="276px" alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Deddy S. P. Maramis, S.STP
             </div>
 
             {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Perpustakaan
-            </div> --}}
+        Kepala Unit Perpustakaan
+    </div> --}}
         </div>
 
-        {{-- Muhammad Imran Syukri, SE --}}
+
+        {{-- Ade Ria Safitri, S.STP, M.Tr.IP --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Ade Ria Safitri, S.STP, M.Tr.IP.png') }}" width="251px"
+                height="276px" alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Muhammad Imran Syukri, SE
+                Ade Ria Safitri, S.STP, M.Tr.IP
             </div>
 
             {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
@@ -309,10 +265,41 @@
             </div> --}}
         </div>
 
+
+        {{-- Budi Harijadi --}}
+        <div class="col-4">
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
+                alt="" srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Budi Harijadi
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+        Kepala Unit Perpustakaan
+    </div> --}}
+        </div>
+
+
+        {{-- Muhammad Imran Syukri, SE --}}
+        <div class="col-4">
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
+                alt="" srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Muhammad Imran Syukri, SE
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+        Kepala Unit Perpustakaan
+    </div> --}}
+        </div>
+
+
         {{-- Suryanto --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px"
+                alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Suryanto
@@ -324,40 +311,10 @@
         </div>
 
 
-
-
-        {{-- Budi Harijadi --}}
-        <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
-                srcset="">
-
-            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Budi Harijadi
-            </div>
-
-            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                Kepala Unit Perpustakaan
-            </div> --}}
-        </div>
-
-        {{-- Muhammad Deandie Noufal Enrico, S.Tr.IP --}}
-        <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Muhammad Deandie Noufal Enrico, S.Tr.IP.png') }}" width="251px" height="276px" alt=""
-                srcset="">
-
-            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
-                Muhammad Deandie Noufal Enrico, S.Tr.IP
-            </div>
-
-            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
-                        Kepala Unit Perpustakaan
-                    </div> --}}
-        </div>
-
         {{-- Aisyah Hafira Rizal, S.Tr.IP --}}
         <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Aisyah Hafira Rizal, S.Tr.IP.png') }}" width="251px" height="276px" alt=""
-                srcset="">
+            <img src="{{ asset('assets/homepage/images/Aisyah Hafira Rizal, S.Tr.IP.png') }}" width="251px"
+                height="276px" alt="" srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
                 Aisyah Hafira Rizal, S.Tr.IP
@@ -369,12 +326,25 @@
         </div>
 
 
+        {{-- Muhammad Deandie Noufal Enrico, S.Tr.IP --}}
+        <div class="col-4">
+            <img src="{{ asset('assets/homepage/images/Muhammad Deandie Noufal Enrico, S.Tr.IP.png') }}"
+                width="251px" height="276px" alt="" srcset="">
+
+            <div class="pt-2" style="font-size: 24px; font-weight: bold;">
+                Muhammad Deandie Noufal Enrico, S.Tr.IP
+            </div>
+
+            {{-- <div class="pt-2 px-4" style="font-size: 16px; font-weight: bold; color:#063A69;">
+                        Kepala Unit Perpustakaan
+                    </div> --}}
+        </div>
 
 
 
         {{-- &nbsp; --}}
         {{-- <div class="col-4">
-            <img src="{{ asset('foto_pegawai/Group-115.png') }}" width="251px" height="276px" alt=""
+            <img src="{{ asset('assets/homepage/images/Group-115.png') }}" width="251px" height="276px" alt=""
                 srcset="">
 
             <div class="pt-2" style="font-size: 24px; font-weight: bold;">
