@@ -81,7 +81,7 @@
                                         </td>
 
                                         <td scope="col">{{ Str::substr($item['PENGADUAN_VALUE'], 0, 70) }}
-                                                ...
+                                            ...
                                         </td>
                                         <td> {{ $item['PENGADUAN_OFFICER'] === 1 ? null : $item->user->name }} </td>
                                         {{-- Option Row --}}
