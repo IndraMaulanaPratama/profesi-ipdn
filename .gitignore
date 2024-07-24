@@ -4,6 +4,7 @@ composer.lock
 package-lock.json
 public/hot
 vendor
+public/build
 public/assets
 public/file_pengaduan
 public/gambar
