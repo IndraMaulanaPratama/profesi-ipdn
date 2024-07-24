@@ -42,7 +42,7 @@ class Create extends Component
     public $confirm_password;
 
     #[Rule('image|max:1024')]
-    public $photo, $sign;
+    public $photo;
 
 
 
@@ -63,6 +63,17 @@ class Create extends Component
 
 
 
+    // Fungsi kanggo nangtoskeun nami file
+    public function fileName($file)
+    {
+        if (null != $file) {
+            return Carbon::now()->timestamp . '-' . $this->photo->getClientOriginalName();
+        } else {
+            return null;
+        }
+    }
+
+
 
     public function createData()
     {
@@ -70,11 +81,7 @@ class Create extends Component
         try {
             $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
             $idUser = uuid_create(4); // <!-- Ngadamel id nu unik kanggo database
-            $this->photo != null ? $photoName = $timestamp . '-' . $this->photo->getClientOriginalName() : $photoName = "defaultPhoto.jpeg";
-            $this->sign != null ? $signName = $timestamp . '-' . $this->sign->getClientOriginalName() : $signName = "defaultSign.jpeg";
-
-            // $photoName = $this->photo == null ? 'defaultPhoto.jpg' : $timestamp . '-' . $this->photo->getClientOriginalName();
-            // $signName = $this->sign == null ? 'defaultSign.jpg' : $timestamp . '-' . $this->sign->getClientOriginalName();
+            $photoName = $this->fileName($this->photo);
 
             // Ngadamel inisialisasi data kangga database user
             $data = [
@@ -84,7 +91,6 @@ class Create extends Component
                 'email_verified_at' => $timestamp,
                 'password' => bcrypt($this->password),
                 'photo' => str_replace(" ", "", $photoName),
-                'sign' => str_replace(" ", "", $signName),
                 'user_role' => $this->role,
             ];
 
@@ -94,11 +100,9 @@ class Create extends Component
 
             // Maca alamat asli tinu data anu bakal disimpen
             // $photoPath = $this->photo->getRealPath();
-            // $photoSign = $this->sign->getRealPath();
 
             // Miwarang livewire kanggo nyimpen data dumasar kana katangtosan nu tos di damel
-            $this->photo != null ? $this->photo->storeAs('foto_pegawai', str_replace(" ", "", $photoName), 'public') : null;
-            $this->sign != null ? $this->sign->storeAs('tanda_tangan', str_replace(" ", "", $signName), 'public') : null;
+            $this->photo?->storeAs('foto_pegawai', str_replace(" ", "", $photoName), 'public');
 
             // Proses nyimpen data nu dikintun ka lebet database
             User::create($data);
