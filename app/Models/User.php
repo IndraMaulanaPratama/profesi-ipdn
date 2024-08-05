@@ -82,6 +82,10 @@ class User extends Authenticatable
         return $this->hasMany(Kurikulum::class, 'KURIKULUM_OFFICER', 'id');
     }
 
+    public function kegiatan(): HasMany
+    {
+        return $this->hasMany(Kegiatan::class, 'KEGIATAN_OFFICER', 'id');
+    }
 
     public function kalenderAkademik(): HasMany
     {
