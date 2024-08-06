@@ -101,7 +101,6 @@ Route::middleware(['auth', 'access'])->group(function () {
  */
 Route::middleware(['auth', 'access'])->group(function () {
     Route::get('/admin/layanan-pengaduan', \App\Livewire\Page\Admin\LayananPengaduan\LayananPengaduan::class)->name('admin.layanan-pengaduan');
-
 });
 /** tungtung tina ranahna layanan pengaduan */
 
@@ -136,6 +135,24 @@ Route::middleware(['auth', 'access'])->group(function () {
 
 });
 /** tungtung tina ranahna akademik */
+
+
+
+/**
+ * Ranahna berita
+ * kegiatan
+ */
+Route::middleware(['auth', 'access'])->group(function () {
+
+    // kegiatan
+    Route::get('admin/berita/kegiatan', \App\Livewire\Page\Admin\Berita\Kegiatan\Kegiatan::class)->name('admin.berita.kegiatan');
+
+    // pengumuman
+    Route::get('admin/berita/pengumuman', \App\Livewire\Page\Admin\Berita\Kegiatan\Kegiatan::class)->name('admin.berita.pengumuman');
+
+});
+/** tungtung tina ranahna Berita */
+
 
 
 /**
