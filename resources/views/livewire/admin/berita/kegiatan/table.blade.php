@@ -38,14 +38,15 @@
 
                         @foreach ($data as $item)
                             <tr>
-                                <!-- Urutan data -->
-                                <td> {{ $item['LAYANAN_URUTAN'] }} </td>
+
+                                {{-- Nomor Table --}}
+                                <th scope="row"> {{ $loop->index + $data->firstItem() }} </th>
 
                                 <!-- Judul -->
                                 <td>
                                     <a
-                                        href="{{ route('admin.akademik.laboratorium.ubah-layanan', ['id' => $item['LAYANAN_ID']])}}">
-                                        {{ $item['LAYANAN_JUDUL'] }}
+                                        href="{{ route('admin.akademik.laboratorium.ubah-layanan', ['id' => $item['KEGIATAN_ID']]) }}">
+                                        {{ $item['KEGIATAN_JUDUL'] }}
                                     </a>
                                 </td>
 
@@ -57,25 +58,14 @@
                                     {{ \Carbon\Carbon::parse($item['updated_at'])->translatedFormat('d - F - Y') }}
                                 </td>
 
-                                <!-- Tombol Detail -->
-                                <td>
-                                    <button type="button" class="btn btn-sm btn-outline-success rounded-pill"
-                                        wire:click="detailData('{{ $item['LAYANAN_ID'] }}')" data-bs-toggle="modal"
-                                        data-bs-target="#detailData">
-                                        <i class="bi bi-eye"></i>
-                                    </button>
-                                </td>
-
                                 <!-- Tombol Hapus -->
                                 <td>
                                     <button type="button" class="btn rounded-pill btn-sm btn-outline-danger"
-                                        wire:click='deleteData("{{ $item['LAYANAN_ID'] }}")'
-                                        wire:confirm='Anda yakin akan menghapus data {{ $item['LAYANAN_JUDUL'] }} ini?'>
+                                        wire:click='deleteData("{{ $item['KEGIATAN_ID'] }}")'
+                                        wire:confirm='Anda yakin akan menghapus data {{ $item['KEGIATAN_JUDUL'] }} ini?'>
                                         <i class="bi bi-trash3-fill"></i>
                                     </button>
                                 </td>
-
-                                </button>
                             </tr>
                         @endforeach
                     </tbody>

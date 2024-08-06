@@ -146,6 +146,7 @@ Route::middleware(['auth', 'access'])->group(function () {
 
     // kegiatan
     Route::get('admin/berita/kegiatan', \App\Livewire\Page\Admin\Berita\Kegiatan\Kegiatan::class)->name('admin.berita.kegiatan');
+    Route::get('admin/berita/kegiatan/tambah-data', \App\Livewire\Page\Admin\Berita\Kegiatan\Kegiatan::class)->name('admin.berita.kegiatan.tambah');
 
     // pengumuman
     Route::get('admin/berita/pengumuman', \App\Livewire\Page\Admin\Berita\Kegiatan\Kegiatan::class)->name('admin.berita.pengumuman');
