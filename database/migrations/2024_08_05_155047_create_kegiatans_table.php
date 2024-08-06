@@ -19,9 +19,9 @@ return new class extends Migration {
             $table->timestamps();
             $table->softDeletes();
 
-            $table->unsignedBigInteger('PELATIHAN_OFFICER');
-            $table->foreign('PELATIHAN_OFFICER')->references('id')->on('users');
-            $table->unsignedBigInteger('PELATIHAN_OFFICER', 255)->nullable()->change()->comment('Foreign Key ke table user sebagai petugas');
+            $table->unsignedBigInteger('KEGIATAN_OFFICER');
+            $table->foreign('KEGIATAN_OFFICER')->references('id')->on('users');
+            $table->unsignedBigInteger('KEGIATAN_OFFICER', 255)->nullable()->change()->comment('Foreign Key ke table user sebagai petugas');
         });
     }
 
