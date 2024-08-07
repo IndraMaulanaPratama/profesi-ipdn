@@ -12,7 +12,7 @@ class Content extends Component
 {
     public function render()
     {
-        $data = Kegiatan::orderBy('updated_at', 'ASC')->get();
+        $data = Kegiatan::orderBy('updated_at', 'desc')->get();
         return view('livewire.app.berita.kegiatan.content', ['data' => $data]);
     }
 }
