@@ -10,5 +10,6 @@ package-lock.json
 /public/tanda_tangan
 /public/foto_pegawai
 /public/storage
+/public/thumbnail_berita
 .DS_Store
 /vendor
