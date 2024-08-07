@@ -8,11 +8,14 @@ use Livewire\Component;
 
 #[Title("Kegiatan PPPKp - Profesi Kepamongprajaan IPDN")]
 
-class Content extends Component
+class Deatail extends Component
 {
+    public $id;
+
     public function render()
     {
-        $data = Kegiatan::get();
-        return view('livewire.app.berita.kegiatan.content', ['data' => $data]);
+        $data = Kegiatan::find($this->id)->first();
+
+        return view('livewire.app.berita.kegiatan.deatail', ['data' => $data]);
     }
 }
