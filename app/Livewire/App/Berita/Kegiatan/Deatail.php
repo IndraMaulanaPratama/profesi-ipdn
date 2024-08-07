@@ -12,9 +12,13 @@ class Deatail extends Component
 {
     public $id;
 
+    public function mount($id){
+        $this->id = $id;
+    }
+
     public function render()
     {
-        $data = Kegiatan::find($this->id)->first();
+        $data = Kegiatan::find($this->id);
 
         return view('livewire.app.berita.kegiatan.deatail', ['data' => $data]);
     }
