@@ -13,6 +13,7 @@ use App\Livewire\Page\App\Akademik\BiayaPendidikan;
 use App\Livewire\Page\App\Akademik\KalenderAkademik;
 use App\Livewire\Page\App\Akademik\Kurikulum;
 use App\Livewire\Page\App\Akademik\Laboratorium;
+use App\Livewire\Page\App\Berita\Detail;
 use App\Livewire\Page\App\Berita\Pengumuman;
 use App\Livewire\Page\App\Dashboard;
 use App\Livewire\Page\App\Kemahasiswaan\Brosur;
@@ -75,6 +76,8 @@ Route::group([], function () {
     // Berita
     Route::get('/berita/pengumuman', Pengumuman::class)->name('berita-pengumuman');
     Route::get('/berita/kegiatan', \App\Livewire\Page\App\Berita\Kegiatan::class)->name('berita-kegiatan');
+    Route::get('/berita/kegiatan/detail/{id}', Detail::class)->name('berita-kegiatan.detail');
+
 
 });
 /** tungtung tina ranahna halaman semah */
@@ -149,8 +152,6 @@ Route::middleware(['auth', 'access'])->group(function () {
     // kegiatan
     Route::get('admin/berita/kegiatan', TableBeritaKegiatan::class)->name('admin.berita.kegiatan');
     Route::get('admin/berita/kegiatan/tambah-data', CreateBeritaKegiatan::class)->name('admin.berita.kegiatan.tambah');
-
-    // pengumuman
 
 });
 /** tungtung tina ranahna Berita */
