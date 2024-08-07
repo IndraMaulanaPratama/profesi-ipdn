@@ -6,7 +6,7 @@
     <div class="row my-4">
         {{-- Tambih Data --}}
         <div class="col-lg-8">
-            <a href="{{ route('admin.akademik.laboratorium.tambah-layanan') }}" class="btn btn-primary">
+            <a href="{{ route('admin.berita.kegiatan.tambah') }}" class="btn btn-primary">
                 Tambah Data
             </a>
         </div>
