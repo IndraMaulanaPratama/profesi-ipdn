@@ -34,6 +34,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Page\Admin\Akademik\Laboratorium\Pelatihan\Create as PelatihanCreate;
 use App\Livewire\Page\Admin\Akademik\Laboratorium\Pelatihan\Update as PelatihanUpdate;
+use App\Livewire\Page\Admin\Berita\Kegiatan\Kegiatan as TableBeritaKegiatan;
+use App\Livewire\Page\Admin\Berita\Kegiatan\Create as CreateBeritaKegiatan;
 
 /**
  * Ranahna halaman semah
@@ -145,11 +147,10 @@ Route::middleware(['auth', 'access'])->group(function () {
 Route::middleware(['auth', 'access'])->group(function () {
 
     // kegiatan
-    Route::get('admin/berita/kegiatan', \App\Livewire\Page\Admin\Berita\Kegiatan\Kegiatan::class)->name('admin.berita.kegiatan');
-    Route::get('admin/berita/kegiatan/tambah-data', \App\Livewire\Page\Admin\Berita\Kegiatan\Kegiatan::class)->name('admin.berita.kegiatan.tambah');
+    Route::get('admin/berita/kegiatan', TableBeritaKegiatan::class)->name('admin.berita.kegiatan');
+    Route::get('admin/berita/kegiatan/tambah-data', CreateBeritaKegiatan::class)->name('admin.berita.kegiatan.tambah');
 
     // pengumuman
-    Route::get('admin/berita/pengumuman', \App\Livewire\Page\Admin\Berita\Kegiatan\Kegiatan::class)->name('admin.berita.pengumuman');
 
 });
 /** tungtung tina ranahna Berita */
