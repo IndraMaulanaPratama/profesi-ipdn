@@ -111,7 +111,7 @@
                                 Papua Barat Daya dan Kabupaten Malang.
                             </p>
 
-                            <p style="color: #063A69; text-decoration: underline; font-size: 12px;">
+                            <p hidden style="color: #063A69; text-decoration: underline; font-size: 12px;">
                                 <a href="#">Baca Selengkapnya</a>
                             </p>
                         </div>
@@ -141,7 +141,7 @@
                                 XII kelas bratha tahun akademik 2023/2024.
                             </p>
 
-                            <p style="color: #063A69; text-decoration: underline; font-size: 12px;">
+                            <p hidden style="color: #063A69; text-decoration: underline; font-size: 12px;">
                                 <a href="#">Baca Selengkapnya</a>
                             </p>
 
@@ -172,7 +172,7 @@
                                 Pendidikan Profesi Kepamongprajaan Dr. Dra. Hj. Endang Try Setyasih.
                             </p>
 
-                            <p style="color: #063A69; text-decoration: underline; font-size: 12px;">
+                            <p hidden style="color: #063A69; text-decoration: underline; font-size: 12px;">
                                 <a href="#">Baca Selengkapnya</a>
                             </p>
 
@@ -183,7 +183,7 @@
 
 
                 {{-- See More --}}
-                <div class="py-4">
+                <div class="py-4" hidden>
                     <center>
                         <a href="" class="link">Lihat Selengkapnya ...</a>
                     </center>
