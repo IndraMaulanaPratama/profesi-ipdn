@@ -41,7 +41,7 @@ class Table extends Component
                     return $query->where('KEGIATAN_JUDUL', 'LIKE', '%' . $search . '%');
                 }
             )
-            ->orderBy('updated_at')
+            ->orderBy('updated_at', 'desc')
             ->paginate();
 
         return view('livewire.admin.berita.kegiatan.table', ['data' => $data]);

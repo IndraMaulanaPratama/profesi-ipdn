@@ -45,7 +45,7 @@
                                 <!-- Judul -->
                                 <td>
                                     <a
-                                        href="{{ route('admin.akademik.laboratorium.ubah-layanan', ['id' => $item['KEGIATAN_ID']]) }}">
+                                        href="{{ route('admin.berita.kegiatan.detail', ['id' => $item['KEGIATAN_ID']]) }}">
                                         {{ $item['KEGIATAN_JUDUL'] }}
                                     </a>
                                 </td>
