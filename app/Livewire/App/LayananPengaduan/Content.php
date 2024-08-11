@@ -7,6 +7,7 @@ use App\Models\Pengaduan;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
+use Livewire\Attributes\Rule;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -15,7 +16,10 @@ class Content extends Component
     use WithFileUploads;
 
     // Variabel form
-    public $inputEmail, $inputNama, $inputPengaduan, $inputFile, $inputSearch;
+    public $inputEmail, $inputNama, $inputPengaduan, $inputSearch;
+
+    #[Rule('max:10240')]
+    public $inputFile;
 
 
     public function cariPengajuan()
@@ -90,10 +94,11 @@ class Content extends Component
                     'nama' => $this->inputNama,
                     'pengaduan' => $this->inputPengaduan
                 ];
+
                 Mail::to('profesi.kepamongprajaan@ipdn.ac.id')->send(new testMail($dataEmail));
 
                 // ngarahkeun aplikasi ka halaman resume pengajuan
-                return redirect('layanan-pengaduan/resume/' . $idPengajuan);
+                return redirect("layanan-pengaduan/resume/$idPengajuan");
 
             } catch (\Throwable $th) {
                 dd($th->getMessage());
