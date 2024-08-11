@@ -18,7 +18,7 @@ class Content extends Component
     // Variabel form
     public $inputEmail, $inputNama, $inputPengaduan, $inputSearch;
 
-    #[Rule('max:10240')]
+    #[Rule(['file', 'max:11264'])]
     public $inputFile;
 
 
@@ -51,6 +51,8 @@ class Content extends Component
 
     public function buatPengajuan()
     {
+        $this->validate();
+
         if (null != $this->inputPengaduan):
             $timestamp = Carbon::now('Asia/Jakarta')->timestamp;
             $randomString = Str::random(3);
@@ -67,7 +69,6 @@ class Content extends Component
                 'PENGADUAN_VALUE' => $this->inputPengaduan,
                 'PENGADUAN_ATTACHMENT' => $fileName,
             ];
-
 
             try {
                 // Miwarang livewire kanggo nyimpen data dumasar kana katangtosan nu tos di damel
