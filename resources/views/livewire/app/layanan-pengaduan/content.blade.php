@@ -74,7 +74,7 @@
                                 {{-- File --}}
                                 <div class="py-2">
                                     <x-admin.components.form.file name='inputFile' placeholder="Bukti Pegaduan" />
-                                    <small class="text-danger" >file max 2mb</small>
+                                    <small class="text-danger" >file max 10mb</small>
                                 </div>
 
 
