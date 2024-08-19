@@ -22,7 +22,7 @@
                         {{-- <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
                             alt="..."> --}}
 
-                        <a href="https://ipdn.siakadcloud.com/spmbfront/" target="_" >
+                        <a href="https://ipdn.siakadcloud.com/spmbfront/" target="_">
                             <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
                                 width="100%" />
                         </a>
@@ -32,7 +32,7 @@
                         {{-- <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
                             alt="..."> --}}
 
-                        <a href="https://ipdn.siakadcloud.com/spmbfront/" target="_" >
+                        <a href="https://ipdn.siakadcloud.com/spmbfront/" target="_">
 
                             <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
                                 width="100%" />
@@ -43,7 +43,7 @@
                         {{-- <img src="{{ asset('assets/homepage/images/bg-1.jpeg') }}" height="550" class="d-block w-100"
                             alt="..."> --}}
 
-                        <a href="https://ipdn.siakadcloud.com/spmbfront/" target="_" >
+                        <a href="https://ipdn.siakadcloud.com/spmbfront/" target="_">
 
                             <img src="{{ asset('assets/homepage/images/PENERIMAAN MAHASISWA BARU 1.png') }}"
                                 width="100%" />
@@ -77,110 +77,58 @@
         <div class="col-12 py-4">
 
             {{-- Title --}}
-            {{-- <div class="my-4">
+            <div class="my-4">
                 <center>
                     <h3><b>Kegiatan Profesi Kepamongprajaan</b></h3>
                 </center>
-            </div> --}}
+            </div>
 
 
             {{-- Card Berita --}}
             <div class="row justify-content-evenly g-4">
 
-                {{-- Berita 1 --}}
-                <div class="col-4">
-                    <div class="card rounded-lg shadow">
+                @foreach ($data as $item)
+                    {{-- Berita 1 --}}
+                    <div class="col-4">
+                        <div class="card rounded-lg shadow">
 
-                        <img src="{{ asset('assets/homepage/images/image 3.png') }}" height="270" class="card-img-top"
-                            alt="..." />
+                            <img src="{{ asset('thumbnail_berita/' . $item['KEGIATAN_THUMBNAIL']) }}" height="270"
+                                class="card-img-top" alt="..." />
 
-                        {{-- Content --}}
-                        <div class="card-body" style="height: 250px">
+                            {{-- Content --}}
+                            <div class="card-body" style="height: 250px">
 
-                            <h6 class="pb-4">
-                                <b>
-                                    KEGIATAN PENGANUGERAHAN TANDA KARTIKA PAMONG PRAJA
-                                </b>
-                            </h6>
+                                {{-- Judul konten --}}
+                                <h6 class="pb-2">
+                                    <div class="" style="height: 70px;">
+                                        <b>
+                                            {!! $item['KEGIATAN_JUDUL'] !!}
+                                        </b>
+                                    </div>
+                                </h6>
 
-                            <p class="" style="text-align: justify; color: #5B5B5B; font-size: 12px">
-                                Jatingagor, 27/10/2023 - Dalam rangka penganugerahan Tanda Kartika Pamong Praja dan
-                                Alumni Kehormatan Kepada Pejabat Gubernur Papua Barat Daya Dr. Drs. Mohammad Musa’ad,
-                                M.Si dan Bupati Malang Drs. H. Sanusi, M.M. sebagai bentuk apresiasi yang tinggi atas
-                                kontribusinya dalam mendayagunakan alumni Institut Pemerintahan Dalam Negeri di Provinsi
-                                Papua Barat Daya dan Kabupaten Malang.
-                            </p>
+                                {{-- Isi Konten --}}
+                                <div class="" style="height: 100px">
 
-                            <p hidden style="color: #063A69; text-decoration: underline; font-size: 12px;">
-                                <a href="#">Baca Selengkapnya</a>
-                            </p>
-                        </div>
+                                    <p class="" style="text-align: justify; color: #5B5B5B; font-size: 12px">
+                                        @if (strlen($item['KEGIATAN_ISI']) >= 150)
+                                            {!! Str::substr($item['KEGIATAN_ISI'], 0, 150) !!}
+                                        @else
+                                            {!! $item['KEGIATAN_ISI'] !!}
+                                        @endif
+                                    </p>
 
-                    </div>
-                </div>
+                                </div>
 
-                {{-- Berita 2 --}}
-                <div class="col-4">
-                    <div class="card rounded-lg shadow">
-                        <img src="{{ asset('assets/homepage/images/image 5.png') }}" height="270" class="card-img-top"
-                            alt="..." />
-
-                        {{-- Content --}}
-                        <div class="card-body" style="height: 250px">
-
-                            <h6 class="pb-4">
-                                <b>
-                                    Provinsi Papua Barat Daya Tingkatkan SDM Kepala Distrik Melalui Pendidikan Profesi
-                                    Kepamongprajaan di IPDN -Kemendagri
-                                </b>
-                            </h6>
-
-                            <p class="" style="text-align: justify; color: #5B5B5B; font-size: 12px">
-                                Jakarta, 06/10/2023 - Rektor IPDN, Prof. Dr. Drs. H. Hadi Prabowo., M.M resmi membuka
-                                kegiatan matrikulasi dan perkuliahan program pendidikan profesi kepamongprajaan angkatan
-                                XII kelas bratha tahun akademik 2023/2024.
-                            </p>
-
-                            <p hidden style="color: #063A69; text-decoration: underline; font-size: 12px;">
-                                <a href="#">Baca Selengkapnya</a>
-                            </p>
+                                <p style="color: #063A69; text-decoration: underline; font-size: 12px;">
+                                    <a href="{{ env('APP_URL') . '/berita/kegiatan/detail/' . $item['KEGIATAN_ID'] }}">Baca
+                                        Selengkapnya</a>
+                                </p>
+                            </div>
 
                         </div>
                     </div>
-
-                </div>
-
-                {{-- Berita 3 --}}
-                <div class="col-4">
-                    <div class="card rounded-lg shadow">
-                        <img src="{{ asset('assets/homepage/images/image 4.png') }}" height="270" class="card-img-top"
-                            alt="..." />
-
-                        {{-- Content --}}
-                        <div class="card-body" style="height: 250px">
-
-                            <h6 class="pb-4">
-                                <b>
-                                    PENGANUGERAHAN TANDA KEHORMATAN DAM LENCANA ALUMNI KEHORMATAN
-                                </b>
-                            </h6>
-
-                            <p class="" style="text-align: justify; color: #5B5B5B; font-size: 12px">
-                                Jatingagor, 04/03/2023 - Rektor IPDN, Prof. Dr. Drs. H. Hadi Prabowo., M.M memberikan
-                                penganugerahan tanda kehormatan Kartika Pamong Praja Madya, Kartika Pamong Praja Muda
-                                dan Lencana Alumni Kehormatan Pendidikan Tinggi Kepamongprajaan kepada Direktur Program
-                                Pendidikan Profesi Kepamongprajaan Dr. Dra. Hj. Endang Try Setyasih.
-                            </p>
-
-                            <p hidden style="color: #063A69; text-decoration: underline; font-size: 12px;">
-                                <a href="#">Baca Selengkapnya</a>
-                            </p>
-
-                        </div>
-
-                    </div>
-                </div>
-
+                @endforeach
 
                 {{-- See More --}}
                 <div class="py-4" hidden>
