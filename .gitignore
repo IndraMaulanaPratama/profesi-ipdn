@@ -1,15 +1,12 @@
-.env
-/node_modules
-composer.lock
-package-lock.json
-/public/hot
-/public/build
-/public/assets
-/public/file_pengaduan
-/public/gambar
-/public/tanda_tangan
-/public/foto_pegawai
-/public/storage
-/public/thumbnail_berita
-.DS_Store
-/vendor
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
