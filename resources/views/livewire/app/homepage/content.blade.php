@@ -131,9 +131,10 @@
                 @endforeach
 
                 {{-- See More --}}
-                <div class="py-4" hidden>
+                <div class="py-4">
                     <center>
-                        <a href="" class="link">Lihat Selengkapnya ...</a>
+                        <a href="{{ env('APP_URL') . '/berita/kegiatan/' }}" class="link"
+                            style="text-decoration: underline">Lihat Semua ...</a>
                     </center>
                 </div>
 
